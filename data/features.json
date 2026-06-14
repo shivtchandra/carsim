@@ -1,0 +1,482 @@
+[
+  {
+    "id": "airbags-2",
+    "name": "Dual Front Airbags",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "Front airbags for driver and passenger that deploy in a frontal crash.",
+    "whyItMatters": "The single biggest reducer of fatal injury in frontal impacts. Now mandatory in India.",
+    "whoNeedsIt": "Everyone — baseline safety.",
+    "hasSimulation": false
+  },
+  {
+    "id": "airbags-6",
+    "name": "6 Airbags",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "Adds side and curtain airbags to the front pair, protecting the torso and head in side impacts.",
+    "whyItMatters": "Side impacts are common at urban junctions and curtain airbags dramatically cut head-injury risk.",
+    "whoNeedsIt": "Families; anyone in city traffic daily.",
+    "hasSimulation": false
+  },
+  {
+    "id": "esc",
+    "name": "Electronic Stability Control",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "Brakes individual wheels automatically to stop a skid or slide.",
+    "whyItMatters": "Proven to cut single-vehicle loss-of-control crashes by roughly a third.",
+    "whoNeedsIt": "Everyone, especially highway and monsoon drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "abs-ebd",
+    "name": "ABS with EBD",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "Prevents wheel lock-up under hard braking and balances brake force front-to-rear.",
+    "whyItMatters": "Lets you steer while braking hard. Mandatory equipment in India.",
+    "whoNeedsIt": "Everyone — baseline safety.",
+    "hasSimulation": false
+  },
+  {
+    "id": "adas-l2",
+    "name": "Level 2 ADAS",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "A camera/radar suite that combines adaptive cruise, lane keeping and emergency braking.",
+    "whyItMatters": "Acts as a second pair of eyes — it can brake or steer before you react.",
+    "whoNeedsIt": "Highway commuters; anyone driving fatigued hours.",
+    "hasSimulation": true
+  },
+  {
+    "id": "aeb",
+    "name": "Autonomous Emergency Braking",
+    "category": "safety",
+    "impactScore": 3,
+    "whatItIs": "Detects an imminent collision and applies brakes automatically if you don't.",
+    "whyItMatters": "Cuts rear-end crashes by around 40% in real-world studies.",
+    "whoNeedsIt": "City stop-go commuters; distracted-traffic environments.",
+    "hasSimulation": true
+  },
+  {
+    "id": "lane-keep",
+    "name": "Lane Keep Assist",
+    "category": "safety",
+    "impactScore": 2,
+    "whatItIs": "Nudges the steering to keep the car centred if you drift out of lane.",
+    "whyItMatters": "Counters the micro-sleeps and phone glances behind many highway accidents.",
+    "whoNeedsIt": "Long-distance highway drivers.",
+    "hasSimulation": true
+  },
+  {
+    "id": "blind-spot",
+    "name": "Blind Spot Monitor",
+    "category": "safety",
+    "impactScore": 2,
+    "whatItIs": "Warns of vehicles sitting in your over-the-shoulder blind spot, usually via mirror icons or a camera feed.",
+    "whyItMatters": "Two-wheelers in India live in your blind spot; this flags them before a lane change.",
+    "whoNeedsIt": "Urban drivers; anyone on multi-lane highways.",
+    "hasSimulation": true
+  },
+  {
+    "id": "adaptive-cruise",
+    "name": "Adaptive Cruise Control",
+    "category": "safety",
+    "impactScore": 2,
+    "whatItIs": "Cruise control that automatically maintains a set gap to the car ahead.",
+    "whyItMatters": "Removes constant speed-adjustment fatigue on expressways.",
+    "whoNeedsIt": "Expressway commuters; intercity drivers.",
+    "hasSimulation": true
+  },
+  {
+    "id": "rear-camera",
+    "name": "Rear Parking Camera",
+    "category": "convenience",
+    "impactScore": 2,
+    "whatItIs": "Camera view of what's behind while reversing, with guidelines.",
+    "whyItMatters": "Prevents low-speed scrapes and protects children and pets you can't see.",
+    "whoNeedsIt": "Everyone parking in tight Indian spaces.",
+    "hasSimulation": false
+  },
+  {
+    "id": "camera-360",
+    "name": "360° Camera",
+    "category": "convenience",
+    "impactScore": 2,
+    "whatItIs": "Stitched top-down view from four cameras for parking.",
+    "whyItMatters": "Takes the guesswork out of kerbs, pillars and tight gaps.",
+    "whoNeedsIt": "Drivers in cramped city parking; new drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "front-parking-sensors",
+    "name": "Front Parking Sensors",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Beeping proximity sensors in the front bumper.",
+    "whyItMatters": "Saves bumper paint in nose-in parking.",
+    "whoNeedsIt": "Tight-parking city users.",
+    "hasSimulation": false
+  },
+  {
+    "id": "tpms",
+    "name": "Tyre Pressure Monitor",
+    "category": "safety",
+    "impactScore": 2,
+    "whatItIs": "Live tyre pressure readout with low-pressure warnings.",
+    "whyItMatters": "Slow punctures at highway speed are a major blowout cause.",
+    "whoNeedsIt": "Highway drivers; anyone skipping weekly pressure checks.",
+    "hasSimulation": false
+  },
+  {
+    "id": "isofix",
+    "name": "ISOFIX Child Seat Mounts",
+    "category": "safety",
+    "impactScore": 2,
+    "whatItIs": "Standardised rigid anchors for child seats on rear seats.",
+    "whyItMatters": "A correctly anchored child seat is vastly safer than a belt-routed one.",
+    "whoNeedsIt": "Families with kids under 8.",
+    "hasSimulation": false
+  },
+  {
+    "id": "hill-hold",
+    "name": "Hill Hold Assist",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Holds the brakes for a couple of seconds when starting on a slope.",
+    "whyItMatters": "No rollback stress on flyover ramps and basement exits.",
+    "whoNeedsIt": "Hilly-city drivers; new manual drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "sunroof",
+    "name": "Sunroof",
+    "category": "comfort",
+    "impactScore": 1,
+    "whatItIs": "Single-pane tilting/sliding glass roof.",
+    "whyItMatters": "Adds light and airiness; in India it is largely a desirability feature.",
+    "whoNeedsIt": "Buyers who value cabin ambience.",
+    "hasSimulation": false
+  },
+  {
+    "id": "pano-sunroof",
+    "name": "Panoramic Sunroof",
+    "category": "comfort",
+    "impactScore": 1,
+    "whatItIs": "Full-length glass roof over both rows.",
+    "whyItMatters": "Transforms cabin feel, though it adds weight and heat load.",
+    "whoNeedsIt": "Ambience-first buyers; rear-seat families.",
+    "hasSimulation": false
+  },
+  {
+    "id": "ventilated-seats",
+    "name": "Ventilated Front Seats",
+    "category": "comfort",
+    "impactScore": 3,
+    "whatItIs": "Fans in the seat that blow air through perforated upholstery.",
+    "whyItMatters": "In Indian summers this is the most-used comfort feature in the car — back sweat gone.",
+    "whoNeedsIt": "Anyone in a hot, humid city. Genuinely everyone.",
+    "hasSimulation": false
+  },
+  {
+    "id": "leatherette-seats",
+    "name": "Leatherette Upholstery",
+    "category": "comfort",
+    "impactScore": 1,
+    "whatItIs": "Synthetic leather seat covering.",
+    "whyItMatters": "Easier to clean than fabric and lifts perceived quality.",
+    "whoNeedsIt": "Families with kids; resale-conscious buyers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "powered-driver-seat",
+    "name": "Powered Driver Seat",
+    "category": "comfort",
+    "impactScore": 1,
+    "whatItIs": "Electric adjustment for the driver's seat, often 6-8 way.",
+    "whyItMatters": "Fine-grained adjustment helps shared cars and long drives.",
+    "whoNeedsIt": "Multi-driver households; long-commute drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "auto-ac",
+    "name": "Automatic Climate Control",
+    "category": "comfort",
+    "impactScore": 2,
+    "whatItIs": "Set a temperature and the AC manages fan and compressor itself.",
+    "whyItMatters": "Removes constant manual fiddling; keeps cabin stable.",
+    "whoNeedsIt": "Everyone beyond base-trim budgets.",
+    "hasSimulation": false
+  },
+  {
+    "id": "rear-ac-vents",
+    "name": "Rear AC Vents",
+    "category": "comfort",
+    "impactScore": 2,
+    "whatItIs": "Air vents for the second row.",
+    "whyItMatters": "Rear passengers in Indian heat need direct airflow — non-negotiable for families.",
+    "whoNeedsIt": "Anyone who regularly carries rear passengers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "air-purifier",
+    "name": "In-built Air Purifier",
+    "category": "comfort",
+    "impactScore": 1,
+    "whatItIs": "Cabin air purifier, sometimes with AQI display.",
+    "whyItMatters": "Helps in high-AQI metro winters, though cabin filters do most of the work.",
+    "whoNeedsIt": "Delhi-NCR and other high-AQI city dwellers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "touchscreen-8",
+    "name": "8\" Touchscreen",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "8-inch central infotainment touchscreen.",
+    "whyItMatters": "Baseline for navigation and media duties.",
+    "whoNeedsIt": "Everyone — table stakes.",
+    "hasSimulation": false
+  },
+  {
+    "id": "touchscreen-10",
+    "name": "10\"+ Touchscreen",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Large-format (10-12 inch) infotainment display.",
+    "whyItMatters": "Easier glanceability for maps; mostly a perceived-premium upgrade.",
+    "whoNeedsIt": "Navigation-heavy users.",
+    "hasSimulation": false
+  },
+  {
+    "id": "wireless-carplay",
+    "name": "Wireless CarPlay / Android Auto",
+    "category": "tech",
+    "impactScore": 2,
+    "whatItIs": "Phone projection without plugging in a cable.",
+    "whyItMatters": "The feature you touch every single drive; wireless removes daily friction.",
+    "whoNeedsIt": "Every smartphone user.",
+    "hasSimulation": false
+  },
+  {
+    "id": "digital-cluster",
+    "name": "Digital Instrument Cluster",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Fully digital driver's display, often 10+ inches.",
+    "whyItMatters": "Configurable maps/info in your sightline; mostly aesthetic beyond that.",
+    "whoNeedsIt": "Tech-first buyers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "hud",
+    "name": "Head-Up Display",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Speed and navigation projected ahead of the driver.",
+    "whyItMatters": "Keeps eyes on the road, though small HUDs wash out in bright sun.",
+    "whoNeedsIt": "Highway drivers who use navigation constantly.",
+    "hasSimulation": false
+  },
+  {
+    "id": "connected-car",
+    "name": "Connected Car Tech",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "SIM-based remote app control: pre-cool, locate, geofence, remote lock.",
+    "whyItMatters": "Remote pre-cooling before you reach a parked car is the killer feature in summer.",
+    "whoNeedsIt": "Urban professionals; parents tracking shared cars.",
+    "hasSimulation": false
+  },
+  {
+    "id": "wireless-charger",
+    "name": "Wireless Phone Charger",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Qi charging pad in the centre console.",
+    "whyItMatters": "Convenient top-ups, though slower than a cable.",
+    "whoNeedsIt": "Wireless-CarPlay users whose phones drain fast.",
+    "hasSimulation": false
+  },
+  {
+    "id": "premium-audio",
+    "name": "Branded Premium Audio",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Upgraded speaker system (Bose, JBL, Sony, Harman).",
+    "whyItMatters": "Noticeably better staging at moderate volumes; diminishing returns in road noise.",
+    "whoNeedsIt": "Music-first commuters.",
+    "hasSimulation": false
+  },
+  {
+    "id": "auto-headlamps",
+    "name": "Auto LED Headlamps",
+    "category": "convenience",
+    "impactScore": 2,
+    "whatItIs": "LED projector headlamps that switch on automatically in low light.",
+    "whyItMatters": "LED throw and auto-on at dusk are genuine safety aids on unlit roads.",
+    "whoNeedsIt": "Anyone driving at night outside city cores.",
+    "hasSimulation": false
+  },
+  {
+    "id": "auto-wipers",
+    "name": "Rain-sensing Wipers",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Wipers that start and pace themselves when rain is detected.",
+    "whyItMatters": "One less thing to manage in sudden monsoon bursts.",
+    "whoNeedsIt": "Monsoon-belt drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "keyless-entry",
+    "name": "Keyless Entry & Push Start",
+    "category": "convenience",
+    "impactScore": 2,
+    "whatItIs": "Walk up with the key in your pocket, unlock and start with a button.",
+    "whyItMatters": "Daily-use convenience you immediately miss in cars without it.",
+    "whoNeedsIt": "Everyone above base trims.",
+    "hasSimulation": false
+  },
+  {
+    "id": "cruise-control",
+    "name": "Cruise Control",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Holds a set speed without throttle input (non-adaptive).",
+    "whyItMatters": "Reduces fatigue and speeding tickets on expressways.",
+    "whoNeedsIt": "Occasional highway drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "auto-dimming-irvm",
+    "name": "Auto-dimming Mirror",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Rear-view mirror that auto-dims high-beam glare behind you.",
+    "whyItMatters": "Night-drive comfort given India's high-beam habits.",
+    "whoNeedsIt": "Night and highway drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "powered-tailgate",
+    "name": "Powered Tailgate",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Electrically opening and closing boot lid.",
+    "whyItMatters": "Hands-full convenience; pure luxury otherwise.",
+    "whoNeedsIt": "Frequent airport/luggage users.",
+    "hasSimulation": false
+  },
+  {
+    "id": "paddle-shifters",
+    "name": "Paddle Shifters",
+    "category": "performance",
+    "impactScore": 1,
+    "whatItIs": "Steering-mounted manual gear control for automatics.",
+    "whyItMatters": "Useful for engine braking on ghats; otherwise rarely touched.",
+    "whoNeedsIt": "Hill-route drivers; enthusiasts.",
+    "hasSimulation": false
+  },
+  {
+    "id": "drive-modes",
+    "name": "Drive Modes",
+    "category": "performance",
+    "impactScore": 1,
+    "whatItIs": "Selectable throttle/steering maps (Eco/Normal/Sport).",
+    "whyItMatters": "Sport sharpens response; Eco helps in traffic. Differences are modest.",
+    "whoNeedsIt": "Drivers who like tailoring response.",
+    "hasSimulation": false
+  },
+  {
+    "id": "traction-modes",
+    "name": "Terrain/Traction Modes",
+    "category": "performance",
+    "impactScore": 1,
+    "whatItIs": "Traction control maps for mud, sand or snow on FWD cars.",
+    "whyItMatters": "Marginal aid on slush; these are not off-roaders.",
+    "whoNeedsIt": "Occasional bad-road users.",
+    "hasSimulation": false
+  },
+  {
+    "id": "all-disc-brakes",
+    "name": "All-wheel Disc Brakes",
+    "category": "performance",
+    "impactScore": 2,
+    "whatItIs": "Disc brakes on all four wheels instead of rear drums.",
+    "whyItMatters": "Better fade resistance on ghat descents and repeated hard stops.",
+    "whoNeedsIt": "Hill-route and spirited drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "alloy-16",
+    "name": "16\" Alloy Wheels",
+    "category": "performance",
+    "impactScore": 1,
+    "whatItIs": "16-inch alloy wheels.",
+    "whyItMatters": "Lighter than steel, better looks; taller sidewalls ride better on bad roads.",
+    "whoNeedsIt": "Standard expectation at mid trims.",
+    "hasSimulation": false
+  },
+  {
+    "id": "alloy-17",
+    "name": "17\"+ Alloy Wheels",
+    "category": "performance",
+    "impactScore": 1,
+    "whatItIs": "17-inch or larger diamond-cut alloys.",
+    "whyItMatters": "Sharper looks and marginally better grip; slightly firmer ride.",
+    "whoNeedsIt": "Style-first buyers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "led-drl",
+    "name": "LED DRLs & Tail Lamps",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "LED daytime running lights and tail lamps.",
+    "whyItMatters": "Daytime visibility to other drivers plus signature looks.",
+    "whoNeedsIt": "Everyone; mostly aesthetic.",
+    "hasSimulation": false
+  },
+  {
+    "id": "rear-defogger",
+    "name": "Rear Defogger & Wiper",
+    "category": "convenience",
+    "impactScore": 1,
+    "whatItIs": "Heated rear glass and rear wiper.",
+    "whyItMatters": "Essential rear visibility in monsoon and winter fog.",
+    "whoNeedsIt": "Monsoon and hill-station drivers.",
+    "hasSimulation": false
+  },
+  {
+    "id": "dashcam",
+    "name": "Factory Dashcam",
+    "category": "tech",
+    "impactScore": 1,
+    "whatItIs": "Built-in front (sometimes dual) dashcam.",
+    "whyItMatters": "Insurance-dispute gold in Indian traffic.",
+    "whoNeedsIt": "Every city driver, honestly.",
+    "hasSimulation": false
+  },
+  {
+    "id": "awd-4wd",
+    "name": "4WD / AWD",
+    "category": "performance",
+    "impactScore": 2,
+    "whatItIs": "Drive to all four wheels, selectable or automatic.",
+    "whyItMatters": "Real traction on broken trails, ghats in monsoon and loose surfaces.",
+    "whoNeedsIt": "Off-road users; hill-country owners.",
+    "hasSimulation": false
+  },
+  {
+    "id": "third-row",
+    "name": "Third-row Seats",
+    "category": "comfort",
+    "impactScore": 2,
+    "whatItIs": "A usable +2 third row of seats.",
+    "whyItMatters": "Turns the car into a 6/7-seater for the full family.",
+    "whoNeedsIt": "Large or joint families.",
+    "hasSimulation": false
+  }
+]

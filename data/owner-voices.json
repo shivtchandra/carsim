@@ -1,0 +1,927 @@
+[
+  {
+    "modelId": "hyundai-creta",
+    "voices": [
+      {
+        "theme": "Ride & refinement",
+        "sentiment": "positive",
+        "text": "Owners consistently praise the soft ride and quiet cabin — it soaks up bad city roads better than most rivals."
+      },
+      {
+        "theme": "Real-world mileage",
+        "sentiment": "mixed",
+        "text": "NA petrol AT owners report 9–11 km/l in city traffic, noticeably below the brochure figure; highway runs do better."
+      },
+      {
+        "theme": "Service experience",
+        "sentiment": "positive",
+        "text": "Hyundai's service network gets high marks — predictable costs and easy availability even in smaller towns."
+      },
+      {
+        "theme": "Waiting periods",
+        "sentiment": "negative",
+        "text": "Popular variants routinely carry 1–3 month waiting periods, and dealers push accessories to jump the queue."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-seltos",
+    "voices": [
+      {
+        "theme": "Looks & features",
+        "sentiment": "positive",
+        "text": "Owners love the styling and the loaded top trims — the panoramic sunroof and 360 camera get mentioned a lot."
+      },
+      {
+        "theme": "Ride quality",
+        "sentiment": "negative",
+        "text": "The firm suspension is the most common complaint — sharp bumps and potholes thud into the cabin more than in a Creta."
+      },
+      {
+        "theme": "Diesel praise",
+        "sentiment": "positive",
+        "text": "1.5 diesel owners report effortless highway cruising and 17–19 km/l on long runs."
+      },
+      {
+        "theme": "Niggles",
+        "sentiment": "mixed",
+        "text": "Scattered reports of infotainment freezes and rattles; service response varies by dealer."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-grand-vitara",
+    "voices": [
+      {
+        "theme": "Hybrid economy",
+        "sentiment": "positive",
+        "text": "Strong-hybrid owners regularly see 20+ km/l in city driving — the single biggest reason they recommend it."
+      },
+      {
+        "theme": "Boot & space",
+        "sentiment": "negative",
+        "text": "The hybrid's smaller boot (255 L) frustrates road-trippers; rear seat width is also tighter than rivals."
+      },
+      {
+        "theme": "Power delivery",
+        "sentiment": "mixed",
+        "text": "Smooth in town, but owners say the NA petrol feels strained on quick overtakes with a full load."
+      },
+      {
+        "theme": "Service costs",
+        "sentiment": "positive",
+        "text": "Maruti's low maintenance costs and dense service network remain a recurring plus point."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-hyryder",
+    "voices": [
+      {
+        "theme": "Hybrid economy",
+        "sentiment": "positive",
+        "text": "Like its Maruti twin, the strong hybrid's 20+ km/l city economy is what owners talk about most."
+      },
+      {
+        "theme": "Reliability faith",
+        "sentiment": "positive",
+        "text": "Owners cite Toyota's reliability reputation and longer standard warranty as the reason they paid the premium over the Grand Vitara."
+      },
+      {
+        "theme": "Rear AC vents & space",
+        "sentiment": "mixed",
+        "text": "Comfortable for four; the middle rear passenger and boot space draw complaints on the hybrid."
+      },
+      {
+        "theme": "Feature gaps",
+        "sentiment": "negative",
+        "text": "No ventilated seats on some trims and a basic infotainment compared to Korean rivals."
+      }
+    ]
+  },
+  {
+    "modelId": "honda-elevate",
+    "voices": [
+      {
+        "theme": "Driving manners",
+        "sentiment": "positive",
+        "text": "Owners praise the light controls, good visibility and absorbent ride — easy to live with daily."
+      },
+      {
+        "theme": "Engine character",
+        "sentiment": "mixed",
+        "text": "The 1.5 NA petrol is smooth but unexciting; CVT owners note a rubber-band feel when pushed."
+      },
+      {
+        "theme": "Feature list",
+        "sentiment": "negative",
+        "text": "No sunroof options below top trim, no 360 camera, and cabin plastics feel built to a price."
+      },
+      {
+        "theme": "Honda ownership",
+        "sentiment": "positive",
+        "text": "Low niggle count and fuss-free service keep long-term owners loyal."
+      }
+    ]
+  },
+  {
+    "modelId": "vw-taigun",
+    "voices": [
+      {
+        "theme": "Driving fun",
+        "sentiment": "positive",
+        "text": "The 1.5 TSI DSG is the enthusiast pick of the segment — owners rave about the punch and body control."
+      },
+      {
+        "theme": "DSG anxiety",
+        "sentiment": "negative",
+        "text": "A vocal minority report DSG overheating or jerky low-speed behaviour, and out-of-warranty repair costs worry owners."
+      },
+      {
+        "theme": "Build quality",
+        "sentiment": "positive",
+        "text": "Doors-shut-like-a-vault solidity and stable high-speed manners come up in nearly every review."
+      },
+      {
+        "theme": "Rear seat & features",
+        "sentiment": "mixed",
+        "text": "Tight rear seat for three and a sparse feature list versus Korean rivals at the same money."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-kushaq",
+    "voices": [
+      {
+        "theme": "Chassis & safety",
+        "sentiment": "positive",
+        "text": "Owners highlight the planted handling and 5-star BNCAP rating — it feels engineered, not assembled."
+      },
+      {
+        "theme": "Service costs",
+        "sentiment": "mixed",
+        "text": "Skoda service has improved with capped-price plans, but parts still cost more than Maruti/Hyundai equivalents."
+      },
+      {
+        "theme": "1.0 TSI economy",
+        "sentiment": "positive",
+        "text": "The 1.0 TSI returns a genuine 14–16 km/l for most owners while still feeling eager."
+      },
+      {
+        "theme": "Cabin width",
+        "sentiment": "negative",
+        "text": "Three abreast in the back is a squeeze, and rear AC performance in peak summer draws complaints."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-curvv",
+    "voices": [
+      {
+        "theme": "Road presence",
+        "sentiment": "positive",
+        "text": "The coupe styling turns heads — owners say it photographs like a car a segment above."
+      },
+      {
+        "theme": "Software niggles",
+        "sentiment": "negative",
+        "text": "Touchscreen freezes, sensor warnings and minor electrical gremlins are the most common early-ownership complaints."
+      },
+      {
+        "theme": "Diesel option",
+        "sentiment": "positive",
+        "text": "Having the only diesel in the coupe-SUV space wins over high-mileage buyers; 16–18 km/l reported."
+      },
+      {
+        "theme": "Rear headroom",
+        "sentiment": "mixed",
+        "text": "The sloping roof costs taller rear passengers some headroom — test-sit before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xuv-3xo",
+    "voices": [
+      {
+        "theme": "Value & kit",
+        "sentiment": "positive",
+        "text": "Owners can't believe the feature list for the price — sunroof, level-2 ADAS and 360 camera undercut everyone."
+      },
+      {
+        "theme": "Ride comfort",
+        "sentiment": "positive",
+        "text": "The suspension takes broken roads better than any rival in the class, a consistent owner highlight."
+      },
+      {
+        "theme": "Fit & finish",
+        "sentiment": "mixed",
+        "text": "Panel gaps and interior plastics lag the polish of Korean rivals; some rattles reported early."
+      },
+      {
+        "theme": "Service variability",
+        "sentiment": "negative",
+        "text": "Mahindra dealer experience is inconsistent — great in metros, patchy in smaller towns."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-astor",
+    "voices": [
+      {
+        "theme": "Cabin feel",
+        "sentiment": "positive",
+        "text": "The red leatherette interior and big screen feel premium — owners say it punches above its price inside."
+      },
+      {
+        "theme": "Resale anxiety",
+        "sentiment": "negative",
+        "text": "Weak resale values and uncertainty around the brand keep coming up in long-term owner posts."
+      },
+      {
+        "theme": "Turbo performance",
+        "sentiment": "mixed",
+        "text": "The 1.3 turbo is quick but thirsty — 8–10 km/l city figures reported by AT owners."
+      },
+      {
+        "theme": "Features for money",
+        "sentiment": "positive",
+        "text": "ADAS and the AI assistant at this price point still undercut most rivals."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-nexon",
+    "voices": [
+      {
+        "theme": "Safety reputation",
+        "sentiment": "positive",
+        "text": "The 5-star crash rating is the single most cited reason owners chose the Nexon for their families."
+      },
+      {
+        "theme": "Software & electricals",
+        "sentiment": "negative",
+        "text": "Touchscreen lag, reverse camera dropouts and sensor errors remain the top complaints post-facelift."
+      },
+      {
+        "theme": "Diesel torque",
+        "sentiment": "positive",
+        "text": "Diesel owners love the mid-range punch and report 17–19 km/l on highway runs."
+      },
+      {
+        "theme": "AMT behaviour",
+        "sentiment": "mixed",
+        "text": "The AMT is fine in relaxed driving but head-nods in traffic; the DCA is smoother but pricier."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-brezza",
+    "voices": [
+      {
+        "theme": "Ownership ease",
+        "sentiment": "positive",
+        "text": "Cheap service, anywhere-in-India network and strong resale make it the default safe choice for owners."
+      },
+      {
+        "theme": "Engine refinement",
+        "sentiment": "mixed",
+        "text": "The 1.5 NA petrol is smooth but feels flat with AC on and a full load, say highway drivers."
+      },
+      {
+        "theme": "CNG flexibility",
+        "sentiment": "positive",
+        "text": "CNG owners report running costs under ₹2.5/km — unbeatable for high-mileage commuters."
+      },
+      {
+        "theme": "Interior plastics",
+        "sentiment": "negative",
+        "text": "Hard plastics everywhere and missing premium features at the top end disappoint some upgraders."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-venue",
+    "voices": [
+      {
+        "theme": "City friendliness",
+        "sentiment": "positive",
+        "text": "Compact size, light steering and good visibility make it a favourite for first-time and city drivers."
+      },
+      {
+        "theme": "Rear seat space",
+        "sentiment": "negative",
+        "text": "The tight rear bench is the most repeated complaint — fine for kids, cramped for three adults."
+      },
+      {
+        "theme": "Turbo DCT",
+        "sentiment": "mixed",
+        "text": "Quick and smooth when cold, but some owners report hesitation in crawling traffic."
+      },
+      {
+        "theme": "Service network",
+        "sentiment": "positive",
+        "text": "Hyundai service consistency keeps overall ownership stress low."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-sonet",
+    "voices": [
+      {
+        "theme": "Feature density",
+        "sentiment": "positive",
+        "text": "Ventilated seats, Bose audio and sunroof in a sub-4m — owners feel they got a segment-above cabin."
+      },
+      {
+        "theme": "Stiff ride",
+        "sentiment": "negative",
+        "text": "Like the Seltos, the firm low-speed ride over potholes is the most common gripe."
+      },
+      {
+        "theme": "Diesel AT",
+        "sentiment": "positive",
+        "text": "The only diesel automatic in the class — owners doing long commutes swear by it."
+      },
+      {
+        "theme": "Rear space",
+        "sentiment": "mixed",
+        "text": "Better boot than rivals but rear knee-room is tight for taller families."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-punch",
+    "voices": [
+      {
+        "theme": "Tough & high-set",
+        "sentiment": "positive",
+        "text": "Owners love the high seating, 5-star rating and the way it shrugs off broken roads at this price."
+      },
+      {
+        "theme": "Power on highways",
+        "sentiment": "negative",
+        "text": "The 1.2 NA three-cylinder runs out of breath above 100 km/h — owners call it a city car at heart."
+      },
+      {
+        "theme": "CNG twin-cylinder",
+        "sentiment": "positive",
+        "text": "The under-floor twin CNG tanks keep the boot usable — a unique practical win owners highlight."
+      },
+      {
+        "theme": "Cabin noise",
+        "sentiment": "mixed",
+        "text": "Three-cylinder thrum is always present; acceptable to most, annoying to some."
+      }
+    ]
+  },
+  {
+    "modelId": "renault-kiger",
+    "voices": [
+      {
+        "theme": "Value pricing",
+        "sentiment": "positive",
+        "text": "Owners consistently call it the most car for the least money in the segment."
+      },
+      {
+        "theme": "Thin network",
+        "sentiment": "negative",
+        "text": "Renault's shrinking dealer and service footprint is the biggest long-term worry owners voice."
+      },
+      {
+        "theme": "Turbo CVT",
+        "sentiment": "mixed",
+        "text": "The 1.0 turbo CVT is peppy once rolling but drones under hard acceleration."
+      },
+      {
+        "theme": "Boot space",
+        "sentiment": "positive",
+        "text": "405 L is class-best — luggage space wins family approval."
+      }
+    ]
+  },
+  {
+    "modelId": "nissan-magnite",
+    "voices": [
+      {
+        "theme": "Aggressive pricing",
+        "sentiment": "positive",
+        "text": "The entry price keeps stunning buyers — owners say nothing else offers SUV looks this cheap."
+      },
+      {
+        "theme": "Interior quality",
+        "sentiment": "negative",
+        "text": "Hard, hollow-feeling plastics and inconsistent panel fit are the trade-off owners accept for the price."
+      },
+      {
+        "theme": "Turbo engine",
+        "sentiment": "mixed",
+        "text": "The 1.0 turbo feels eager, though refinement trails the Koreans; NA version best avoided per owners."
+      },
+      {
+        "theme": "Network worry",
+        "sentiment": "negative",
+        "text": "Like Renault, Nissan's thin service network makes out-of-metro owners nervous."
+      }
+    ]
+  },
+  {
+    "modelId": "honda-city",
+    "voices": [
+      {
+        "theme": "Rear seat comfort",
+        "sentiment": "positive",
+        "text": "The City's rear bench remains the family benchmark — owners call it the most comfortable seat under ₹20L."
+      },
+      {
+        "theme": "i-VTEC smoothness",
+        "sentiment": "positive",
+        "text": "The free-revving 1.5 petrol and light controls earn near-universal owner praise; 14–16 km/l reported."
+      },
+      {
+        "theme": "Ground clearance care",
+        "sentiment": "mixed",
+        "text": "Speed breakers need respect with five aboard — scraping reports are common on tall breakers."
+      },
+      {
+        "theme": "Feature pricing",
+        "sentiment": "negative",
+        "text": "Owners feel ADAS and sunroof arrive only at steep top-trim prices versus rivals."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-verna",
+    "voices": [
+      {
+        "theme": "Turbo performance",
+        "sentiment": "positive",
+        "text": "The 160 PS turbo makes it the quickest sedan under ₹20L — enthusiasts among owners love it."
+      },
+      {
+        "theme": "Polarising looks",
+        "sentiment": "mixed",
+        "text": "The futuristic styling splits opinion sharply — owners either love or apologise for it."
+      },
+      {
+        "theme": "Loaded cabin",
+        "sentiment": "positive",
+        "text": "Ventilated seats, dual screens and ADAS — owners say nothing in the segment matches the kit."
+      },
+      {
+        "theme": "Low-slung entry",
+        "sentiment": "negative",
+        "text": "Elderly family members find the low seating hard to get in and out of, a recurring family complaint."
+      }
+    ]
+  },
+  {
+    "modelId": "vw-virtus",
+    "voices": [
+      {
+        "theme": "GT driving joy",
+        "sentiment": "positive",
+        "text": "1.5 TSI GT owners describe it as a junior GTI — the segment's driver's car."
+      },
+      {
+        "theme": "Solid build",
+        "sentiment": "positive",
+        "text": "High-speed stability and crash-test confidence are owner highlights."
+      },
+      {
+        "theme": "DSG concerns",
+        "sentiment": "negative",
+        "text": "The familiar DSG reliability anxiety follows the GT; extended warranty is considered essential by owners."
+      },
+      {
+        "theme": "Cost of ownership",
+        "sentiment": "mixed",
+        "text": "Parts and service cost more than Honda/Hyundai, though intervals are reasonable."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-slavia",
+    "voices": [
+      {
+        "theme": "Driving balance",
+        "sentiment": "positive",
+        "text": "Owners praise the ride-handling balance — compliant over bad roads yet composed at speed."
+      },
+      {
+        "theme": "1.5 TSI punch",
+        "sentiment": "positive",
+        "text": "The 150 PS TSI with DSG is repeatedly called the best engine in any sub-₹20L sedan."
+      },
+      {
+        "theme": "Rear AC & space",
+        "sentiment": "mixed",
+        "text": "Good legroom but rear AC vents struggle in May–June heat, say owners in hot cities."
+      },
+      {
+        "theme": "Service costs",
+        "sentiment": "negative",
+        "text": "Higher parts pricing versus Japanese rivals remains the main ownership gripe."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-scorpio-n",
+    "voices": [
+      {
+        "theme": "Road presence",
+        "sentiment": "positive",
+        "text": "Nothing commands road respect like it — owners say traffic literally makes way."
+      },
+      {
+        "theme": "Diesel grunt",
+        "sentiment": "positive",
+        "text": "The 2.2 diesel's effortless cruising and 14–16 km/l highway economy win unanimous praise."
+      },
+      {
+        "theme": "Third row & boot",
+        "sentiment": "negative",
+        "text": "Jump seats are punishment for adults and boot space with all rows up is nearly nil."
+      },
+      {
+        "theme": "Quality niggles",
+        "sentiment": "mixed",
+        "text": "Rattles, software bugs and inconsistent dealer service temper the love affair."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xuv700",
+    "voices": [
+      {
+        "theme": "Performance value",
+        "sentiment": "positive",
+        "text": "Owners call the 200 PS petrol and 185 PS diesel unmatched performance-per-rupee in India."
+      },
+      {
+        "theme": "ADAS pioneer",
+        "sentiment": "mixed",
+        "text": "Level-2 ADAS works well on highways but false braking events on Indian roads spook some owners."
+      },
+      {
+        "theme": "Waiting & delivery",
+        "sentiment": "negative",
+        "text": "Long waits and delivery-time price changes frustrated many early bookers."
+      },
+      {
+        "theme": "Space & comfort",
+        "sentiment": "positive",
+        "text": "Genuine 7-seater comfort and a composed highway ride make it the family favourite."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-harrier",
+    "voices": [
+      {
+        "theme": "Stance & design",
+        "sentiment": "positive",
+        "text": "Owners say it still looks the most expensive car in its price band, especially post-facelift."
+      },
+      {
+        "theme": "Diesel-only limits",
+        "sentiment": "mixed",
+        "text": "The Kryotec diesel is strong and efficient, but city buyers wish for the petrol that never came."
+      },
+      {
+        "theme": "Electronics gremlins",
+        "sentiment": "negative",
+        "text": "Screen blackouts, sensor faults and software bugs are the recurring dark side of ownership."
+      },
+      {
+        "theme": "Ride maturity",
+        "sentiment": "positive",
+        "text": "The OMEGA-arc platform's flat, planted ride draws favourable comparisons with Europeans."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-hector",
+    "voices": [
+      {
+        "theme": "Cabin lounge",
+        "sentiment": "positive",
+        "text": "The huge panoramic sunroof and sofa-like seats make owners describe it as a lounge on wheels."
+      },
+      {
+        "theme": "Infotainment scale",
+        "sentiment": "mixed",
+        "text": "The 14-inch screen wows, though laggy responses and voice-assistant misses frustrate daily users."
+      },
+      {
+        "theme": "Body roll",
+        "sentiment": "negative",
+        "text": "Soft suspension means pronounced lean in corners — drivers who hustle dislike it."
+      },
+      {
+        "theme": "Value pricing",
+        "sentiment": "positive",
+        "text": "Owners repeatedly cite how much metal and kit the money buys versus XUV700 and Harrier."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-windsor",
+    "voices": [
+      {
+        "theme": "Cabin comfort",
+        "sentiment": "positive",
+        "text": "Owners are thrilled with the lounge-like rear seats and high headroom; it feels like an upscale sofa."
+      },
+      {
+        "theme": "Screens focus",
+        "sentiment": "mixed",
+        "text": "The massive 15.6-inch display is loved by techies, but older drivers find doing basics (like adjusting AC) on screens annoying."
+      },
+      {
+        "theme": "City range",
+        "sentiment": "positive",
+        "text": "The 38kWh pack yields a reliable 230–250 km real range in city stop-and-go commuting, which fits most needs."
+      },
+      {
+        "theme": "Soft suspension",
+        "sentiment": "mixed",
+        "text": "Very plush over bumps at low speed, but it feels floaty and rolls quite a bit on high-speed expressway curves."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-thar-roxx",
+    "voices": [
+      {
+        "theme": "Road presence",
+        "sentiment": "positive",
+        "text": "Owners love the towering driving position and aggressive design; other road users give way instantly."
+      },
+      {
+        "theme": "Family viability",
+        "sentiment": "positive",
+        "text": "Unlike the 3-door Thar, the 5-door Roxx is praised by spouses for its rear legroom and decent 447L boot."
+      },
+      {
+        "theme": "Ride stiffness",
+        "sentiment": "negative",
+        "text": "It is built on a body-on-frame Scorpio-N chassis; low-speed ride over side-to-side bumps can toss passengers around."
+      },
+      {
+        "theme": "Fuel economy",
+        "sentiment": "mixed",
+        "text": "The diesel delivers an acceptable 11–13 km/l in city traffic, but the petrol version gets very thirsty (7–9 km/l)."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-swift",
+    "voices": [
+      {
+        "theme": "Fuel efficiency",
+        "sentiment": "positive",
+        "text": "Owners consistently report 18–21 km/l in the city and 24+ km/l on highways — highly economical."
+      },
+      {
+        "theme": "3-cylinder thrum",
+        "sentiment": "mixed",
+        "text": "Frugal engine, but some owners complain about mild cabin vibrations at idle compared to the previous 4-cylinder."
+      },
+      {
+        "theme": "Standard safety",
+        "sentiment": "positive",
+        "text": "6 airbags and ESC standard across the range is highly appreciated for a budget hatchback."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-dzire",
+    "voices": [
+      {
+        "theme": "GNCAP rating",
+        "sentiment": "positive",
+        "text": "The historic 5-star crash safety score is the primary reason many safety-conscious buyers picked it."
+      },
+      {
+        "theme": "Sunroof appeal",
+        "sentiment": "positive",
+        "text": "The segment-first single-pane electric sunroof is a massive hit with kids and younger buyers."
+      },
+      {
+        "theme": "Refinement",
+        "sentiment": "mixed",
+        "text": "It shares the Swift's Z12E 3-cylinder engine; it is efficient but sounds vocal when revved hard."
+      }
+    ]
+  },
+  {
+    "modelId": "honda-amaze",
+    "voices": [
+      {
+        "theme": "Smooth CVT",
+        "sentiment": "positive",
+        "text": "The automatic version is widely praised as the smoothest and most stress-free commuter sedan under ₹10 Lakh."
+      },
+      {
+        "theme": "Safety features",
+        "sentiment": "positive",
+        "text": "Standard 6 airbags and 5-star BNCAP capability give owners huge peace of mind."
+      },
+      {
+        "theme": "Highway performance",
+        "sentiment": "mixed",
+        "text": "Excellent in town, but the NA i-VTEC lacks mid-range punch; it needs to be revved high to overtake on highways."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-kylaq",
+    "voices": [
+      {
+        "theme": "Build Quality",
+        "sentiment": "positive",
+        "text": "Feels typically solid like larger European SUVs, door shut is reassuring."
+      },
+      {
+        "theme": "Boot Space",
+        "sentiment": "positive",
+        "text": "Surprisingly large boot for a sub-4m car, fits multiple bags easily."
+      },
+      {
+        "theme": "Engine Refinement",
+        "sentiment": "mixed",
+        "text": "Enthusiastic power delivery but idle vibrations reveal it's a 3-cylinder."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-zs-ev",
+    "voices": [
+      {
+        "theme": "Running Cost",
+        "sentiment": "positive",
+        "text": "Extremely economical to drive, charging costs are negligible compared to petrol."
+      },
+      {
+        "theme": "Cabin Feel",
+        "sentiment": "positive",
+        "text": "The panoramic sunroof makes it feel airy and premium inside."
+      },
+      {
+        "theme": "Ride Quality",
+        "sentiment": "mixed",
+        "text": "Smooth on flat roads, but gets jittery over sharp potholes."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-taisor",
+    "voices": [
+      {
+        "theme": "Design",
+        "sentiment": "positive",
+        "text": "The sloping roofline gives it a sporty coupe look that stands out."
+      },
+      {
+        "theme": "Fuel Efficiency",
+        "sentiment": "positive",
+        "text": "Easily delivers over 16 km/l in heavy city traffic, very frugal."
+      },
+      {
+        "theme": "Cabin Plastics",
+        "sentiment": "negative",
+        "text": "Plastics on the lower dashboard feel hard and scratchy."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-crysta",
+    "voices": [
+      {
+        "theme": "Ride Comfort",
+        "sentiment": "positive",
+        "text": "Perfect for long-distance cruising, rear seats are incredibly comfortable."
+      },
+      {
+        "theme": "Reliability",
+        "sentiment": "positive",
+        "text": "Done over 1.5 Lakh km and it still runs like new. Zero breakdowns."
+      },
+      {
+        "theme": "Gearbox",
+        "sentiment": "mixed",
+        "text": "Clutch is a bit heavy, miss having an automatic option in traffic."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-exter",
+    "voices": [
+      {
+        "theme": "Headroom",
+        "sentiment": "positive",
+        "text": "Excellent headroom, easy ingress and egress for elderly parents."
+      },
+      {
+        "theme": "Refinement",
+        "sentiment": "positive",
+        "text": "Engine is super quiet at city speeds, very smooth."
+      },
+      {
+        "theme": "Highway Manner",
+        "sentiment": "mixed",
+        "text": "Fine for relaxed cruising, but lacks quick highway overtaking power."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-ioniq5",
+    "voices": [
+      {
+        "theme": "Futuristic Styling",
+        "sentiment": "positive",
+        "text": "Turns heads everywhere. Design looks like a concept car."
+      },
+      {
+        "theme": "Lounge Cabin",
+        "sentiment": "positive",
+        "text": "Flat floor and sliding center console make it feel like a spacious lounge."
+      },
+      {
+        "theme": "Ground Clearance",
+        "sentiment": "mixed",
+        "text": "Need to be careful over tall speedbreakers when fully loaded."
+      }
+    ]
+  },
+  {
+    "modelId": "vinfast-vf6",
+    "voices": [
+      {
+        "theme": "Tech & Screen",
+        "sentiment": "positive",
+        "text": "The big central screen is responsive, and software updates are frequent."
+      },
+      {
+        "theme": "Steering Feedback",
+        "sentiment": "mixed",
+        "text": "Very light and easy in the city, but feels artificial on the highway."
+      }
+    ]
+  },
+  {
+    "modelId": "vinfast-vf7",
+    "voices": [
+      {
+        "theme": "Power",
+        "sentiment": "positive",
+        "text": "Crazy acceleration. The dual-motor version pulls like a sports car."
+      },
+      {
+        "theme": "Network Support",
+        "sentiment": "mixed",
+        "text": "Great EV product, but VinFast dealerships are still sparse."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-q3",
+    "voices": [
+      {
+        "theme": "Engine",
+        "sentiment": "positive",
+        "text": "2.0 TFSI has excellent grunt, gearshifts are lightning-fast."
+      },
+      {
+        "theme": "Handling",
+        "sentiment": "positive",
+        "text": "quattro AWD offers incredible confidence and grip on wet roads."
+      },
+      {
+        "theme": "Space",
+        "sentiment": "mixed",
+        "text": "Boot is decent, but rear legroom is only average for this price."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-q5",
+    "voices": [
+      {
+        "theme": "Refinement",
+        "sentiment": "positive",
+        "text": "Super silent cabin, almost zero road or wind noise makes it very relaxing."
+      },
+      {
+        "theme": "Ride Comfort",
+        "sentiment": "positive",
+        "text": "Suspension setup is stellar, glides over broken patches smoothly."
+      },
+      {
+        "theme": "Fuel Bills",
+        "sentiment": "negative",
+        "text": "Heavy SUV + petrol engine means fuel bills are quite high."
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "hyundai",
+    "name": "Hyundai",
+    "country": "South Korea",
+    "color": "#1C3FA8"
+  },
+  {
+    "id": "kia",
+    "name": "Kia",
+    "country": "South Korea",
+    "color": "#BB162B"
+  },
+  {
+    "id": "maruti",
+    "name": "Maruti Suzuki",
+    "country": "India / Japan",
+    "color": "#0B5EA8"
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota",
+    "country": "Japan",
+    "color": "#EB0A1E"
+  },
+  {
+    "id": "honda",
+    "name": "Honda",
+    "country": "Japan",
+    "color": "#C8102E"
+  },
+  {
+    "id": "volkswagen",
+    "name": "Volkswagen",
+    "country": "Germany",
+    "color": "#0E4C92"
+  },
+  {
+    "id": "skoda",
+    "name": "Skoda",
+    "country": "Czech Republic",
+    "color": "#0F3A30"
+  },
+  {
+    "id": "tata",
+    "name": "Tata Motors",
+    "country": "India",
+    "color": "#1868C5"
+  },
+  {
+    "id": "mahindra",
+    "name": "Mahindra",
+    "country": "India",
+    "color": "#B61F24"
+  },
+  {
+    "id": "mg",
+    "name": "MG Motor",
+    "country": "UK / China",
+    "color": "#A8001C"
+  },
+  {
+    "id": "renault",
+    "name": "Renault",
+    "country": "France",
+    "color": "#F7C600"
+  },
+  {
+    "id": "nissan",
+    "name": "Nissan",
+    "country": "Japan",
+    "color": "#C3002F"
+  },
+  {
+    "id": "vinfast",
+    "name": "VinFast",
+    "country": "Vietnam",
+    "color": "#1B4F93"
+  },
+  {
+    "id": "audi",
+    "name": "Audi",
+    "country": "Germany",
+    "color": "#000000"
+  }
+]

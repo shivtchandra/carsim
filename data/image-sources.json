@@ -1,0 +1,244 @@
+{
+  "_note": "Car photo sources. 'query' searches Wikimedia Commons (freely licensed; credit auto-recorded on fetch). Set 'url' to override with a direct image URL (e.g. licensed press image). Run: node scripts/fetch-images.mjs",
+  "sources": [
+    {
+      "modelId": "hyundai-creta",
+      "query": "Hyundai Creta 2024",
+      "fetchedFrom": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/summer-edition/creta-summer-edition.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/summer-edition/creta-summer-edition.jpg"
+    },
+    {
+      "modelId": "kia-seltos",
+      "query": "Kia Seltos 2023 facelift",
+      "fetchedFrom": "https://www.kia.com/content/dam/kia2/in/en/images/360vr/new_seltos/1mw51mc5fss036/exterior/kdg/04-d.png",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.kia.com/content/dam/kia2/in/en/images/360vr/new_seltos/1mw51mc5fss036/exterior/kdg/04-d.png"
+    },
+    {
+      "modelId": "maruti-grand-vitara",
+      "query": "Suzuki Grand Vitara 2022 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2022_Maruti_Suzuki_Grand_Vitara_Zeta_Smart_Hybrid_%28India%29_front_view.jpg/1280px-2022_Maruti_Suzuki_Grand_Vitara_Zeta_Smart_Hybrid_%28India%29_front_view.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/grand_vitara/colors/Celestial-Blue.webp"
+    },
+    {
+      "modelId": "toyota-hyryder",
+      "query": "Toyota Urban Cruiser Hyryder",
+      "url": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/grand_vitara/colors/Celestial-Blue.webp",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/4/4c/2022_Toyota_Urban_Cruiser_Hyryder_V_Hybrid_%28India%29_front_view.jpg"
+    },
+    {
+      "modelId": "honda-elevate",
+      "query": "Honda Elevate",
+      "url": "https://www.hondacarindia.com/honda-elevate/images/color-monotone/platinum-white-pearl.png",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/90/2023_Honda_Elevate_VX_%28India%29_front_view.jpg"
+    },
+    {
+      "modelId": "vw-taigun",
+      "query": "Volkswagen Taigun",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/2020_Volkswagen_Taigun_Side_View.jpg/1280px-2020_Volkswagen_Taigun_Side_View.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://assets.volkswagen.com/is/image/volkswagenag/the-new-taigun-section1?fit=crop,1&fmt=webp&qlt=79&wid=1920&align=0.00,0.00&bfc=off"
+    },
+    {
+      "modelId": "skoda-kushaq",
+      "query": "Skoda Kushaq",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/4th_International_Auto_Show%2C_Bangalore_%282025%29_82.jpg/1280px-4th_International_Auto_Show%2C_Bangalore_%282025%29_82.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://images.skoda-cms.skoda-auto.com/2023-10/2b3fde06-a83a-4467-9c98-df058b8ef3a7/Kushaq-Matte-Edition.png"
+    },
+    {
+      "modelId": "tata-curvv",
+      "query": "Tata Curvv",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Tata_Curvv.EV.jpg/1280px-Tata_Curvv.EV.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://tata-curvv.saboomotors.com/assets/images/colors/gold-essence.webp"
+    },
+    {
+      "modelId": "mahindra-xuv-3xo",
+      "query": "Mahindra XUV 3XO",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mahindra_XUV_3XO_2025.jpg/1280px-Mahindra_XUV_3XO_2025.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mahindra-3xo.saboomotors.com/assets/images/colors/dune-beige.webp"
+    },
+    {
+      "modelId": "mg-astor",
+      "query": "MG Astor",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/MG_ZS_facelift_001.jpg/1280px-MG_ZS_facelift_001.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mg-astor.saboomotors.com/assets/images/colors/spiced-orange.webp"
+    },
+    {
+      "modelId": "tata-nexon",
+      "query": "Tata Nexon",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tata_Nexon_Blue_Dual_Tone.jpg/1280px-Tata_Nexon_Blue_Dual_Tone.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://tata-nexon.saboomotors.com/assets/images/colors/fearless-purple.webp"
+    },
+    {
+      "modelId": "maruti-brezza",
+      "query": "Maruti Brezza",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/2016_Suzuki_Vitara_Brezza_ZDi%2B_1.3_YFB1S_%2820160821%29.jpg/1280px-2016_Suzuki_Vitara_Brezza_ZDi%2B_1.3_YFB1S_%2820160821%29.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Brezza_2022/brezza-colors/exuberant-blue.webp"
+    },
+    {
+      "modelId": "hyundai-venue",
+      "query": "Hyundai Venue 2022",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/2022_Hyundai_Venue%2C_rear_11.30.21.jpg/1280px-2022_Hyundai_Venue%2C_rear_11.30.21.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Venue/color/fiery-red.png"
+    },
+    {
+      "modelId": "kia-sonet",
+      "query": "Kia Sonet",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Kia_Sonet_04.jpg/1280px-Kia_Sonet_04.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.kia.com/content/dam/kia2/in/en/images/360vr/sonet/pe/exterior/cr1/01-d.png"
+    },
+    {
+      "modelId": "tata-punch",
+      "query": "Tata Punch",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Tata_Punch_Camo_spotted_at_Visakhapatnam.jpg/1280px-Tata_Punch_Camo_spotted_at_Visakhapatnam.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://tata-punch.saboomotors.com/assets/images/colors/tornado-blue.webp"
+    },
+    {
+      "modelId": "renault-kiger",
+      "query": "Renault Kiger",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Renault_Kiger_FL_202103.jpg/1280px-Renault_Kiger_FL_202103.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://renault-kiger.saboomotors.com/assets/images/colors/ice-cool-white.webp"
+    },
+    {
+      "modelId": "nissan-magnite",
+      "query": "Nissan Magnite",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2021_Nissan_Magnite_Premium_%28Indonesia%29_front_view.jpg/1280px-2021_Nissan_Magnite_Premium_%28Indonesia%29_front_view.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://nissan-magnite.saboomotors.com/assets/images/colors/flare-garnet-red.webp"
+    },
+    {
+      "modelId": "honda-city",
+      "query": "Honda City 2023 sedan India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2022_Honda_City_ZX_i-VTEC_%28India%29_front_view.jpg/1280px-2022_Honda_City_ZX_i-VTEC_%28India%29_front_view.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.hondacarindia.com/honda-city/images/color/platinum-white-pearl.png"
+    },
+    {
+      "modelId": "hyundai-verna",
+      "query": "Hyundai Verna 2023",
+      "url": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Verna/color-images/exterior/abp.png",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/4/41/Hyundai_Accent_1.5_MPI_Smart%2B_%28VI%29_%E2%80%93_f_08032025.jpg"
+    },
+    {
+      "modelId": "vw-virtus",
+      "query": "Volkswagen Virtus",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sal%C3%A3o_do_Autom%C3%B3vel_2018_%2845890970041%29.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://assets.volkswagen.com/is/image/volkswagenag/virtus-home-new-1?fit=crop,1&fmt=webp&qlt=79&wid=1920&align=0.00,0.00&bfc=off"
+    },
+    {
+      "modelId": "skoda-slavia",
+      "query": "Skoda Slavia",
+      "url": "https://images.skoda-cms.skoda-auto.com/2023-10/61c77f0a-7023-45f8-bad5-20163351d564/Slavia-Matte-Edition.png",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/92/2021_%C5%A0koda_Slavia_1.5_TSI_Style_%28India%29_front_view.png"
+    },
+    {
+      "modelId": "mahindra-scorpio-n",
+      "query": "Mahindra Scorpio N",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mahindra_Scorpio_2014.JPG/1280px-Mahindra_Scorpio_2014.JPG",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mahindra-scorpio.saboomotors.com/assets/images/colors/everest-white.webp"
+    },
+    {
+      "modelId": "mahindra-xuv700",
+      "query": "Mahindra XUV700",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/A_black_Mahindra_XUV700_SUV_in_Ashiana_Brahmananda%2C_Jamshedpur%2C_India_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg/1280px-A_black_Mahindra_XUV700_SUV_in_Ashiana_Brahmananda%2C_Jamshedpur%2C_India_%28Ank_Kumar%2C_Infosys_Limited%29_02.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mahindra-xuv700.saboomotors.com/assets/images/colors/everest-white.webp"
+    },
+    {
+      "modelId": "tata-harrier",
+      "query": "Tata Harrier",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tata_Buzzard_Sport%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0651%29.jpg/1280px-Tata_Buzzard_Sport%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0651%29.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://tata-harrier.saboomotors.com/assets/images/colors/sunlit-yellow.webp"
+    },
+    {
+      "modelId": "mg-hector",
+      "query": "MG Hector",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Baojun_530_02_China_2018-03-20.jpg/1280px-Baojun_530_02_China_2018-03-20.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mg-hector.saboomotors.com/assets/images/colors/dune-brown.webp"
+    },
+    {
+      "modelId": "mg-windsor",
+      "query": "Baojun Cloud 2023",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/9/97/2024_Wuling_Cloud_EV_in_Pristine_White_taken_in_Bandung%2C_West_Java_40173_01.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://mg-windsor.saboomotors.com/assets/images/colors/clay-beige.webp"
+    },
+    {
+      "modelId": "mahindra-thar-roxx",
+      "url": "https://mahindra-thar.saboomotors.com/assets/images/colors/tango-red.webp",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Mahindra_Thar.jpg"
+    },
+    {
+      "modelId": "maruti-swift",
+      "query": "Suzuki Swift 2024 front",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Suzuki_Swift_%282024%29_hybrid_IMG_2582.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/swift-2024/colors/Swift-Luster-Blue.webp"
+    },
+    {
+      "modelId": "maruti-dzire",
+      "query": "Maruti Suzuki Dzire",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Maruti_Suzuki_Swift_Dzire_back_side_logo.jpg/1280px-Maruti_Suzuki_Swift_Dzire_back_side_logo.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/dzire-2024/colors/Dzire-Gallant-Red.webp"
+    },
+    {
+      "modelId": "honda-amaze",
+      "query": "Honda Amaze sedan",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Honda_Amaze_front_view.jpg",
+      "credit": "Official Manufacturer Image",
+      "license": "Press / Editorial Use",
+      "url": "https://www.hondacarindia.com/honda-amaze/images/color/platinum-white-pearl.png"
+    }
+  ]
+}

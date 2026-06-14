@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "hyundai-creta",
+    "brandId": "hyundai",
+    "name": "Creta",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1109900,
+      "max": 2470000
+    },
+    "heroImage": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/summer-edition/creta-summer-edition.jpg",
+    "aiSummary": "The segment's default choice, the Creta pairs a wide variant spread with strong features and a panoramic-sunroof-led equipment list. The 1.5 turbo DCT adds genuine pace, but the NA petrol is the volume pick.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Widest variant and powertrain spread in segment",
+        "Feature-rich cabin with ADAS on top trims",
+        "Strong resale and service network"
+      ],
+      "cons": [
+        "NA petrol feels adequate, not quick",
+        "Top variants get expensive",
+        "Ride is soft rather than sporty"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 433,
+      "wheelbaseMm": 2610,
+      "groundClearanceMm": 190,
+      "lengthMm": 4300,
+      "widthMm": 1790,
+      "heightMm": 1635
+    }
+  },
+  {
+    "id": "kia-seltos",
+    "brandId": "kia",
+    "name": "Seltos",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1098900,
+      "max": 2020900
+    },
+    "heroImage": "https://www.kia.com/content/dam/kia2/in/en/images/360vr/new_seltos/1mw51mc5fss036/exterior/kdg/04-d.png",
+    "aiSummary": "Mechanically the Creta's twin but tuned sharper, the Seltos leans sporty with a stiffer ride and the segment's most aggressive styling. The 160 PS turbo DCT is the enthusiast pick of the class.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 3,
+      "childStars": 2
+    },
+    "prosCons": {
+      "pros": [
+        "Punchy 1.5 turbo with DCT",
+        "Loaded with tech across trims",
+        "Sharper styling and firmer handling than Creta"
+      ],
+      "cons": [
+        "Firm ride over broken roads",
+        "Older GNCAP score raises safety questions",
+        "Rear seat comfort trails the Creta"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 433,
+      "wheelbaseMm": 2610,
+      "groundClearanceMm": 190,
+      "lengthMm": 4365,
+      "widthMm": 1800,
+      "heightMm": 1645
+    }
+  },
+  {
+    "id": "maruti-grand-vitara",
+    "brandId": "maruti",
+    "name": "Grand Vitara",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1099000,
+      "max": 1999000
+    },
+    "heroImage": "https://www.nexaexperience.com/adobe/assets/urn:aaid:aem:df83bcb1-e3e5-46d6-93b8-21c14d757a97/as/GV-Desktop-Banner-latest.jpg?height=2160&width=2000&id=1&preferwebp=true",
+    "aiSummary": "The Grand Vitara's strong-hybrid variants deliver hatchback-beating real-world economy in a family SUV body. Performance is modest, but ownership costs are the lowest in the class.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Strong hybrid delivers 20+ km/l real-world",
+        "Lowest maintenance costs in segment",
+        "Strong resale value"
+      ],
+      "cons": [
+        "Leisurely acceleration in all forms",
+        "Cabin plastics feel built to cost",
+        "No turbo-petrol option"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 373,
+      "wheelbaseMm": 2600,
+      "groundClearanceMm": 190,
+      "lengthMm": 4365,
+      "widthMm": 1795,
+      "heightMm": 1640
+    }
+  },
+  {
+    "id": "toyota-hyryder",
+    "brandId": "toyota",
+    "name": "Urban Cruiser Hyryder",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1114000,
+      "max": 2020000
+    },
+    "heroImage": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/grand_vitara/colors/Cafe-White.webp",
+    "aiSummary": "Toyota's badge-engineered Grand Vitara adds the brand's reliability halo to the same hybrid powertrain. The strong hybrid is the reason to buy it; the mild hybrid is merely competent.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Exceptional hybrid fuel efficiency",
+        "Toyota reliability and service reputation",
+        "High resale retention"
+      ],
+      "cons": [
+        "Slowest 0-100 times in segment",
+        "Boot shrinks in hybrid variants",
+        "Interior shared wholesale with Grand Vitara"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 373,
+      "wheelbaseMm": 2600,
+      "groundClearanceMm": 190,
+      "lengthMm": 4365,
+      "widthMm": 1795,
+      "heightMm": 1640
+    }
+  },
+  {
+    "id": "honda-elevate",
+    "brandId": "honda",
+    "name": "Elevate",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1104900,
+      "max": 1639900
+    },
+    "heroImage": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2FcarModelImage%2Felevate%2Felevate_silver_desk_new.png&w=3840&q=75",
+    "aiSummary": "The Elevate bets on Honda's refined 1.5 i-VTEC, ADAS across most trims, and class-leading ground clearance rather than gimmicks. It is honest, roomy and easy to drive — just not exciting.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Refined, proven 1.5 NA petrol",
+        "Honda Sensing ADAS from mid trims",
+        "Excellent visibility and easy ergonomics"
+      ],
+      "cons": [
+        "Single engine, no turbo or hybrid",
+        "Feature list trails Koreans at the same price",
+        "Dated infotainment graphics"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 458,
+      "wheelbaseMm": 2650,
+      "groundClearanceMm": 200,
+      "lengthMm": 4312,
+      "widthMm": 1790,
+      "heightMm": 1699
+    }
+  },
+  {
+    "id": "vw-taigun",
+    "brandId": "volkswagen",
+    "name": "Taigun",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1170000,
+      "max": 1950000
+    },
+    "heroImage": "https://assets.volkswagen.com/is/image/volkswagenag/taigun-model-db-1920X1080?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTE5MjAmaGVpPTEwODAmYWxpZ249MC4wMCwwLjAwJmJmYz1vZmYmM2E1Nw==",
+    "aiSummary": "The Taigun is the driver's pick: both TSI engines are eager and the chassis is the best-balanced in the class, with a 5-star GNCAP score to match. You trade some rear-seat space and features for it.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP adult and child rating",
+        "1.5 TSI + DSG is genuinely quick",
+        "Best-in-class handling balance"
+      ],
+      "cons": [
+        "Tighter rear seat than rivals",
+        "Fewer comfort features per rupee",
+        "Higher maintenance costs"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 385,
+      "wheelbaseMm": 2651,
+      "groundClearanceMm": 190,
+      "lengthMm": 4221,
+      "widthMm": 1760,
+      "heightMm": 1612
+    }
+  },
+  {
+    "id": "skoda-kushaq",
+    "brandId": "skoda",
+    "name": "Kushaq",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1060900,
+      "max": 1919900
+    },
+    "heroImage": "https://cdn.skoda-auto.com/images/external/cdfd74ed29ab527a74dbdc55ec4c23cc/DerivativeIntroductionModule/517a7c8aa96236dc9d8954f4916e42718d6bf87515b75d7ab74272b3bc3277bf/Default_bp1200_1.webp",
+    "aiSummary": "The Kushaq shares the Taigun's excellent TSI engines and 5-star crash rating but wraps them in slightly more conservative clothes and a marginally softer ride. The Monte Carlo trim is the visual highlight.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP rating",
+        "Strong TSI powertrains shared with Taigun",
+        "Composed ride-handling balance"
+      ],
+      "cons": [
+        "Three-cylinder 1.0 thrums at idle",
+        "Rear AC vents but few rear comforts",
+        "Service network thinner than rivals"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 385,
+      "wheelbaseMm": 2651,
+      "groundClearanceMm": 190,
+      "lengthMm": 4225,
+      "widthMm": 1760,
+      "heightMm": 1612
+    }
+  },
+  {
+    "id": "tata-curvv",
+    "brandId": "tata",
+    "name": "Curvv",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 999000,
+      "max": 1949000
+    },
+    "heroImage": "https://s7ap1.scene7.com/is/image/tatamotors/goldessence?$R-292-164-D$&fit=crop&fmt=webp",
+    "aiSummary": "Tata's coupe-SUV brings segment-first style and a new 1.2 GDI turbo, undercutting rivals on price. Fit-finish and powertrain refinement still trail the class best.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star BNCAP rating",
+        "Distinctive coupe styling",
+        "Aggressive pricing per feature"
+      ],
+      "cons": [
+        "Engine refinement trails rivals",
+        "DCT calibration can hesitate",
+        "Coupe roofline cuts rear headroom"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 500,
+      "wheelbaseMm": 2560,
+      "groundClearanceMm": 190,
+      "lengthMm": 4308,
+      "widthMm": 1815,
+      "heightMm": 1600
+    }
+  },
+  {
+    "id": "mahindra-xuv-3xo",
+    "brandId": "mahindra",
+    "name": "XUV 3XO",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 753900,
+      "max": 1488900
+    },
+    "heroImage": "https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw81c70a61/XUV3XO_ev/x3xe-banner-1920x829.jpg",
+    "aiSummary": "Technically sub-4-metre but cross-shopped against everything here, the 3XO packs a 5-star BNCAP score, level-2 ADAS and a strong turbo-petrol at prices the bigger SUVs cannot touch. Cabin width is its main compromise.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 4
+    },
+    "prosCons": {
+      "pros": [
+        "Unbeatable price-to-feature ratio",
+        "5-star BNCAP with ADAS availability",
+        "Punchy 1.2 turbo engines"
+      ],
+      "cons": [
+        "Narrower cabin than full-size rivals",
+        "Smaller boot than segment",
+        "Brand service experience varies by city"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 364,
+      "wheelbaseMm": 2600,
+      "groundClearanceMm": 201,
+      "lengthMm": 3987,
+      "widthMm": 1821,
+      "heightMm": 1637
+    }
+  },
+  {
+    "id": "mg-astor",
+    "brandId": "mg",
+    "name": "Astor",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 999000,
+      "max": 1820000
+    },
+    "heroImage": "https://mgmotor.scene7.com/is/image/mgmotor/as-bn-dsc-053?hei=2160&qlt=80&resMode=bisharp",
+    "aiSummary": "The Astor was first to bring level-2 ADAS to the segment and still undercuts rivals on features per rupee. Ageing engines and softer resale are the trade-offs.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Level-2 ADAS at aggressive prices",
+        "5-star GNCAP adult rating",
+        "Premium-feeling cabin design"
+      ],
+      "cons": [
+        "Thirstier, older engine lineup",
+        "Weakest resale retention here",
+        "CVT dulls the NA petrol"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 488,
+      "wheelbaseMm": 2585,
+      "groundClearanceMm": 190,
+      "lengthMm": 4323,
+      "widthMm": 1809,
+      "heightMm": 1650
+    }
+  },
+  {
+    "id": "tata-nexon",
+    "brandId": "tata",
+    "name": "Nexon",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 800000,
+      "max": 1749000
+    },
+    "heroImage": "https://s7ap1.scene7.com/is/image/tatamotors/GrasslandBeige-0-2?$PO-750-500-S$&fit=crop&fmt=avif-alpha",
+    "aiSummary": "India's first 5-star crash-test SUV keeps its safety crown post-facelift, with a punchy 1.2 turbo and a frugal 1.5 diesel. The cabin tech leapt a generation in 2023.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star BNCAP with consistent crash record",
+        "Petrol, diesel and EV sibling to choose from",
+        "Strong value through the range"
+      ],
+      "cons": [
+        "Turbo-petrol is vocal when pushed",
+        "DCA gearbox can hesitate in traffic",
+        "Rear seat tighter than Punch's upright package"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 382,
+      "wheelbaseMm": 2498,
+      "groundClearanceMm": 185,
+      "lengthMm": 3993,
+      "widthMm": 1811,
+      "heightMm": 1607
+    }
+  },
+  {
+    "id": "maruti-brezza",
+    "brandId": "maruti",
+    "name": "Brezza",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 825900,
+      "max": 1300900
+    },
+    "heroImage": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/Brezza_2022/brezza-colors/exuberant-blue.webp",
+    "aiSummary": "The Brezza trades outright pace for bulletproof running costs and the segment's best resale. The 1.5 NA petrol with the torque-converter auto is the relaxed pick.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Lowest running costs in class",
+        "Smooth 6AT with paddle shifters",
+        "Maruti service network everywhere"
+      ],
+      "cons": [
+        "Modest 103 PS performance",
+        "No turbo or diesel option",
+        "Boot smaller than rivals"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 328,
+      "wheelbaseMm": 2500,
+      "groundClearanceMm": 185,
+      "lengthMm": 3995,
+      "widthMm": 1795,
+      "heightMm": 1685
+    }
+  },
+  {
+    "id": "hyundai-venue",
+    "brandId": "hyundai",
+    "name": "Venue",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 793900,
+      "max": 1581900
+    },
+    "heroImage": "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Venue/titanium-black-knight.png",
+    "aiSummary": "The Venue packs three engines and big-car features into a city-friendly footprint. The 1.0 turbo DCT is the sweet spot; the diesel is the segment's quiet overachiever.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Three engine choices incl. diesel",
+        "Feature list mirrors the Creta playbook",
+        "Light controls, easy city car"
+      ],
+      "cons": [
+        "1.2 base petrol feels strained",
+        "Rear seat width is tight",
+        "Top trims overlap Creta pricing"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 350,
+      "wheelbaseMm": 2500,
+      "groundClearanceMm": 185,
+      "lengthMm": 3995,
+      "widthMm": 1770,
+      "heightMm": 1617
+    }
+  },
+  {
+    "id": "kia-sonet",
+    "brandId": "kia",
+    "name": "Sonet",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 732900,
+      "max": 1399900
+    },
+    "heroImage": "https://www.kia.com/content/dam/kia2/in/en/images/360vr/sonet/pe/exterior/cr1/01-d.png",
+    "aiSummary": "The Sonet is the Venue's flashier twin: same engines, sharper styling, bigger boot and more kit at the top end, including ventilated seats and a 360° camera.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Segment-best 385L boot",
+        "Diesel AT is unique at this size",
+        "Loaded top trims"
+      ],
+      "cons": [
+        "Firm low-speed ride",
+        "Gets pricey fully loaded",
+        "Rear bench better for two"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 385,
+      "wheelbaseMm": 2500,
+      "groundClearanceMm": 185,
+      "lengthMm": 3995,
+      "widthMm": 1790,
+      "heightMm": 1642
+    }
+  },
+  {
+    "id": "tata-punch",
+    "brandId": "tata",
+    "name": "Punch",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 613000,
+      "max": 1259000
+    },
+    "heroImage": "https://s7ap1.scene7.com/is/image/tatamotors/home-page-cyantific?$R-292-164-D$&fit=crop&fmt=webp",
+    "aiSummary": "A micro-SUV with a 5-star GNCAP score and genuine ground clearance, the Punch is the budget pick that doesn't feel like one. Just don't expect pace from the 88 PS 1.2.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 4
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP at hatchback money",
+        "Upright, commanding driving position",
+        "Excellent bad-road ability"
+      ],
+      "cons": [
+        "88 PS means leisurely highway pace",
+        "No turbo or diesel",
+        "AMT can be jerky"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 366,
+      "wheelbaseMm": 2445,
+      "groundClearanceMm": 187,
+      "lengthMm": 3827,
+      "widthMm": 1742,
+      "heightMm": 1615
+    }
+  },
+  {
+    "id": "renault-kiger",
+    "brandId": "renault",
+    "name": "Kiger",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 600000,
+      "max": 1130000
+    },
+    "heroImage": "https://renault-kiger.saboomotors.com/assets/images/colors/ice-cool-white.webp",
+    "aiSummary": "The Kiger undercuts every rival while offering a willing 1.0 turbo and a 405L boot. Cabin plastics and refinement show where the money was saved.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 2
+    },
+    "prosCons": {
+      "pros": [
+        "Sharpest pricing in segment",
+        "Big 405L boot",
+        "Eager 1.0 turbo with CVT option"
+      ],
+      "cons": [
+        "Budget-grade cabin materials",
+        "Three-cylinder thrum ever-present",
+        "Thin dealer network"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 405,
+      "wheelbaseMm": 2500,
+      "groundClearanceMm": 185,
+      "lengthMm": 3991,
+      "widthMm": 1751,
+      "heightMm": 1608
+    }
+  },
+  {
+    "id": "nissan-magnite",
+    "brandId": "nissan",
+    "name": "Magnite",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 564900,
+      "max": 1139900
+    },
+    "heroImage": "https://nissan-magnite.saboomotors.com/assets/images/colors/flare-garnet-red.webp",
+    "aiSummary": "The Magnite is the Kiger's platform twin with bolder styling and similar value-first pricing. The turbo CVT combination is genuinely pleasant in town.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 2
+    },
+    "prosCons": {
+      "pros": [
+        "Aggressive pricing",
+        "Smooth turbo-CVT pairing",
+        "Distinctive styling for the money"
+      ],
+      "cons": [
+        "Interior plastics feel built to price",
+        "Smallest boot of the twins",
+        "Sparse service network"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 336,
+      "wheelbaseMm": 2500,
+      "groundClearanceMm": 185,
+      "lengthMm": 3994,
+      "widthMm": 1758,
+      "heightMm": 1572
+    }
+  },
+  {
+    "id": "honda-city",
+    "brandId": "honda",
+    "name": "City",
+    "segment": "midsize-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 1249900,
+      "max": 1699900
+    },
+    "heroImage": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/grand_vitara/colors/Cafe-White.webp",
+    "aiSummary": "Three decades of refinement show: the City's 1.5 i-VTEC, huge rear seat and Honda Sensing ADAS make it the default sensible sedan. It rewards smooth drivers, not racers.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 4
+    },
+    "prosCons": {
+      "pros": [
+        "Benchmark rear-seat space and comfort",
+        "Refined, rev-happy 1.5 petrol",
+        "ADAS standard from mid trims"
+      ],
+      "cons": [
+        "No turbo or diesel option",
+        "Road noise at highway speeds",
+        "CVT drones when hustled"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 506,
+      "wheelbaseMm": 2600,
+      "groundClearanceMm": 170,
+      "lengthMm": 4589,
+      "widthMm": 1748,
+      "heightMm": 1489
+    }
+  },
+  {
+    "id": "hyundai-verna",
+    "brandId": "hyundai",
+    "name": "Verna",
+    "segment": "midsize-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 1097900,
+      "max": 1749900
+    },
+    "heroImage": "https://www.hyundai.com/content/dam/hyundai/in/en/data/vehicle-thumbnail/Thumbnail/verna_thumbanil_pc.png",
+    "aiSummary": "The Verna pairs segment-best space with a genuinely quick 160 PS turbo and a 5-star GNCAP score. The polarising styling is the only gamble.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP adult and child",
+        "160 PS turbo is properly quick",
+        "Longest wheelbase, biggest boot"
+      ],
+      "cons": [
+        "Love-or-hate styling",
+        "NA petrol is just adequate",
+        "Firm rear seat cushioning"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 528,
+      "wheelbaseMm": 2670,
+      "groundClearanceMm": 170,
+      "lengthMm": 4535,
+      "widthMm": 1765,
+      "heightMm": 1485
+    }
+  },
+  {
+    "id": "vw-virtus",
+    "brandId": "volkswagen",
+    "name": "Virtus",
+    "segment": "midsize-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 1049900,
+      "max": 1859900
+    },
+    "heroImage": "https://assets.volkswagen.com/is/image/volkswagenag/virtus-home-new-1?fit=crop,1&fmt=webp&qlt=79&wid=1920&align=0.00,0.00&bfc=off",
+    "aiSummary": "The Virtus is the Taigun in a sharper suit: the same excellent TSIs, 5-star rating and balanced chassis with a proper 521L boot. The GT 1.5 DSG is a junior sports sedan.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP rating",
+        "1.5 TSI GT is the enthusiast bargain",
+        "Composed high-speed manners"
+      ],
+      "cons": [
+        "Costlier servicing than Japanese rivals",
+        "Rear seat under thigh support is average",
+        "Feature list trails Koreans"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 521,
+      "wheelbaseMm": 2651,
+      "groundClearanceMm": 170,
+      "lengthMm": 4561,
+      "widthMm": 1752,
+      "heightMm": 1507
+    }
+  },
+  {
+    "id": "skoda-slavia",
+    "brandId": "skoda",
+    "name": "Slavia",
+    "segment": "midsize-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 1029900,
+      "max": 1819900
+    },
+    "heroImage": "https://cdn.skoda-auto.com/images/external/1c42198de3ef6be1c0d4c67e0ce55b87/DerivativeIntroductionModule/517a7c8aa96236dc9d8954f4916e42718d6bf87515b75d7ab74272b3bc3277bf/Default_bp1200_1.webp",
+    "aiSummary": "The Slavia mirrors the Virtus mechanically, trading a little flash for Skoda's slightly plusher cabin trim. Same 5 stars, same brilliant 1.5 TSI at the top.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star GNCAP rating",
+        "Strong TSI engines",
+        "Big boot and usable rear seat"
+      ],
+      "cons": [
+        "Three-cylinder idle thrum on 1.0",
+        "Service network still growing",
+        "Options pricing adds up"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 521,
+      "wheelbaseMm": 2651,
+      "groundClearanceMm": 170,
+      "lengthMm": 4541,
+      "widthMm": 1752,
+      "heightMm": 1507
+    }
+  },
+  {
+    "id": "mahindra-scorpio-n",
+    "brandId": "mahindra",
+    "name": "Scorpio-N",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1384900,
+      "max": 2449900
+    },
+    "heroImage": "https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwfbfbcf05/images/SCN/xlarge/ScorpioN_624x296.png",
+    "aiSummary": "Body-on-frame presence with surprisingly sorted road manners, the Scorpio-N's 2.2 diesel and optional 4XPLOR 4WD make it the ladder-frame default. It is big, heavy and proud of it.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Imposing road presence and torque-rich diesel",
+        "Optional genuine 4WD",
+        "5-star GNCAP adult score"
+      ],
+      "cons": [
+        "Heavy steering and bulk in the city",
+        "Third row is for occasional use",
+        "Petrol is thirsty"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 460,
+      "wheelbaseMm": 2750,
+      "groundClearanceMm": 216,
+      "lengthMm": 4662,
+      "widthMm": 1917,
+      "heightMm": 1857
+    }
+  },
+  {
+    "id": "mahindra-xuv700",
+    "brandId": "mahindra",
+    "name": "XUV700",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1365900,
+      "max": 2499900
+    },
+    "heroImage": "https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwe61fbdd2/images/X7XO/xlarge/AX7L_624x296_RubyVelvet.png",
+    "aiSummary": "The XUV700 brought ADAS and 200 PS to the mainstream. Monocoque comfort, seven seats and a muscular 2.2 diesel make it the do-everything family flagship.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 4
+    },
+    "prosCons": {
+      "pros": [
+        "200 PS petrol / 185 PS diesel muscle",
+        "Full Level-2 ADAS on top trims",
+        "Genuine 7-seat practicality"
+      ],
+      "cons": [
+        "Long waiting periods persist",
+        "Some cabin rattles reported",
+        "Boot small with third row up"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 408,
+      "wheelbaseMm": 2750,
+      "groundClearanceMm": 200,
+      "lengthMm": 4695,
+      "widthMm": 1890,
+      "heightMm": 1755
+    }
+  },
+  {
+    "id": "tata-harrier",
+    "brandId": "tata",
+    "name": "Harrier",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1498900,
+      "max": 2599900
+    },
+    "heroImage": "https://tata-harrier.saboomotors.com/assets/images/colors/sunlit-yellow.webp",
+    "aiSummary": "Land Rover-derived bones give the Harrier its planted feel; the facelift added a 5-star BNCAP score and big-screen tech. Diesel-only remains its defining choice.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "5-star BNCAP adult and child",
+        "Settled, big-car highway ride",
+        "Striking design inside and out"
+      ],
+      "cons": [
+        "No petrol option at all",
+        "Kryotec diesel is gruff at idle",
+        "Patchy quality control history"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 445,
+      "wheelbaseMm": 2741,
+      "groundClearanceMm": 205,
+      "lengthMm": 4598,
+      "widthMm": 1894,
+      "heightMm": 1706
+    }
+  },
+  {
+    "id": "mg-hector",
+    "brandId": "mg",
+    "name": "Hector",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1398900,
+      "max": 2299900
+    },
+    "heroImage": "https://mgmotor.scene7.com/is/image/mgmotor/002-kmi-pdp-hector?wid=1920&fmt=webp-alpha&resMode=bisharp&fit=constrain&qlt=90",
+    "aiSummary": "The Hector sells space and screens per rupee: a limo-like rear seat, 587L boot and a 14-inch display define it. Dynamics are soft and unhurried by design.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Cavernous cabin and 587L boot",
+        "Big feature list incl. ADAS",
+        "Comfort-first ride"
+      ],
+      "cons": [
+        "Soft, roly-poly handling",
+        "Petrol-CVT is merely adequate",
+        "Weak resale retention"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 587,
+      "wheelbaseMm": 2750,
+      "groundClearanceMm": 205,
+      "lengthMm": 4655,
+      "widthMm": 1835,
+      "heightMm": 1760
+    }
+  },
+  {
+    "id": "mg-windsor",
+    "brandId": "mg",
+    "name": "Windsor EV",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1400000,
+      "max": 1860000
+    },
+    "heroImage": "https://mg-windsor.saboomotors.com/assets/images/colors/clay-beige.webp",
+    "aiSummary": "MG's Windsor EV is a comfort-oriented electric CUV with a massive 604L boot, lounge-like 135° reclining rear seats, and a huge 15.6-inch touchscreen. It is tailored for city commutes and spacious rear-seat comfort.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Sofa-like rear seats with 135° recline",
+        "Huge 604L boot capacity",
+        "Super spacious 2700mm wheelbase"
+      ],
+      "cons": [
+        "No physical controls for AC and mirrors",
+        "Highway range is average on smaller pack",
+        "Soft suspension rolls in corners"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 604,
+      "wheelbaseMm": 2700,
+      "groundClearanceMm": 190,
+      "lengthMm": 4565,
+      "widthMm": 1865,
+      "heightMm": 1718
+    }
+  },
+  {
+    "id": "mahindra-thar-roxx",
+    "brandId": "mahindra",
+    "name": "Thar ROXX",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1239000,
+      "max": 2282000
+    },
+    "heroImage": "https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw95b25431/images/TH5D/xlarge/Thar_Roxx_624x296_HP.png",
+    "aiSummary": "The Thar ROXX is a 5-door lifestyle SUV that pairs legendary off-road capability with family-friendly comfort and a 5-star BNCAP safety rating. The mStallion petrol and mHawk diesel offer strong performance.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "Imposing road presence and off-road capability",
+        "Spacious 5-door cabin with panoramic sunroof",
+        "5-star BNCAP safety rating with ADAS"
+      ],
+      "cons": [
+        "Heavy steering and bulk in tight spaces",
+        "Lumpy low-speed ride quality",
+        "Diesel 4x4 gets expensive at top end"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 447,
+      "wheelbaseMm": 2850,
+      "groundClearanceMm": 226,
+      "lengthMm": 4428,
+      "widthMm": 1870,
+      "heightMm": 1850
+    }
+  },
+  {
+    "id": "maruti-swift",
+    "brandId": "maruti",
+    "name": "Swift",
+    "segment": "compact-hatch",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 579000,
+      "max": 964000
+    },
+    "heroImage": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/swift-2024/colors/Swift-Luster-Blue.webp",
+    "aiSummary": "The new 2024 Swift features Maruti's frugal Z12E 3-cylinder engine and standard 6 airbags. It remains the default fun-to-drive premium hatchback, balancing compact dimensions with excellent fuel efficiency.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 3,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Frugal 3-cylinder Z-series petrol (25+ km/l)",
+        "Standard safety equipment (6 airbags, ESC)",
+        "Sporty, agile handling in city traffic"
+      ],
+      "cons": [
+        "Engine thrums at idle under load",
+        "Boot space and cabin width are average",
+        "Gets expensive at the top end"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 265,
+      "wheelbaseMm": 2450,
+      "groundClearanceMm": 180,
+      "lengthMm": 3860,
+      "widthMm": 1735,
+      "heightMm": 1495
+    }
+  },
+  {
+    "id": "maruti-dzire",
+    "brandId": "maruti",
+    "name": "Dzire",
+    "segment": "compact-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 679000,
+      "max": 1014000
+    },
+    "heroImage": "https://images-saboomaruti-in.s3.ap-south-1.amazonaws.com/dzire-2024/colors/Dzire-Gallant-Red.webp",
+    "aiSummary": "The first sub-4m sedan to score a 5-star GNCAP rating, the 2024 Dzire pairs premium features like an electric sunroof and 360° camera with Maruti's highly efficient Z12E engine.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "Unprecedented 5-star safety rating",
+        "Frugal engine (24.8 km/l manual, 25.7 km/l AMT)",
+        "Segment-first single pane sunroof"
+      ],
+      "cons": [
+        "3-cylinder engine is less refined than the old 4-cylinder",
+        "Top trims cross the ₹10 Lakh mark",
+        "Rear seat width is tight for three adults"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 382,
+      "wheelbaseMm": 2450,
+      "groundClearanceMm": 165,
+      "lengthMm": 3995,
+      "widthMm": 1735,
+      "heightMm": 1515
+    }
+  },
+  {
+    "id": "honda-amaze",
+    "brandId": "honda",
+    "name": "Amaze",
+    "segment": "compact-sedan",
+    "bodyStyle": "sedan",
+    "priceRange": {
+      "min": 751000,
+      "max": 1000000
+    },
+    "heroImage": "https://www.hondacarindia.com/_next/image?url=https%3A%2F%2Fwww.hondacarindia.com%2Fweb-data%2Fmodels%2F2024%2FnewAmaze%2Fexterior360Desktop%2FAMAZE_EXT_360_LUNAR_SILVER_METALLIC_V-3__00009%201_chooseCar.png&w=3840&q=75",
+    "aiSummary": "The third-generation Honda Amaze pairs a bold 3-box design with a refined 1.2 i-VTEC engine, a smooth CVT, and standard 6 airbags. Top trims add advanced safety tech (ADAS) to the compact sedan class.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "Superb safety rating with standard 6 airbags",
+        "Extremely smooth i-VTEC CVT gearbox combination",
+        "Bold, mini-City design with spacious cabin"
+      ],
+      "cons": [
+        "Refinement at higher highway speeds could be better",
+        "No turbo or CNG options available",
+        "Ride is soft and floats over high-speed dips"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 420,
+      "wheelbaseMm": 2470,
+      "groundClearanceMm": 165,
+      "lengthMm": 3995,
+      "widthMm": 1695,
+      "heightMm": 1508
+    }
+  },
+  {
+    "id": "skoda-kylaq",
+    "brandId": "skoda",
+    "name": "Kylaq",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 789000,
+      "max": 1299000
+    },
+    "heroImage": "https://cdn.skoda-auto.com/images/external/8f3dd81e2e781dd0629da99e63974018/DerivativeIntroductionModule/517a7c8aa96236dc9d8954f4916e42718d6bf87515b75d7ab74272b3bc3277bf/Default_bp1200_1.webp",
+    "aiSummary": "Skoda's entry into the sub-4m SUV segment, the Kylaq features a 5-star BNCAP safety rating, a spacious boot, and a punchy 1.0 TSI engine. It brings European driving dynamics to a wider audience.",
+    "ncap": {
+      "agency": "BNCAP",
+      "adultStars": 5,
+      "childStars": 5
+    },
+    "prosCons": {
+      "pros": [
+        "Excellent 5-star BNCAP safety rating",
+        "Class-leading 446L boot space",
+        "Punchy performance from 1.0 TSI"
+      ],
+      "cons": [
+        "Rear seat legroom is a bit tight",
+        "No diesel or CNG options",
+        "3-cylinder engine vibrates slightly at idle"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 446,
+      "wheelbaseMm": 2566,
+      "groundClearanceMm": 189,
+      "lengthMm": 3995,
+      "widthMm": 1791,
+      "heightMm": 1612
+    }
+  },
+  {
+    "id": "mg-zs-ev",
+    "brandId": "mg",
+    "name": "ZS EV",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1799000,
+      "max": 2050000
+    },
+    "heroImage": "https://mgmotor.scene7.com/is/image/mgmotor/zs-bn-dsc-0109?hei=2160&qlt=80&resMode=bisharp",
+    "aiSummary": "The MG ZS EV pairs a practical 50.3 kWh battery pack with strong performance and a tech-loaded cabin. With a real-world range of ~330 km, it is a highly viable primary car for city and moderate highway usage.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Refined and punchy electric motor",
+        "Tech-rich cabin with panoramic sunroof",
+        "Low running costs (~₹1.3/km)"
+      ],
+      "cons": [
+        "Bumpy ride over sharp speed breakers",
+        "Stiff competition from Curvv EV",
+        "Projected steeper resale depreciation"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 448,
+      "wheelbaseMm": 2585,
+      "groundClearanceMm": 177,
+      "lengthMm": 4319,
+      "widthMm": 1809,
+      "heightMm": 1649
+    }
+  },
+  {
+    "id": "toyota-taisor",
+    "brandId": "toyota",
+    "name": "Urban Cruiser Taisor",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 725000,
+      "max": 1263000
+    },
+    "heroImage": "https://static3.toyotabharat.com/images/showroom/d27/banner/urbancruiser-taisor-banner-1920x807.webp",
+    "aiSummary": "Toyota's rebadged Fronx crossover, the Taisor features a coupe-SUV silhouette, a choice of 1.2L petrol or 1.0L Boosterjet turbo-petrol engines, and Toyota's trusted ownership experience.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Stunning coupe-SUV crossover silhouette",
+        "Excellent fuel economy up to 22+ km/l",
+        "Toyota service and warranty peace of mind"
+      ],
+      "cons": [
+        "Rear seat headroom is limited by sloping roof",
+        "Cabin plastics feel average in places",
+        "Boot space is modest at 308L"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 308,
+      "wheelbaseMm": 2520,
+      "groundClearanceMm": 190,
+      "lengthMm": 3995,
+      "widthMm": 1795,
+      "heightMm": 1550
+    }
+  },
+  {
+    "id": "toyota-crysta",
+    "brandId": "toyota",
+    "name": "Innova Crysta",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1899000,
+      "max": 2663000
+    },
+    "heroImage": "https://static3.toyotabharat.com/images/showroom/innova-mmc/20-years-ruling-1600x850.webp",
+    "aiSummary": "The legendary MPV continues to rule on comfort, reliability, and resale value. Driven by a robust 2.4L diesel engine, it is the default choice for long-distance family travel and fleet buyers in India.",
+    "ncap": {
+      "agency": "GNCAP",
+      "adultStars": 4,
+      "childStars": 3
+    },
+    "prosCons": {
+      "pros": [
+        "Unmatched ride comfort and spacious three rows",
+        "Bulletproof reliability and high resale value",
+        "Punchy 2.4L diesel engine with strong low-end grunt"
+      ],
+      "cons": [
+        "No automatic transmission option currently",
+        "Engine gets noisy at high highway speeds",
+        "Large size can be cumbersome in tight city lanes"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 300,
+      "wheelbaseMm": 2750,
+      "groundClearanceMm": 178,
+      "lengthMm": 4695,
+      "widthMm": 1830,
+      "heightMm": 1760
+    }
+  },
+  {
+    "id": "hyundai-exter",
+    "brandId": "hyundai",
+    "name": "Exter",
+    "segment": "sub-4m-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 581000,
+      "max": 961000
+    },
+    "heroImage": "https://www.hyundai.com/content/dam/hyundai/in/en/data/vehicle-thumbnail/Thumbnail/exter_thumbnail_pc.png",
+    "aiSummary": "Hyundai's micro-SUV slots below the Venue, offering a spacious cabin, a smooth 1.2L engine, standard 6 airbags, and a segment-first factory-fitted dashcam.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Excellent headroom and airy cabin feel",
+        "Smooth 4-cylinder engine refinement",
+        "Standard 6 airbags across all trims"
+      ],
+      "cons": [
+        "Not a true SUV — basically a raised hatchback",
+        "Looks can be polarizing",
+        "Highway overtake needs planning"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 391,
+      "wheelbaseMm": 2450,
+      "groundClearanceMm": 185,
+      "lengthMm": 3995,
+      "widthMm": 1795,
+      "heightMm": 1518
+    }
+  },
+  {
+    "id": "hyundai-ioniq5",
+    "brandId": "hyundai",
+    "name": "Ioniq 5",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 5570000,
+      "max": 5571000
+    },
+    "heroImage": "https://www.hyundai.com/content/dam/hyundai/in/en/data/vehicle-thumbnail/Thumbnail/ioniq_thumbnail_pc.png",
+    "aiSummary": "Hyundai's flagship EV is a retro-futuristic masterpiece. Based on the dedicated E-GMP platform, it offers an 84 kWh battery, ultra-fast charging, a luxurious lounge-like cabin, and a real-world range of ~450 km.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Stunning retro-futuristic design",
+        "Dedicated EV platform yields massive cabin space",
+        "Ultra-fast charging capability (10-80% in 18 mins)"
+      ],
+      "cons": [
+        "Expensive price tag in India",
+        "Low ground clearance for an SUV (163mm)",
+        "No all-wheel drive option offered here"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 527,
+      "wheelbaseMm": 3000,
+      "groundClearanceMm": 163,
+      "lengthMm": 4635,
+      "widthMm": 1890,
+      "heightMm": 1605
+    }
+  },
+  {
+    "id": "vinfast-vf6",
+    "brandId": "vinfast",
+    "name": "VF 6",
+    "segment": "compact-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 1729000,
+      "max": 1999000
+    },
+    "heroImage": "https://static-cms-prod.vinfastauto.in/statics/2025-09/vf6_pdp.webp",
+    "aiSummary": "The VinFast VF6 enters India as a premium compact electric SUV. Powered by a 59.6 kWh battery pack, it offers 174 bhp, a tech-heavy cabin, and Level 2 ADAS features as standard.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Spacious cabin with clean, modern layout",
+        "Strong electric motor performance",
+        "Comprehensive Level 2 ADAS suite"
+      ],
+      "cons": [
+        "New brand in India with developing network",
+        "Polarizing dashboard controls",
+        "Initial price premium over petrol equivalents"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 423,
+      "wheelbaseMm": 2730,
+      "groundClearanceMm": 190,
+      "lengthMm": 4308,
+      "widthMm": 1820,
+      "heightMm": 1636
+    }
+  },
+  {
+    "id": "vinfast-vf7",
+    "brandId": "vinfast",
+    "name": "VF 7",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 2189000,
+      "max": 2899000
+    },
+    "heroImage": "https://static-cms-prod.vinfastauto.in/statics/2025-09/vf7_pdp.webp",
+    "aiSummary": "VinFast's larger EV crossover features an aggressive coupe-like silhouette, an AWD option delivering 348 bhp, a 75.3 kWh battery pack, and a premium cabin experience.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Futuristic, aggressive coupe-like styling",
+        "Outstanding 348 bhp AWD performance",
+        "Tech-laden cabin with large central screen"
+      ],
+      "cons": [
+        "Brand trust and service network are still unproven",
+        "Rear headroom slightly compromised by coupe roof",
+        "Steeper depreciation curve typical of new EV brands"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 537,
+      "wheelbaseMm": 2840,
+      "groundClearanceMm": 190,
+      "lengthMm": 4545,
+      "widthMm": 1890,
+      "heightMm": 1635
+    }
+  },
+  {
+    "id": "audi-q3",
+    "brandId": "audi",
+    "name": "Q3",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 4367000,
+      "max": 5300000
+    },
+    "heroImage": "https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:ee41c2a9-f14e-4d8c-ac20-2bd0b2f92a96/as/1920x1080-audi-q3-eciRGBv2_2018_Audi_Q3_St_Johns_AL_14_No_Sign.jpg?width=1920",
+    "aiSummary": "The Audi Q3 pairs a bold design with a refined 2.0L TFSI engine, quattro AWD, and a tech-rich interior. It offers a premium, comfortable, and dynamically solid entry into luxury motoring.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Punchy and refined 2.0L TFSI engine",
+        "Standard quattro AWD system",
+        "High-quality premium cabin and ride comfort"
+      ],
+      "cons": [
+        "No diesel engine option available",
+        "Interior lacks some physical control buttons",
+        "Top trims get expensive compared to space offered"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 530,
+      "wheelbaseMm": 2680,
+      "groundClearanceMm": 170,
+      "lengthMm": 4485,
+      "widthMm": 1849,
+      "heightMm": 1616
+    }
+  },
+  {
+    "id": "audi-q5",
+    "brandId": "audi",
+    "name": "Q5",
+    "segment": "midsize-suv",
+    "bodyStyle": "suv",
+    "priceRange": {
+      "min": 6555000,
+      "max": 7229000
+    },
+    "heroImage": "https://emea-dam.audi.com/adobe/assets/urn:aaid:aem:a95c1593-d1e3-4f43-a36d-b43eb67a898f/as/124_Q5-Launch_1920x1920_Wothout-text.jpg?width=1920",
+    "aiSummary": "A cornerstone of Audi's SUV line, the Q5 is a balanced luxury machine. Powered by a 2.0L TFSI engine putting out 249 hp, it features quattro AWD, a highly refined ride, and class-leading cabin materials.",
+    "ncap": {
+      "agency": null,
+      "adultStars": null,
+      "childStars": null
+    },
+    "prosCons": {
+      "pros": [
+        "Effortless highway cruiser with a silent cabin",
+        "Excellent ride and handling balance",
+        "Quattro AWD offers strong grip in monsoons"
+      ],
+      "cons": [
+        "Conservative styling feels a bit dated",
+        "No diesel option in a heavy SUV segment",
+        "Underwhelming real-world fuel economy (~8-10 km/l)"
+      ]
+    },
+    "dimensions": {
+      "bootLitres": 520,
+      "wheelbaseMm": 2819,
+      "groundClearanceMm": 200,
+      "lengthMm": 4689,
+      "widthMm": 1893,
+      "heightMm": 1659
+    }
+  }
+]

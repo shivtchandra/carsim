@@ -1,0 +1,859 @@
+[
+  {
+    "featureId": "aeb",
+    "visual": {
+      "scene": "aeb",
+      "steps": [
+        { "label": "Radar tracks the car ahead" },
+        { "label": "Lead car brakes — warning flashes" },
+        { "label": "Auto-brake if you don't react" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Cruising — radar tracks the car ahead continuously." },
+        { "at": 3, "text": "Lead car brakes hard. Warning at 2.0s time-to-collision." },
+        { "at": 5.5, "text": "No driver response → automatic braking at 0.8s TTC." },
+        { "at": 7.5, "text": "Car stops with a safety gap. Loop restarts." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You drive on highways or fast dual carriageways", "Heavy traffic with sudden stops", "New or occasional drivers in the family"],
+      "notUsefulIf": ["Mostly low-speed city driving under 40 km/h", "You already drive very defensively with large following gaps"],
+      "frequencyTemplate": "Rarely in pure city — matters on {highwayTrips}/week highway runs",
+      "rules": [
+        { "when": { "highwayPctGte": 0.35 }, "appendUseful": ["Your profile includes regular highway trips — AEB pays off there"] },
+        { "when": { "newDriver": true }, "appendUseful": ["Extra safety margin while you're still building reflexes"] }
+      ]
+    },
+    "value": { "practicalScore": 9, "experienceScore": 4, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "adaptive-cruise",
+    "visual": {
+      "scene": "adaptive-cruise",
+      "steps": [
+        { "label": "Set speed on the highway" },
+        { "label": "Car matches traffic automatically" },
+        { "label": "Returns to set speed when clear" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Set speed 100 km/h — radar locks a following gap." },
+        { "at": 3, "text": "Lead car slows; your car eases off automatically." },
+        { "at": 6, "text": "Lead car clears the lane → smooth return to set speed." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Weekly highway commutes (ORR, expressways)", "Long family road trips", "Tired evening drives home"],
+      "notUsefulIf": ["Under 15% highway driving", "You prefer full manual control"],
+      "frequencyTemplate": "Useful on {highwayTrips} highway trips/week",
+      "rules": [
+        { "when": { "highwayPctGte": 0.4 }, "appendUseful": ["At your highway share, you'll use this almost every long drive"], "frequency": "3–4 times/week on highway legs" },
+        { "when": { "cityId": "hyderabad" }, "appendUseful": ["Hyderabad ORR runs are ideal ACC territory"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 7, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "lane-keep",
+    "visual": {
+      "scene": "lane-keep",
+      "steps": [
+        { "label": "Camera reads lane lines" },
+        { "label": "Drift without indicating" },
+        { "label": "Gentle steering nudge back" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Camera reads lane markings ahead." },
+        { "at": 3, "text": "Car drifts toward the line without indicating…" },
+        { "at": 5.5, "text": "Gentle counter-steer nudges it back to centre." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["High-speed highway cruising", "Long drives where fatigue sets in", "Wide lanes on expressways"],
+      "notUsefulIf": ["Narrow city lanes with constant overtaking", "Faded or missing road markings in your area"],
+      "rules": [
+        { "when": { "annualKmGte": 15000 }, "appendUseful": ["High annual km means more hours where lane-keep reduces fatigue"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 6, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "blind-spot",
+    "visual": {
+      "scene": "blind-spot",
+      "steps": [
+        { "label": "Radar watches the blind zone" },
+        { "label": "Two-wheeler enters — icon lights" },
+        { "label": "Wait, then change lanes safely" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Radar watches the zone your mirrors can't." },
+        { "at": 3, "text": "A two-wheeler enters the blind spot — mirror icon lights." },
+        { "at": 6, "text": "Indicate now and the warning escalates. Wait, then move." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Frequent lane changes on highways", "City driving with heavy two-wheeler traffic", "Wide C-pillars that block rear view"],
+      "notUsefulIf": ["Rarely change lanes", "You always shoulder-check religiously"],
+      "rules": [
+        { "when": { "cityId": "bangalore" }, "appendUseful": ["Bengaluru's lane-splitting traffic makes BSM especially valuable"] },
+        { "when": { "cityId": "mumbai" }, "appendUseful": ["Western Express Highway merges are classic blind-spot moments"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 5, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "adas-l2",
+    "visual": {
+      "scene": "adas-l2",
+      "steps": [
+        { "label": "ACC + lane centering together" },
+        { "label": "Car holds speed, gap and lane" },
+        { "label": "You supervise — hands on wheel" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Level 2 = adaptive cruise + lane centering, together." },
+        { "at": 3, "text": "The car holds speed, gap and lane position itself." },
+        { "at": 6, "text": "Hands stay on the wheel — you supervise, it assists." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Regular 100+ km highway trips", "You value reduced fatigue on long drives", "Tech-forward buyers who will actually use assist"],
+      "notUsefulIf": ["Almost entirely city driving", "You don't trust or want semi-autonomous features"],
+      "frequencyTemplate": "Pays off on {highwayTrips} long drives/month",
+      "rules": [
+        { "when": { "highwayPctGte": 0.3, "annualKmGte": 12000 }, "appendUseful": ["Your driving mix justifies L2 on monthly highway runs"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 8, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "cruise-control",
+    "visual": {
+      "scene": "cruise-control",
+      "steps": [
+        { "label": "Highway — set 100 km/h" },
+        { "label": "Foot off accelerator" },
+        { "label": "Speed holds until you brake" }
+      ],
+      "captions": [
+        { "at": 0, "text": "On the highway, tap SET at 100 km/h." },
+        { "at": 3, "text": "Lift your foot — throttle holds steady." },
+        { "at": 6, "text": "Tap brake or RES to adjust. Simple, no radar needed." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Open highway stretches without stop-go traffic", "Long drives where leg fatigue matters", "Fuel efficiency — steadier throttle saves a bit"],
+      "notUsefulIf": ["Dense city traffic with constant braking", "You already have adaptive cruise on your shortlist"],
+      "frequencyTemplate": "Handy on {highwayTrips} highway trips/week",
+      "rules": [
+        { "when": { "highwayPctGte": 0.25 }, "appendUseful": ["Worth having — you'll reach for it on ORR and expressway legs"] }
+      ]
+    },
+    "value": { "practicalScore": 6, "experienceScore": 4, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "hill-hold",
+    "visual": {
+      "scene": "hill-hold",
+      "steps": [
+        { "label": "Stopped on an incline" },
+        { "label": "Brake holds for ~2 seconds" },
+        { "label": "Move off without rolling back" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Stopped on a slope — foot on brake." },
+        { "at": 3, "text": "Release brake — hill-hold keeps you still for ~2s." },
+        { "at": 6, "text": "Clutch/accelerate smoothly. No rollback into the car behind." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Parking ramps and basement exits", "Flyovers and inclined signals", "Manual transmission (if equipped) or stop-start on slopes"],
+      "notUsefulIf": ["Flat city with rare inclines", "You're very confident with clutch control"],
+      "rules": [
+        { "when": { "cityId": "hyderabad" }, "appendUseful": ["Hyderabad flyovers and ORR ramps — you'll feel this weekly"] },
+        { "when": { "cityId": "bangalore" }, "appendUseful": ["Koramangala and Indiranagar ramps reward hill-hold"] },
+        { "when": { "newDriver": true }, "appendUseful": ["Removes one of the scariest manual-driving moments"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 3, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "pano-sunroof",
+    "visual": {
+      "scene": "pano-sunroof",
+      "steps": [
+        { "label": "Cabin with shade closed" },
+        { "label": "Shade opens — light floods in" },
+        { "label": "Night drives: stars through glass" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Shade closed — cabin feels like a normal car." },
+        { "at": 3, "text": "Slide the shade — panoramic glass brightens the whole cabin." },
+        { "at": 6, "text": "Evening highway: open vent, not full sun. Ambience upgrade." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You care about cabin ambience and road trips", "Rear passengers (kids enjoy the view)", "Mild climates where you won't bake in summer"],
+      "notUsefulIf": ["Parked outdoors all day in 40°C+ cities", "You never open it after month one"],
+      "rules": [
+        { "when": { "cityId": "delhi" }, "appendNotUseful": ["Delhi summers — you'll keep the shade shut May–July"] }
+      ]
+    },
+    "value": { "practicalScore": 3, "experienceScore": 8, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "ventilated-seats",
+    "visual": {
+      "scene": "ventilated-seats",
+      "steps": [
+        { "label": "Perforated seat surface" },
+        { "label": "Fans push cool air" },
+        { "label": "Back stays dry in heat" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Perforated seat leather lets air pass through the cushion." },
+        { "at": 3, "text": "Built-in fans push air — your back stops sticking in summer." },
+        { "at": 6, "text": "The comfort feature owners actually use daily in hot cities." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Hot, humid cities — Hyderabad, Chennai, Mumbai summers", "Long commutes in stop-start traffic", "You wear formal shirts and hate back sweat"],
+      "notUsefulIf": ["Mild hill-station climate year-round", "You rarely drive in peak afternoon heat"],
+      "rules": [
+        { "when": { "cityId": "hyderabad" }, "appendUseful": ["Summer afternoons make this one of the highest-ROI comfort upgrades"] },
+        { "when": { "cityId": "chennai" }, "appendUseful": ["Humidity + heat — ventilated seats beat any sunroof"] }
+      ]
+    },
+    "value": { "practicalScore": 9, "experienceScore": 7, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "auto-ac",
+    "visual": {
+      "scene": "auto-ac",
+      "steps": [
+        { "label": "Set target temperature" },
+        { "label": "System auto-adjusts" },
+        { "label": "Stable cabin comfort" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Set 22°C once — the system manages fan speed and compressor." },
+        { "at": 3, "text": "Cabin cools down without constant knob fiddling." },
+        { "at": 6, "text": "Temperature stays stable through traffic and sun load." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Daily drivers who hate adjusting AC every few minutes", "Shared cars with different temperature preferences", "Long highway runs where consistency matters"],
+      "notUsefulIf": ["You only take short trips and manual AC is fine", "Base trim budget is the priority"],
+      "rules": []
+    },
+    "value": { "practicalScore": 7, "experienceScore": 5, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "rear-ac-vents",
+    "visual": {
+      "scene": "rear-ac-vents",
+      "steps": [
+        { "label": "Vents in centre tunnel" },
+        { "label": "Air reaches second row" },
+        { "label": "Rear passengers stay cool" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Second row gets its own vents from the centre tunnel." },
+        { "at": 3, "text": "Direct airflow reaches rear passengers — not just front-row cold." },
+        { "at": 6, "text": "Essential for families in Indian heat — rear seats stay usable." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Regularly carry family in the back seat", "Kids or parents sit rear on long trips", "You run the AC hard in summer"],
+      "notUsefulIf": ["Mostly solo driving", "Two-row SUV used as a 2-seater"],
+      "rules": [
+        { "when": { "cityId": "delhi" }, "appendUseful": ["Delhi summers — rear passengers without vents suffer fast"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 4, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "sunroof",
+    "visual": {
+      "scene": "sunroof",
+      "steps": [
+        { "label": "Glass panel closed" },
+        { "label": "Electric tilt / slide" },
+        { "label": "Brighter cabin feel" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Single electric glass panel above the front row." },
+        { "at": 3, "text": "Tilt or slide open — cabin feels brighter and airier." },
+        { "at": 6, "text": "Mostly a desirability upgrade; vent position beats full open in summer." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You want a brighter cabin on evening drives", "Resale and brochure appeal matter to you", "Occasional open-air feel without a convertible"],
+      "notUsefulIf": ["Parked in direct sun all day — adds heat", "You never open it after the first month"],
+      "rules": [
+        { "when": { "cityId": "delhi" }, "appendNotUseful": ["Peak summer — shade stays shut most days"] }
+      ]
+    },
+    "value": { "practicalScore": 3, "experienceScore": 7, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "leatherette-seats",
+    "visual": {
+      "scene": "leatherette-seats",
+      "steps": [
+        { "label": "Stitched synthetic leather" },
+        { "label": "Spill on surface" },
+        { "label": "Wipe clean quickly" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Synthetic leather look with stitched panels and easier upkeep." },
+        { "at": 3, "text": "Spills sit on the surface instead of soaking into fabric." },
+        { "at": 6, "text": "Wipe clean in seconds — handy with kids and daily commute." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Kids, pets, or frequent food/drink in the car", "You care about resale looking well-kept", "Premium feel without real leather maintenance"],
+      "notUsefulIf": ["You prefer breathable fabric in hot weather", "Leatherette can feel warm without ventilation"],
+      "rules": []
+    },
+    "value": { "practicalScore": 5, "experienceScore": 6, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "powered-driver-seat",
+    "visual": {
+      "scene": "powered-driver-seat",
+      "steps": [
+        { "label": "Electric adjust switches" },
+        { "label": "Slide & height tuning" },
+        { "label": "Perfect driving position" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Electric motors adjust height, reach, and backrest angle." },
+        { "at": 3, "text": "Fine-tune driving position without manual levers under the seat." },
+        { "at": 6, "text": "Shared cars and long commutes — everyone finds their fit faster." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Multiple drivers share the same car", "Long commute — small posture tweaks reduce fatigue", "You want easy reach to pedals and wheel"],
+      "notUsefulIf": ["Single driver who set manual seat once", "Short city hops only"],
+      "rules": []
+    },
+    "value": { "practicalScore": 5, "experienceScore": 5, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "all-disc-brakes",
+    "visual": {
+      "scene": "all-disc-brakes",
+      "steps": [
+        { "label": "Discs on all four wheels" },
+        { "label": "Even braking under load" },
+        { "label": "Less fade on ghats" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Disc brakes on all four wheels — not drums at the rear." },
+        { "at": 3, "text": "Even braking force across corners under repeated stops." },
+        { "at": 6, "text": "Better fade resistance on ghat descents and spirited driving." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Regular ghat and hill descents", "Spirited driving or heavy loaded stops", "You upgrade from a base trim with rear drums"],
+      "notUsefulIf": ["Pure city driving at moderate speeds", "You never push brakes hard enough to fade"],
+      "rules": [
+        { "when": { "highwayPctGte": 0.25 }, "appendUseful": ["Highway off-ramps and long descents reward all-disc setups"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 4, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "paddle-shifters",
+    "visual": {
+      "scene": "paddle-shifters",
+      "steps": [
+        { "label": "Paddles on steering wheel" },
+        { "label": "Downshift for engine braking" },
+        { "label": "Manual control when needed" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Paddles behind the wheel let you shift manually in an automatic." },
+        { "at": 3, "text": "Downshift on a hill descent — engine braking saves the foot brake." },
+        { "at": 6, "text": "Hold a gear for overtakes; otherwise most owners rarely touch them." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Ghat routes where engine braking helps", "Enthusiasts who want manual override", "DCT/AT drivers who hold gears for overtakes"],
+      "notUsefulIf": ["Flat city commute only", "You never touch them after the first week"],
+      "rules": []
+    },
+    "value": { "practicalScore": 4, "experienceScore": 6, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "drive-modes",
+    "visual": {
+      "scene": "drive-modes",
+      "steps": [
+        { "label": "Eco / Normal / Sport" },
+        { "label": "Throttle map changes" },
+        { "label": "Pick your daily feel" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Eco softens throttle for traffic and fuel savings." },
+        { "at": 3, "text": "Normal is the daily default — balanced response." },
+        { "at": 6, "text": "Sport sharpens throttle and sometimes steering — modest but noticeable." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You like tailoring throttle feel", "Sport mode for highway merges", "Eco in stop-start traffic"],
+      "notUsefulIf": ["You leave it in Normal forever anyway", "Differences feel too subtle to matter to you"],
+      "rules": []
+    },
+    "value": { "practicalScore": 5, "experienceScore": 5, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "alloy-17",
+    "visual": {
+      "scene": "alloy-17",
+      "steps": [
+        { "label": "17\" alloy rim" },
+        { "label": "Diamond-cut styling" },
+        { "label": "Lighter than steel" }
+      ],
+      "captions": [
+        { "at": 0, "text": "17-inch alloy wheels — lighter and sharper looking than steel." },
+        { "at": 3, "text": "Diamond-cut face catches light — the brochure look buyers notice." },
+        { "at": 6, "text": "Slightly firmer ride than smaller wheels; marginally better grip." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Style and road presence matter to you", "You want the top-trim look on mid variants", "Slightly wider tyre contact patch"],
+      "notUsefulIf": ["Bad-road comfort is priority — smaller wheels ride softer", "Alloy repair cost worries you on potholed roads"],
+      "rules": []
+    },
+    "value": { "practicalScore": 4, "experienceScore": 7, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "tpms",
+    "visual": {
+      "scene": "tpms",
+      "steps": [
+        { "label": "Sensors in each tyre" },
+        { "label": "Slow leak — warning on dash" },
+        { "label": "Check before a blowout" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Each tyre reports pressure to the car." },
+        { "at": 3, "text": "Pressure drops slowly — yellow warning on the cluster." },
+        { "at": 6, "text": "Stop and inflate before highway speeds or a sidewall failure." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Highway driving at sustained speeds", "Pothole-heavy roads that knock alignment", "You don't check tyre pressure monthly"],
+      "notUsefulIf": ["You already check pressures every fortnight", "Pure city driving under 60 km/h"],
+      "rules": [
+        { "when": { "highwayPctGte": 0.3 }, "appendUseful": ["Highway heat + under-inflation is a real blowout risk — TPMS catches it early"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 2, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "esc",
+    "visual": {
+      "scene": "esc",
+      "steps": [
+        { "label": "Sudden swerve or wet corner" },
+        { "label": "Car starts to skid" },
+        { "label": "ESC brakes individual wheels — straightens" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Wet road — you swerve to avoid an obstacle." },
+        { "at": 3, "text": "Tail steps out — ESC detects yaw." },
+        { "at": 6, "text": "Selective braking pulls the car back in line. You may not even notice." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Monsoon driving on highways", "Emergency lane changes", "Every driver — it's passive safety"],
+      "notUsefulIf": [],
+      "rules": [
+        { "when": { "cityId": "mumbai" }, "appendUseful": ["Mumbai monsoons + expressway aquaplaning — ESC is non-negotiable"] }
+      ]
+    },
+    "value": { "practicalScore": 10, "experienceScore": 2, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "airbags-6",
+    "visual": {
+      "scene": "airbags-6",
+      "steps": [
+        { "label": "Impact detection" },
+        { "label": "Airbag inflation" },
+        { "label": "Energy absorption" }
+      ],
+      "captions": [
+        { "at": 0, "text": "System monitors crash sensors constantly." },
+        { "at": 2.0, "text": "Frontal collision registered at the bumper." },
+        { "at": 2.5, "text": "Curtain, front, and side airbags inflate in 8 milliseconds." },
+        { "at": 6.0, "text": "Controlled deflation cushions occupants and absorbs energy." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Family with rear passengers", "Highway speeds where crash energy is higher", "You want maximum passive protection"],
+      "notUsefulIf": ["Rarely carry passengers — still valuable in solo crashes"],
+      "rules": [
+        { "when": { "newDriver": true }, "appendUseful": ["More airbag coverage while reflexes are still developing"] }
+      ]
+    },
+    "value": { "practicalScore": 10, "experienceScore": 1, "ownershipImpact": 3 }
+  },
+  {
+    "featureId": "touchscreen-10",
+    "visual": {
+      "scene": "touchscreen-10",
+      "steps": [
+        { "label": "Large high-res display" },
+        { "label": "Tap to toggle split screen" },
+        { "label": "Backup camera guidelines" }
+      ],
+      "captions": [
+        { "at": 0, "text": "10.25-inch high-definition screen sits in your direct line of sight." },
+        { "at": 2.0, "text": "Tap the right shortcut button to split the screen." },
+        { "at": 3.5, "text": "Split Screen Mode: view navigation maps and media playback side by side." },
+        { "at": 5.5, "text": "Tap the left sidebar to access camera shortcuts." },
+        { "at": 7.0, "text": "Reverse camera feed displays active parking guides and sensor indicators." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You use Google Maps / Android Auto / Apple CarPlay daily", "Enjoy clear and crisp reverse/360 camera feeds", "Prefer clean, button-free dashboard controls"],
+      "notUsefulIf": ["You prefer tactile knobs and physical buttons for AC/volume", "Don't use phone mirroring navigation"],
+      "rules": []
+    },
+    "value": { "practicalScore": 7, "experienceScore": 8, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "wireless-carplay",
+    "visual": {
+      "scene": "wireless-carplay",
+      "steps": [
+        { "label": "Phone placed in tray" },
+        { "label": "Wireless connection link" },
+        { "label": "CarPlay projected" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Place phone in the central dashboard charging tray." },
+        { "at": 2.0, "text": "Phone connects automatically via Bluetooth and 5GHz Wi-Fi." },
+        { "at": 4.5, "text": "Maps, music, and voice controls project instantly on the 10\"+ display." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Daily navigation via Google/Apple Maps", "Short trips where plugging in feels tedious", "Clean dashboard aesthetic"],
+      "notUsefulIf": ["You rarely use phone mirroring", "Your phone battery dies without wired charging"],
+      "frequencyTemplate": "Every drive — {dailyUses} times/week",
+      "rules": [
+        { "when": { "annualKmGte": 10000 }, "appendUseful": ["High km means hundreds of cable-free hops in and out"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 6, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "digital-cluster",
+    "visual": {
+      "scene": "digital-cluster",
+      "steps": [
+        { "label": "Digital cluster boots up" },
+        { "label": "Crisp speed & trip readouts" },
+        { "label": "Nav info in sightline" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Fully digital cluster replaces analog dials with a crisp LCD panel." },
+        { "at": 3, "text": "Speed, fuel, and trip data render with sharper graphics and smoother needles." },
+        { "at": 6, "text": "Navigation turn prompts and media info can sit in your direct sightline." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Tech-first buyers who like modern cabin feel", "You use navigation constantly and want turn info near the wheel", "You prefer configurable layouts over fixed analog dials"],
+      "notUsefulIf": ["Analog gauges are fine for your driving style", "You rarely look at the cluster beyond speed"],
+      "rules": []
+    },
+    "value": { "practicalScore": 4, "experienceScore": 7, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "connected-car",
+    "visual": {
+      "scene": "connected-car",
+      "steps": [
+        { "label": "Open the car app" },
+        { "label": "Send remote command" },
+        { "label": "Cabin pre-cools remotely" }
+      ],
+      "captions": [
+        { "at": 0, "text": "SIM-linked app connects to your car from anywhere." },
+        { "at": 3, "text": "Tap remote pre-cool before you walk to the parking lot." },
+        { "at": 6, "text": "Cabin starts cooling in summer — the feature owners actually use daily." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Hot-city parking where cabin heat is brutal", "Parents tracking a shared family car", "You like locating the car in big mall basements"],
+      "notUsefulIf": ["You never use phone apps beyond maps", "Your parking is always shaded or underground with easy access"],
+      "rules": [
+        { "when": { "cityId": "hyderabad" }, "appendUseful": ["Summer pre-cool is genuinely useful before you reach a sun-baked car"] }
+      ]
+    },
+    "value": { "practicalScore": 6, "experienceScore": 5, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "wireless-charger",
+    "visual": {
+      "scene": "wireless-charger",
+      "steps": [
+        { "label": "Phone on Qi pad" },
+        { "label": "Coil charges wirelessly" },
+        { "label": "Battery tops up on the go" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Drop your phone on the Qi pad in the centre console." },
+        { "at": 3, "text": "Coil aligns and tops up battery without a cable." },
+        { "at": 6, "text": "Handy with wireless CarPlay — keeps charge from draining on long drives." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You use wireless CarPlay or Android Auto daily", "Short hops where plugging in feels tedious", "Phone battery drains fast with navigation running"],
+      "notUsefulIf": ["You prefer wired charging for faster top-ups", "Your phone lacks Qi charging"],
+      "rules": []
+    },
+    "value": { "practicalScore": 5, "experienceScore": 5, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "premium-audio",
+    "visual": {
+      "scene": "premium-audio",
+      "steps": [
+        { "label": "Multi-speaker layout" },
+        { "label": "Richer staging at volume" },
+        { "label": "Highway listening payoff" }
+      ],
+      "captions": [
+        { "at": 0, "text": "More speakers and amplification across doors, dash, and subwoofer." },
+        { "at": 3, "text": "Music staging opens up — clearer vocals and tighter bass at moderate volume." },
+        { "at": 6, "text": "Best felt on highway cruises; road noise still limits gains at very high speed." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Music-first commuters who drive alone", "You listen to podcasts or music on every trip", "You notice cabin sound quality in test drives"],
+      "notUsefulIf": ["Audio quality is low priority vs safety or space", "Most driving is noisy city traffic where differences blur"],
+      "rules": []
+    },
+    "value": { "practicalScore": 4, "experienceScore": 8, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "rear-camera",
+    "visual": {
+      "scene": "rear-camera",
+      "steps": [
+        { "label": "Reverse feed opens instantly" },
+        { "label": "Parking guide lines frame the gap" },
+        { "label": "Back in with less guesswork" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Shift to reverse and the rear view fills the screen." },
+        { "at": 3, "text": "Dynamic guide lines show where the car will track." },
+        { "at": 6, "text": "You spot low walls, scooters, and curbs much earlier." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You park in tight apartment basements", "Your family car often reverses around scooters and pillars", "You share the car with newer drivers"],
+      "notUsefulIf": ["You almost always have open parking space", "You already rely on a crisp 360 camera system"],
+      "rules": [
+        { "when": { "cityId": "hyderabad" }, "appendUseful": ["Basement parking and narrow apartment slots make this feel useful every week"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 3, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "camera-360",
+    "visual": {
+      "scene": "camera-360",
+      "steps": [
+        { "label": "Multiple cameras stitch a top view" },
+        { "label": "See all four corners together" },
+        { "label": "Thread into tight spaces cleanly" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Cameras around the car build a stitched bird's-eye view." },
+        { "at": 3, "text": "You can judge all four corners instead of one mirror at a time." },
+        { "at": 6, "text": "Useful when walls, pillars, and scooters crowd the parking slot." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You park in premium malls, offices, or tight apartment slots", "You buy a wider SUV and want corner confidence", "You care about alloy and bumper protection"],
+      "notUsefulIf": ["Your car is small and parking is usually easy", "You rarely deal with narrow urban parking"],
+      "rules": [
+        { "when": { "newDriver": true }, "appendUseful": ["Builds confidence quickly when learning the car's exact corners"] }
+      ]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 6, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "front-parking-sensors",
+    "visual": {
+      "scene": "front-parking-sensors",
+      "steps": [
+        { "label": "Approach a wall or pillar" },
+        { "label": "Beep rate rises as the gap shrinks" },
+        { "label": "Stop before the bumper kisses it" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Creep toward a pillar or wall in a tight slot." },
+        { "at": 3, "text": "The beeps get faster as the nose closes in." },
+        { "at": 6, "text": "You stop with less bumper guessing and fewer parking scrapes." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You park nose-first into tight spaces", "Your car has a tall bonnet or poor front-edge visibility", "Shared family drivers use the same car"],
+      "notUsefulIf": ["You mostly reverse into open parking bays", "You already have a trustworthy 360 camera"],
+      "rules": [
+        { "when": { "cityId": "mumbai" }, "appendUseful": ["Tight urban parking makes front sensors more useful than buyers expect"] }
+      ]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 2, "ownershipImpact": 2 }
+  },
+  {
+    "featureId": "auto-headlamps",
+    "visual": {
+      "scene": "auto-headlamps",
+      "steps": [
+        { "label": "Ambient light drops" },
+        { "label": "Headlamps switch on automatically" },
+        { "label": "You stay visible without thinking about it" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Daylight fades as you enter rain, dusk, or a covered ramp." },
+        { "at": 3, "text": "The sensor triggers the headlamps automatically." },
+        { "at": 6, "text": "Good convenience because you stay visible even when you forget the stalk." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You drive at dawn, dusk, or during monsoons", "The car is shared and people forget to switch lights on", "You frequently enter tunnels, ramps, and covered parking"],
+      "notUsefulIf": ["You drive almost entirely in daylight and are disciplined about lights"],
+      "rules": [
+        { "when": { "annualKmGte": 12000 }, "appendUseful": ["More time on the road means more low-light moments where this quietly helps"] }
+      ]
+    },
+    "value": { "practicalScore": 6, "experienceScore": 3, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "auto-wipers",
+    "visual": {
+      "scene": "auto-wipers",
+      "steps": [
+        { "label": "Rain starts on the windshield" },
+        { "label": "Wipers match the rainfall automatically" },
+        { "label": "You keep both hands focused on driving" }
+      ],
+      "captions": [
+        { "at": 0, "text": "First drops land on the glass during a sudden shower." },
+        { "at": 3, "text": "The sensor starts the wipers and adjusts the speed." },
+        { "at": 6, "text": "Small luxury, but nice in monsoon traffic and messy weather." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You drive in monsoon-heavy cities", "You want fewer small controls to manage in bad weather", "You like premium-feeling convenience touches"],
+      "notUsefulIf": ["You are picky and prefer to control wiper speed yourself", "Your city rarely sees meaningful rain"],
+      "rules": [
+        { "when": { "cityId": "mumbai" }, "appendUseful": ["This feels much more valuable once Mumbai rain starts hammering the glass"] }
+      ]
+    },
+    "value": { "practicalScore": 5, "experienceScore": 4, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "keyless-entry",
+    "visual": {
+      "scene": "keyless-entry",
+      "steps": [
+        { "label": "Approach the car with key in pocket" },
+        { "label": "Doors unlock on touch" },
+        { "label": "Start button replaces key juggling" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Walk up with the key in your pocket or bag." },
+        { "at": 3, "text": "Touch the handle and the car unlocks." },
+        { "at": 6, "text": "Push-button start is one of those things you miss once you've used it daily." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You do many short hops in and out of the car", "You often carry bags, laptops, or groceries", "You want the car to feel a class above"],
+      "notUsefulIf": ["You don't mind using a conventional key", "You care more about hard-value features than cabin convenience"],
+      "rules": [
+        { "when": { "annualKmGte": 10000 }, "appendUseful": ["Lots of weekly stop-start errands make this feel nicer than it sounds on paper"] }
+      ]
+    },
+    "value": { "practicalScore": 6, "experienceScore": 5, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "auto-dimming-irvm",
+    "visual": {
+      "scene": "auto-dimming-irvm",
+      "steps": [
+        { "label": "Bright headlamps appear behind you" },
+        { "label": "Mirror darkens automatically" },
+        { "label": "Night glare gets toned down" }
+      ],
+      "captions": [
+        { "at": 0, "text": "A bright SUV or high-beam car fills the mirror behind you." },
+        { "at": 3, "text": "The mirror dims automatically instead of blasting your eyes." },
+        { "at": 6, "text": "Helpful on night highways, especially when glare fatigue builds up." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You do regular night highway runs", "High-beam glare bothers you", "You want small premium touches that reduce fatigue"],
+      "notUsefulIf": ["You almost never drive at night", "Rear glare rarely bothers you"],
+      "rules": [
+        { "when": { "highwayPctGte": 0.25 }, "appendUseful": ["At your highway share, this becomes more than a brochure gimmick"] }
+      ]
+    },
+    "value": { "practicalScore": 5, "experienceScore": 4, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "led-drl",
+    "visual": {
+      "scene": "led-drl",
+      "steps": [
+        { "label": "Signature light pattern turns on" },
+        { "label": "Car looks more modern and visible" },
+        { "label": "Tail lamps echo the same design language" }
+      ],
+      "captions": [
+        { "at": 0, "text": "The DRLs light up with a sharper signature than basic halogen strips." },
+        { "at": 3, "text": "They improve daytime visibility and make the car look more premium." },
+        { "at": 6, "text": "Mostly an aesthetic upgrade, but it does help the car feel newer every day." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You care about how modern the car looks", "You want stronger road presence in traffic", "Night-time rear-light clarity matters to you"],
+      "notUsefulIf": ["You only care about mechanical and ownership-value features", "Exterior design is low priority for your purchase"],
+      "rules": []
+    },
+    "value": { "practicalScore": 4, "experienceScore": 6, "ownershipImpact": 1 }
+  },
+  {
+    "featureId": "rear-defogger",
+    "visual": {
+      "scene": "rear-defogger",
+      "steps": [
+        { "label": "Rear glass fogs up or gets wet" },
+        { "label": "Heating lines clear the view" },
+        { "label": "Rear wiper keeps visibility usable" }
+      ],
+      "captions": [
+        { "at": 0, "text": "Rear visibility drops when mist, drizzle, or dirt builds up on the glass." },
+        { "at": 3, "text": "The defogger clears the rear screen line by line." },
+        { "at": 6, "text": "With the rear wiper working too, you regain a usable mirror view quickly." }
+      ]
+    },
+    "context": {
+      "usefulIf": ["You drive in rain, fog, or dusty conditions", "You own an SUV or hatch where rear glass gets dirty easily", "Highway rear visibility matters to you"],
+      "notUsefulIf": ["You mostly drive in dry conditions and rarely need the rear glass clear"],
+      "rules": [
+        { "when": { "cityId": "bangalore" }, "appendUseful": ["Cool mornings and drizzle make rear visibility aids feel more useful than expected"] }
+      ]
+    },
+    "value": { "practicalScore": 6, "experienceScore": 2, "ownershipImpact": 1 }
+  }
+]

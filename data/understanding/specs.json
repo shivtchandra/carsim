@@ -1,0 +1,56 @@
+[
+  {
+    "specKey": "boot",
+    "label": "Boot space",
+    "hook": "Will my luggage fit?",
+    "visual": {
+      "scene": "boot-space",
+      "steps": [
+        { "label": "Cabin bags side by side" },
+        { "label": "Stroller or golf bag test" },
+        { "label": "Weekend trip for four" }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Airport runs with 2+ large bags", "Baby stroller without folding rear seats", "Weekly grocery + luggage together"],
+      "notUsefulIf": ["Solo commuter with a laptop bag", "You always use roof box or carrier"]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 3 }
+  },
+  {
+    "specKey": "wheelbase",
+    "label": "Rear legroom",
+    "hook": "Will adults fit in the back?",
+    "visual": {
+      "scene": "rear-space",
+      "steps": [
+        { "label": "Wheelbase = space between axles" },
+        { "label": "Longer = more rear knee room" },
+        { "label": "Two adults comfortably?" }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Regular rear passengers (family, colleagues)", "Long drives where rear comfort matters", "Child seats + still need adult space in front"],
+      "notUsefulIf": ["You drive alone or with one front passenger", "Kids only in the back — they need less legroom"]
+    },
+    "value": { "practicalScore": 7, "experienceScore": 5 }
+  },
+  {
+    "specKey": "groundClearance",
+    "label": "Ground clearance",
+    "hook": "Will it scrape speed breakers?",
+    "visual": {
+      "scene": "ground-clearance",
+      "steps": [
+        { "label": "Car profile vs breaker height" },
+        { "label": "Typical Indian breakers: 100–150 mm" },
+        { "label": "SUV vs sedan difference" }
+      ]
+    },
+    "context": {
+      "usefulIf": ["Unpaved lanes and tall society speed breakers", "Monsoon flooding on roads", "Steep driveway entries"],
+      "notUsefulIf": ["Smooth highways and flat parking only", "You already know your route has no scrapes"]
+    },
+    "value": { "practicalScore": 8, "experienceScore": 4 }
+  }
+]

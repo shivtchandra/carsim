@@ -1,0 +1,17 @@
+[
+  { "fromId": "creta-sx-mt", "toId": "creta-sx-o-ivt", "insight": "Most of this jump is the IVT plus the safety suite — ADAS, 360° camera and ventilated seats are daily-use gains, so it's expensive but not hollow." },
+  { "fromId": "creta-s-mt", "toId": "creta-sx-mt", "insight": "The classic sweet-spot upgrade: the bigger screen, pano roof carry-over and 17-inch wheels make the SX feel like a different car for a modest step." },
+  { "fromId": "creta-sx-ivt", "toId": "creta-sx-turbo-dct", "insight": "Nearly the same money buys 45 PS more and all-disc brakes instead of comfort kit — pick by whether your commute is traffic or highway." },
+  { "fromId": "seltos-htk-plus-mt", "toId": "seltos-htx-mt", "insight": "This step buys the cabin you saw in the ads — pano roof, big screens and leatherette — and is where the Seltos starts feeling premium." },
+  { "fromId": "seltos-htx-mt", "toId": "seltos-gtx-plus-turbo-dct", "insight": "A big cheque, but it covers the turbo engine, DCT, ADAS and 360° camera together — the only Seltos that fully outruns the Creta." },
+  { "fromId": "gv-delta-mt", "toId": "gv-zeta-mt", "insight": "Zeta adds the sunroof, screen and connected tech most buyers actually wanted — the Delta is fleet-spec by comparison." },
+  { "fromId": "gv-zeta-at", "toId": "gv-zeta-plus-hybrid", "insight": "The hybrid premium looks steep until you run the fuel math — at city mileages above ~12,000 km/year it pays itself back well before resale." },
+  { "fromId": "hyryder-v-at", "toId": "hyryder-v-hybrid", "insight": "Same trim, two powertrains: the hybrid costs more upfront but turns every fuel stop in its favour — the spreadsheet pick for high-km users." },
+  { "fromId": "elevate-v-mt", "toId": "elevate-vx-mt", "insight": "VX is where Honda Sensing ADAS and blind-spot view land — the rare mid-trim where the gain is mostly safety, not garnish." },
+  { "fromId": "taigun-highline-at", "toId": "taigun-topline-at", "insight": "Ventilated seats and the digital cluster are nice, but the Highline already has the bones — pay up only if you sit in traffic daily." },
+  { "fromId": "taigun-topline-at", "toId": "taigun-gt-plus-dsg", "insight": "This is an engine upgrade dressed as a trim: the 1.5 TSI with DSG transforms the car, and the feature delta is almost incidental." },
+  { "fromId": "kushaq-signature-at", "toId": "kushaq-signature-plus-at", "insight": "The Signature+ packs the comfort kit — sunroof, ventilated seats, bigger alloys — making it the value-per-rupee peak of the Kushaq range." },
+  { "fromId": "curvv-creative-dct", "toId": "curvv-accomplished-dct", "insight": "Accomplished stacks genuinely high-impact kit — ventilated seats, 360° camera, powered driver seat — so the step reads expensive but scores well." },
+  { "fromId": "3xo-ax5-mt", "toId": "3xo-ax7-turbo-mt", "insight": "AX7 brings the stronger TGDi engine plus 360° camera and disc brakes all round — one of the best single-step upgrades in this entire comparison." },
+  { "fromId": "astor-select-cvt", "toId": "astor-sharp-pro-cvt", "insight": "Sharp Pro adds the pano roof, ventilated seats and powered chair that justify the Astor's premium pitch; below this it's a feature-list car without the features." }
+]

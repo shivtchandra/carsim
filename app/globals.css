@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+:root {
+  /* F1 Blueprint Theme — Bone White + Technical Ink + Japanese Vermillion + Steel Blue */
+  --bg-base: #F5F1E8;
+  --bg-elevated: #ECE7DF;
+  --bg-slate: #E5DFC8;
+  --bg-navy: #F5F1E8; 
+
+  /* Section backgrounds mapped uniformly to base bone color */
+  --room-plum: #F5F1E8;
+  --room-indigo: #F5F1E8;
+  --room-emerald: #F5F1E8;
+  --room-bronze: #F5F1E8;
+  --room-graphite: #F5F1E8;
+  --room-gold: #F5F1E8;
+
+  --glass-bg: rgba(22, 22, 22, 0.02);
+  --glass-border: rgba(22, 22, 22, 0.1);
+  --text-primary: #161616;
+  --text-secondary: rgba(22, 22, 22, 0.65);
+
+  --accent: #C84C31;
+  --accent-glow: rgba(200, 76, 49, 0.15);
+  --accent-electric: #C84C31;
+  --accent-bronze: #C84C31;
+  --accent-emerald: #C84C31;
+  --accent-gold: #C84C31;
+  --accent-white: #F5F1E8;
+  --accent-grey: rgba(22, 22, 22, 0.45);
+
+  --secondary: #4F6B8A;
+  --positive: #2d6a4f;
+  --negative: #C84C31;
+  --warning: #d97706;
+}
+
+@theme inline {
+  --color-base: var(--bg-base);
+  --color-elevated: var(--bg-elevated);
+  --color-slate: var(--bg-slate);
+  --color-navy: var(--bg-navy);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-secondary-steel: var(--secondary);
+  --color-accent-electric: var(--accent-electric);
+  --color-room-plum: var(--room-plum);
+  --color-room-indigo: var(--room-indigo);
+  --color-room-emerald: var(--room-emerald);
+  --color-room-bronze: var(--room-bronze);
+  --color-room-graphite: var(--room-graphite);
+  --color-room-gold: var(--room-gold);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --font-display: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+  --font-hero: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+  --font-geist: var(--font-geist-sans), monospace;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Typography classes */
+.font-hero {
+  font-family: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+}
+
+.font-display {
+  font-family: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+}
+
+.font-geist {
+  font-family: var(--font-geist-sans), monospace;
+}
+
+/* Glassmorphism panel -> paper panel */
+.glass {
+  background: var(--bg-elevated);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+.glass-hover {
+  transition: transform 250ms ease-out, box-shadow 250ms ease-out, border-color 250ms ease-out;
+}
+
+.glass-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 24px rgba(22, 22, 22, 0.05);
+  border-color: rgba(199, 75, 50, 0.25);
+}
+
+/* Spec numbers */
+.stat-num {
+  font-family: var(--font-ibm-plex-mono), monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Estimated-data badge */
+.badge-estimated {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--accent);
+  background: rgba(200, 76, 49, 0.08);
+  border: 1px solid rgba(200, 76, 49, 0.15);
+  cursor: help;
+}
+
+/* Editorial layout lines and indicators instead of grids */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(79, 107, 138, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 107, 138, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.blueprint-dots {
+  background-image: radial-gradient(rgba(79, 107, 138, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Room threshold — clean editorial horizontal line divider */
+.room-threshold {
+  height: 48px;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-base);
+}
+
+.room-threshold::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 50%;
+  height: 1px;
+  background: rgba(22, 22, 22, 0.12);
+}
+
+.room-threshold::after {
+  display: none;
+}
+
+/* Buttons in Editorial Vermillion & Bone */
+.btn-accent {
+  background: var(--accent);
+  color: var(--bg-base);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 28px;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out, background 200ms ease-out;
+}
+
+.btn-accent:hover {
+  background: #b03a25;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(199, 75, 50, 0.15);
+}
+
+.btn-ghost {
+  color: var(--text-primary);
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 28px;
+  border: 1px solid rgba(22, 22, 22, 0.15);
+  background: transparent;
+  transition: transform 200ms ease-out, border-color 200ms ease-out, background 200ms ease-out;
+}
+
+.btn-ghost:hover {
+  transform: translateY(-1px);
+  border-color: var(--text-primary);
+  background: rgba(22, 22, 22, 0.02);
+}
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Custom inputs styling matching editorial theme */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(22, 22, 22, 0.08);
+  height: 3px;
+  border-radius: 1px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--bg-base);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: transform 150ms ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}

@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // TODO: tighten before production — restrict writes to authenticated admins.
+    match /{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
