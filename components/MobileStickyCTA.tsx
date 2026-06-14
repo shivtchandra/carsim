@@ -1,11 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function MobileStickyCTA() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show CTA only if scrolled past 300px (out of hero section)
+      setIsVisible(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-50 sm:hidden border-t border-[#161616]/10 px-4 py-3 flex gap-3"
+      className={`fixed bottom-0 inset-x-0 z-50 sm:hidden border-t border-[#161616]/10 px-4 py-3 flex gap-3 transition-transform duration-300 ease-out ${
+        isVisible ? "translate-y-0" : "translate-y-full"
+      }`}
       style={{
         background: "rgba(236, 231, 223, 0.95)",
         backdropFilter: "blur(20px)",

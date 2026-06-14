@@ -93,7 +93,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`px-4 py-2.5 rounded-xl text-sm font-mono transition-all duration-150 ${
                     active
-                      ? "text-[#161616] bg-[#161616]/5 font-bold border-l-2 border-[#C84C31]"
+                      ? "text-[#161616] bg-[#161616]/5 font-bold"
                       : "text-[#161616]/65 hover:text-[#161616] hover:bg-[#161616]/3"
                   }`}
                 >

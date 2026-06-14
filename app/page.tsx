@@ -34,10 +34,10 @@ export default function Home() {
                 <span className="font-mono text-[9px] tracking-[0.3em] text-[#C84C31] uppercase font-bold block">
                   Chapter 01 // SECTION A-01 // FRONT AERODYNAMIC ASSEMBLY // SUSPENSION CELL
                 </span>
-                <h2 className="font-display text-5xl text-[#161616] leading-tight max-w-2xl">
+                <h2 className="font-display text-5xl sm:text-6xl text-[#161616] leading-[1.1] max-w-2xl">
                   An automotive decision engine.<br />Not a classifieds site.
                 </h2>
-                <p className="text-base text-[#161616]/75 max-w-lg leading-relaxed">
+                <p className="text-base sm:text-lg text-[#161616]/75 max-w-xl leading-relaxed">
                   Three intelligence workstations. Each answers a question buyers never think to ask.
                 </p>
               </div>
@@ -63,10 +63,10 @@ export default function Home() {
               <span className="font-mono text-[9px] tracking-[0.3em] text-[#C84C31] uppercase font-bold block">
                 Chapter 03 // SECTION B-04 // COMPARATIVE ANALYSIS // RADAR CHASSIS MATRIX
               </span>
-              <h2 className="font-display text-5xl text-[#161616] leading-tight">
+              <h2 className="font-display text-5xl sm:text-6xl text-[#161616] leading-[1.1]">
                 Compare vehicles.<br />On every axis.
               </h2>
-              <p className="text-base text-[#161616]/75 max-w-xl leading-relaxed">
+              <p className="text-base sm:text-lg text-[#161616]/75 max-w-xl leading-relaxed">
                 Performance, safety, and ownership radar charts. Side-by-side tactical analysis.
               </p>
             </div>
@@ -85,10 +85,10 @@ export default function Home() {
               <span className="font-mono text-[9px] tracking-[0.3em] text-[#C84C31] uppercase font-bold block">
                 Chapter 04 // SECTION C-02 // POWERTRAIN & SIMULATION CENTER
               </span>
-              <h2 className="font-display text-5xl text-[#161616] leading-tight">
+              <h2 className="font-display text-5xl sm:text-6xl text-[#161616] leading-[1.1]">
                 The full picture.<br />Not just the sticker price.
               </h2>
-              <p className="text-base text-[#161616]/75 leading-relaxed">
+              <p className="text-base sm:text-lg text-[#161616]/75 leading-relaxed">
                 Configure your ownership parameters, run wind tunnel aerodynamics, and inspect real-world powertrain dynamics derived from chassis data.
               </p>
             </div>

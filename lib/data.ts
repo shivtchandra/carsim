@@ -5,6 +5,7 @@ import featuresJson from "@/data/features.json";
 import testDataJson from "@/data/test-data.json";
 import costParamsJson from "@/data/cost-params.json";
 import ownerVoicesJson from "@/data/owner-voices.json";
+import detailedReviewsJson from "@/data/detailed-reviews.json";
 import type {
   Brand,
   CostParams,
@@ -17,6 +18,7 @@ import type {
   OwnerVoices,
   TestData,
   Variant,
+  DetailedReview,
 } from "./types";
 
 export const brands = brandsJson as Brand[];
@@ -26,6 +28,7 @@ export const features = featuresJson as Feature[];
 export const testData = testDataJson as TestData[];
 export const costParams = costParamsJson as unknown as CostParams;
 export const ownerVoices = ownerVoicesJson as OwnerVoices[];
+export const detailedReviews = detailedReviewsJson as DetailedReview[];
 
 export const getBrand = (id: string) => brands.find((b) => b.id === id);
 export const getModel = (id: string) => models.find((m) => m.id === id);
@@ -36,6 +39,8 @@ export const getVariantsForModel = (modelId: string) =>
   variants.filter((v) => v.modelId === modelId);
 export const getOwnerVoices = (modelId: string) =>
   ownerVoices.find((o) => o.modelId === modelId)?.voices ?? [];
+export const getDetailedReviews = (modelId: string) =>
+  detailedReviews.filter((r) => r.modelId === modelId);
 
 const SECTOR_REQUIREMENTS: Record<DriveSectorId, DriveMeasuredMetric[]> = {
   launch: ["zeroTo100"],

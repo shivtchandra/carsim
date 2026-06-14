@@ -144,3 +144,64 @@ export function radarScores(modelIds: string[]): Record<string, RadarScores> {
   }
   return out;
 }
+
+function rawMetricsWithFuel(m: Model, fuel: string) {
+  const allVs = getVariantsForModel(m.id);
+  const vs = allVs.filter((v) => v.fuel === fuel);
+  const activeVs = vs.length > 0 ? vs : allVs;
+  const top = activeVs.reduce((a, b) => (b.priceExShowroom > a.priceExShowroom ? b : a), activeVs[0]);
+  const mid = [...activeVs].sort((a, b) => a.priceExShowroom - b.priceExShowroom)[Math.floor(activeVs.length / 2)];
+
+  const bestPw = Math.max(...activeVs.map((v) => v.engine.ps / (v.kerbWeight / 1000)));
+  const best100 = Math.min(...activeVs.map((v) => getTestData(v.id)?.zeroTo100.value ?? 99));
+  const performance = bestPw / 2 + (100 - best100 * 5);
+
+  const efficiency = Math.max(...activeVs.map((v) => v.realWorldFE));
+
+  const safetyFeatureCount = features.filter(
+    (f) => f.category === "safety" && top.featureIds.includes(f.id)
+  ).length;
+  const safety = (m.ncap.adultStars ?? 0) * 2 + safetyFeatureCount;
+
+  const featureScore = top.featureIds.reduce(
+    (s, id) => s + (features.find((f) => f.id === id)?.impactScore ?? 0),
+    0
+  );
+
+  const space = m.dimensions.bootLitres / 10 + m.dimensions.wheelbaseMm / 100;
+
+  const ownership = -estimate5yrCost(m, mid);
+  return { performance, efficiency, safety, features: featureScore, space, ownership };
+}
+
+export function radarScoresWithFuel(selections: { modelId: string; fuel: string }[]): Record<string, RadarScores> {
+  const allCombinations: { key: string; raw: any }[] = [];
+  for (const m of models) {
+    const vs = getVariantsForModel(m.id);
+    const uniqueFuels = Array.from(new Set(vs.map((v) => v.fuel)));
+    for (const fuel of uniqueFuels) {
+      allCombinations.push({
+        key: `${m.id}-${fuel}`,
+        raw: rawMetricsWithFuel(m, fuel),
+      });
+    }
+  }
+
+  const axes = ["performance", "efficiency", "safety", "features", "space", "ownership"] as const;
+  const out: Record<string, RadarScores> = {};
+
+  for (const sel of selections) {
+    const key = `${sel.modelId}-${sel.fuel}`;
+    const match = allCombinations.find((c) => c.key === key);
+    if (!match) continue;
+
+    const scored = {} as RadarScores;
+    for (const axis of axes) {
+      const vals = allCombinations.map((a) => a.raw[axis]);
+      const min = Math.min(...vals), max = Math.max(...vals);
+      scored[axis] = max === min ? 5.5 : 1 + ((match.raw[axis] - min) / (max - min)) * 9;
+    }
+    out[key] = scored;
+  }
+  return out;
+}

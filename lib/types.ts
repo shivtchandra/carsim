@@ -185,3 +185,18 @@ export interface OwnerVoices {
   modelId: string;
   voices: OwnerVoice[];
 }
+
+export interface DetailedReview {
+  id: string;
+  modelId: string;
+  source: string;
+  username: string;
+  rating: number;
+  fuel: Fuel;
+  transmission: Transmission | string;
+  date: string;
+  sentiment: "positive" | "negative" | "mixed";
+  text: string;
+  upvotes: number;
+}
+

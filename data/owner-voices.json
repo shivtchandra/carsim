@@ -691,6 +691,11 @@
         "theme": "Standard safety",
         "sentiment": "positive",
         "text": "6 airbags and ESC standard across the range is highly appreciated for a budget hatchback."
+      },
+      {
+        "theme": "Cabin ambiance",
+        "sentiment": "mixed",
+        "text": "Rear legroom is decent, but some owners note that the dark interior theme makes the cabin feel slightly claustrophobic compared to the older model."
       }
     ]
   },
@@ -711,6 +716,11 @@
         "theme": "Refinement",
         "sentiment": "mixed",
         "text": "It shares the Swift's Z12E 3-cylinder engine; it is efficient but sounds vocal when revved hard."
+      },
+      {
+        "theme": "Price value",
+        "sentiment": "negative",
+        "text": "Top automatic and sunroof trims cross the ₹10 Lakh mark ex-showroom, which feels steep for a sub-4m compact sedan."
       }
     ]
   },
@@ -731,6 +741,11 @@
         "theme": "Highway performance",
         "sentiment": "mixed",
         "text": "Excellent in town, but the NA i-VTEC lacks mid-range punch; it needs to be revved high to overtake on highways."
+      },
+      {
+        "theme": "No CNG or Turbo options",
+        "sentiment": "negative",
+        "text": "Unlike Maruti and Tata rivals, Honda does not offer factory-fitted CNG or a punchy turbo engine, limiting its choice for performance seekers or high-mileage running."
       }
     ]
   },
@@ -751,6 +766,11 @@
         "theme": "Engine Refinement",
         "sentiment": "mixed",
         "text": "Enthusiastic power delivery but idle vibrations reveal it's a 3-cylinder."
+      },
+      {
+        "theme": "AC controls",
+        "sentiment": "negative",
+        "text": "Capacitive touch controls for the air conditioning are universally disliked by owners, who find them distracting to use on the move."
       }
     ]
   },
@@ -771,6 +791,11 @@
         "theme": "Ride Quality",
         "sentiment": "mixed",
         "text": "Smooth on flat roads, but gets jittery over sharp potholes."
+      },
+      {
+        "theme": "Regen & Braking",
+        "sentiment": "mixed",
+        "text": "Strong regenerative braking is great for city driving but takes time to master; passengers sometimes report feeling car sick due to the sudden deceleration."
       }
     ]
   },
@@ -791,6 +816,11 @@
         "theme": "Cabin Plastics",
         "sentiment": "negative",
         "text": "Plastics on the lower dashboard feel hard and scratchy."
+      },
+      {
+        "theme": "Service & Warranty",
+        "sentiment": "positive",
+        "text": "Toyota's 3-year/100,000 km standard warranty and reliable service centers give peace of mind over its Maruti twin."
       }
     ]
   },
@@ -811,6 +841,11 @@
         "theme": "Gearbox",
         "sentiment": "mixed",
         "text": "Clutch is a bit heavy, miss having an automatic option in traffic."
+      },
+      {
+        "theme": "NVH levels",
+        "sentiment": "mixed",
+        "text": "Excellent road insulation, but the 2.4 diesel becomes noisy and booms inside the cabin when pushed hard on expressways."
       }
     ]
   },
@@ -831,6 +866,11 @@
         "theme": "Highway Manner",
         "sentiment": "mixed",
         "text": "Fine for relaxed cruising, but lacks quick highway overtaking power."
+      },
+      {
+        "theme": "Safety Features",
+        "sentiment": "positive",
+        "text": "Having 6 standard airbags and a factory-fitted dual dashcam at this price point is highly rated by owners."
       }
     ]
   },
@@ -851,6 +891,11 @@
         "theme": "Ground Clearance",
         "sentiment": "mixed",
         "text": "Need to be careful over tall speedbreakers when fully loaded."
+      },
+      {
+        "theme": "Charging Speed",
+        "sentiment": "positive",
+        "text": "Owners report that the 800V architecture charges the battery incredibly fast, taking just 18 minutes from 10% to 80% on a 350kW DC charger."
       }
     ]
   },
@@ -866,6 +911,16 @@
         "theme": "Steering Feedback",
         "sentiment": "mixed",
         "text": "Very light and easy in the city, but feels artificial on the highway."
+      },
+      {
+        "theme": "Cabin Comfort",
+        "sentiment": "positive",
+        "text": "Surprisingly roomy for a compact crossover with soft-touch materials on the dashboard."
+      },
+      {
+        "theme": "Dealer Support",
+        "sentiment": "negative",
+        "text": "Being a new entrant, the thin dealer network makes early buyers hesitate about long-term parts availability."
       }
     ]
   },
@@ -881,6 +936,16 @@
         "theme": "Network Support",
         "sentiment": "mixed",
         "text": "Great EV product, but VinFast dealerships are still sparse."
+      },
+      {
+        "theme": "Looks & Styling",
+        "sentiment": "positive",
+        "text": "The radical coupe-like exterior gets a lot of attention on the road, with clean styling that feels ahead of its time."
+      },
+      {
+        "theme": "Rear Headroom",
+        "sentiment": "negative",
+        "text": "The sloping roofline cuts into rear headroom, making it a bit tight for tall passengers."
       }
     ]
   },
@@ -901,6 +966,11 @@
         "theme": "Space",
         "sentiment": "mixed",
         "text": "Boot is decent, but rear legroom is only average for this price."
+      },
+      {
+        "theme": "Ride Comfort",
+        "sentiment": "positive",
+        "text": "Suspension absorbs speed bumps and city potholes with ease, maintaining a plush, typical luxury feel."
       }
     ]
   },
@@ -921,6 +991,11 @@
         "theme": "Fuel Bills",
         "sentiment": "negative",
         "text": "Heavy SUV + petrol engine means fuel bills are quite high."
+      },
+      {
+        "theme": "Design Appeal",
+        "sentiment": "mixed",
+        "text": "The design is elegant and understated, but some owners feel it looks too similar to older model years and lacks flash."
       }
     ]
   }
