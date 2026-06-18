@@ -12,6 +12,7 @@ export const COLLECTIONS = {
   costParams: "costParams",
   upgradeInsights: "upgradeInsights",
   imageSources: "imageSources",
+  communityWallPosts: "communityWallPosts",
   meta: "meta",
   communityWallPosts: "communityWallPosts",
 } as const;

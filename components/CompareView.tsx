@@ -10,7 +10,7 @@ import { estimate5yrCost, radarScoresWithFuel } from "@/lib/scores";
 import EstimatedBadge from "./EstimatedBadge";
 import CarPhoto from "./CarPhoto";
 import OwnerVoicesPanel from "./OwnerVoicesPanel";
-
+import ModelSelect from "./sims/ModelSelect";
 const AXES = [
   { key: "performance", label: "Performance" },
   { key: "efficiency", label: "Efficiency" },
@@ -149,21 +149,12 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
           return (
             <div key={i} className="flex flex-col gap-2 glass p-4">
               <span className="text-[10px] font-mono text-secondary uppercase tracking-wider">Slot {i + 1}</span>
-              <select
+              <ModelSelect
                 value={selection?.modelId ?? ""}
-                onChange={(e) => setSlotModel(i, e.target.value)}
-                className="w-full px-3 py-2 text-sm bg-transparent border border-[#161616]/10 rounded-xl outline-none [&>option]:bg-[#ECE7DF] text-primary"
-                aria-label={`Car ${i + 1}`}
-              >
-                <option value="">{i < 2 ? "Pick a car" : "— add a third (optional) —"}</option>
-                {models
-                  .filter((m) => !selections.some((s, idx) => idx !== i && s.modelId === m.id))
-                  .map((m) => (
-                    <option key={m.id} value={m.id}>
-                      {getBrand(m.brandId)?.name} {m.name}
-                    </option>
-                  ))}
-              </select>
+                onChange={(val) => setSlotModel(i, val)}
+                label={i < 2 ? "Pick a car" : "— add a third (optional) —"}
+                allowNone={i >= 2}
+              />
 
               {selection && uniqueFuels.length > 0 && (
                 <div className="flex gap-2 items-center text-xs mt-1.5">

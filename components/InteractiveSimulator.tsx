@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { Zap } from "lucide-react";
+import DriveSelect from "@/components/ui/DriveSelect";
 
 const CITIES = [
   { id: "mumbai", name: "Mumbai", petrol: 104.2, diesel: 92.1, cng: 87.5, ev: 8.2 },
@@ -175,29 +176,29 @@ export default function InteractiveSimulator() {
             <div className="grid grid-cols-2 gap-4">
               <label className="block text-sm">
                 <span className="text-secondary text-xs block mb-1.5 font-medium">Select City</span>
-                <select
+                <DriveSelect
                   value={cityId}
-                  onChange={(e) => setCityId(e.target.value)}
-                  className="glass w-full px-3 py-2 bg-transparent text-sm outline-none border border-[#161616]/15 rounded-xl [&>option]:bg-[#ECE7DF] text-primary"
-                >
-                  {CITIES.map((c) => (
-                    <option key={c.id} value={c.id}>{c.name}</option>
-                  ))}
-                </select>
+                  onChange={setCityId}
+                  ariaLabel="Select City"
+                  options={CITIES.map((c) => ({ value: c.id, label: c.name }))}
+                  className="w-full"
+                />
               </label>
 
               <label className="block text-sm">
                 <span className="text-secondary text-xs block mb-1.5 font-medium">Fuel Profile</span>
-                <select
+                <DriveSelect
                   value={fuelType}
-                  onChange={(e) => setFuelType(e.target.value as any)}
-                  className="glass w-full px-3 py-2 bg-transparent text-sm outline-none border border-[#161616]/15 rounded-xl [&>option]:bg-[#ECE7DF] text-primary"
-                >
-                  <option value="petrol">Petrol</option>
-                  <option value="diesel">Diesel</option>
-                  <option value="ev">Electric (EV)</option>
-                  <option value="cng">CNG</option>
-                </select>
+                  onChange={(val) => setFuelType(val as any)}
+                  ariaLabel="Fuel Profile"
+                  options={[
+                    { value: "petrol", label: "Petrol" },
+                    { value: "diesel", label: "Diesel" },
+                    { value: "ev", label: "Electric (EV)" },
+                    { value: "cng", label: "CNG" },
+                  ]}
+                  className="w-full"
+                />
               </label>
             </div>
           </div>

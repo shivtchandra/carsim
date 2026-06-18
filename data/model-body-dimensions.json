@@ -1,42 +1,282 @@
 {
-  "hyundai-creta": { "lengthMm": 4300, "widthMm": 1790, "heightMm": 1635 },
-  "kia-seltos": { "lengthMm": 4365, "widthMm": 1800, "heightMm": 1645 },
-  "maruti-grand-vitara": { "lengthMm": 4365, "widthMm": 1795, "heightMm": 1640 },
-  "toyota-hyryder": { "lengthMm": 4365, "widthMm": 1795, "heightMm": 1640 },
-  "honda-elevate": { "lengthMm": 4312, "widthMm": 1790, "heightMm": 1699 },
-  "vw-taigun": { "lengthMm": 4221, "widthMm": 1760, "heightMm": 1612 },
-  "skoda-kushaq": { "lengthMm": 4225, "widthMm": 1760, "heightMm": 1612 },
-  "tata-curvv": { "lengthMm": 4308, "widthMm": 1815, "heightMm": 1600 },
-  "mahindra-xuv-3xo": { "lengthMm": 3987, "widthMm": 1821, "heightMm": 1637 },
-  "mg-astor": { "lengthMm": 4323, "widthMm": 1809, "heightMm": 1650 },
-  "tata-nexon": { "lengthMm": 3993, "widthMm": 1811, "heightMm": 1607 },
-  "maruti-brezza": { "lengthMm": 3995, "widthMm": 1795, "heightMm": 1685 },
-  "hyundai-venue": { "lengthMm": 3995, "widthMm": 1770, "heightMm": 1617 },
-  "kia-sonet": { "lengthMm": 3995, "widthMm": 1790, "heightMm": 1642 },
-  "tata-punch": { "lengthMm": 3827, "widthMm": 1742, "heightMm": 1615 },
-  "renault-kiger": { "lengthMm": 3991, "widthMm": 1751, "heightMm": 1608 },
-  "nissan-magnite": { "lengthMm": 3994, "widthMm": 1758, "heightMm": 1572 },
-  "honda-city": { "lengthMm": 4589, "widthMm": 1748, "heightMm": 1489 },
-  "hyundai-verna": { "lengthMm": 4535, "widthMm": 1765, "heightMm": 1485 },
-  "vw-virtus": { "lengthMm": 4561, "widthMm": 1752, "heightMm": 1507 },
-  "skoda-slavia": { "lengthMm": 4541, "widthMm": 1752, "heightMm": 1507 },
-  "mahindra-scorpio-n": { "lengthMm": 4662, "widthMm": 1917, "heightMm": 1857 },
-  "mahindra-xuv700": { "lengthMm": 4695, "widthMm": 1890, "heightMm": 1755 },
-  "tata-harrier": { "lengthMm": 4598, "widthMm": 1894, "heightMm": 1706 },
-  "mg-hector": { "lengthMm": 4655, "widthMm": 1835, "heightMm": 1760 },
-  "mg-windsor": { "lengthMm": 4565, "widthMm": 1865, "heightMm": 1718 },
-  "mahindra-thar-roxx": { "lengthMm": 4428, "widthMm": 1870, "heightMm": 1850 },
-  "maruti-swift": { "lengthMm": 3860, "widthMm": 1735, "heightMm": 1495 },
-  "maruti-dzire": { "lengthMm": 3995, "widthMm": 1735, "heightMm": 1515 },
-  "honda-amaze": { "lengthMm": 3995, "widthMm": 1695, "heightMm": 1508 },
-  "skoda-kylaq": { "lengthMm": 3995, "widthMm": 1791, "heightMm": 1612 },
-  "mg-zs-ev": { "lengthMm": 4319, "widthMm": 1809, "heightMm": 1649 },
-  "toyota-taisor": { "lengthMm": 3995, "widthMm": 1795, "heightMm": 1550 },
-  "toyota-crysta": { "lengthMm": 4695, "widthMm": 1830, "heightMm": 1760 },
-  "hyundai-exter": { "lengthMm": 3995, "widthMm": 1795, "heightMm": 1518 },
-  "hyundai-ioniq5": { "lengthMm": 4635, "widthMm": 1890, "heightMm": 1605 },
-  "vinfast-vf6": { "lengthMm": 4308, "widthMm": 1820, "heightMm": 1636 },
-  "vinfast-vf7": { "lengthMm": 4545, "widthMm": 1890, "heightMm": 1635 },
-  "audi-q3": { "lengthMm": 4485, "widthMm": 1849, "heightMm": 1616 },
-  "audi-q5": { "lengthMm": 4689, "widthMm": 1893, "heightMm": 1659 }
+  "hyundai-creta": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1635
+  },
+  "kia-seltos": {
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1645
+  },
+  "maruti-grand-vitara": {
+    "lengthMm": 4365,
+    "widthMm": 1795,
+    "heightMm": 1640
+  },
+  "toyota-hyryder": {
+    "lengthMm": 4365,
+    "widthMm": 1795,
+    "heightMm": 1640
+  },
+  "honda-elevate": {
+    "lengthMm": 4312,
+    "widthMm": 1790,
+    "heightMm": 1699
+  },
+  "vw-taigun": {
+    "lengthMm": 4221,
+    "widthMm": 1760,
+    "heightMm": 1612
+  },
+  "skoda-kushaq": {
+    "lengthMm": 4225,
+    "widthMm": 1760,
+    "heightMm": 1612
+  },
+  "tata-curvv": {
+    "lengthMm": 4308,
+    "widthMm": 1815,
+    "heightMm": 1600
+  },
+  "mahindra-xuv-3xo": {
+    "lengthMm": 3987,
+    "widthMm": 1821,
+    "heightMm": 1637
+  },
+  "mg-astor": {
+    "lengthMm": 4323,
+    "widthMm": 1809,
+    "heightMm": 1650
+  },
+  "tata-nexon": {
+    "lengthMm": 3993,
+    "widthMm": 1811,
+    "heightMm": 1607
+  },
+  "maruti-brezza": {
+    "lengthMm": 3995,
+    "widthMm": 1795,
+    "heightMm": 1685
+  },
+  "hyundai-venue": {
+    "lengthMm": 3995,
+    "widthMm": 1770,
+    "heightMm": 1617
+  },
+  "kia-sonet": {
+    "lengthMm": 3995,
+    "widthMm": 1790,
+    "heightMm": 1642
+  },
+  "tata-punch": {
+    "lengthMm": 3827,
+    "widthMm": 1742,
+    "heightMm": 1615
+  },
+  "renault-kiger": {
+    "lengthMm": 3991,
+    "widthMm": 1751,
+    "heightMm": 1608
+  },
+  "nissan-magnite": {
+    "lengthMm": 3994,
+    "widthMm": 1758,
+    "heightMm": 1572
+  },
+  "honda-city": {
+    "lengthMm": 4589,
+    "widthMm": 1748,
+    "heightMm": 1489
+  },
+  "hyundai-verna": {
+    "lengthMm": 4535,
+    "widthMm": 1765,
+    "heightMm": 1485
+  },
+  "vw-virtus": {
+    "lengthMm": 4561,
+    "widthMm": 1752,
+    "heightMm": 1507
+  },
+  "skoda-slavia": {
+    "lengthMm": 4541,
+    "widthMm": 1752,
+    "heightMm": 1507
+  },
+  "mahindra-scorpio-n": {
+    "lengthMm": 4662,
+    "widthMm": 1917,
+    "heightMm": 1857
+  },
+  "mahindra-xuv700": {
+    "lengthMm": 4695,
+    "widthMm": 1890,
+    "heightMm": 1755
+  },
+  "tata-harrier": {
+    "lengthMm": 4598,
+    "widthMm": 1894,
+    "heightMm": 1706
+  },
+  "mg-hector": {
+    "lengthMm": 4655,
+    "widthMm": 1835,
+    "heightMm": 1760
+  },
+  "mg-windsor": {
+    "lengthMm": 4565,
+    "widthMm": 1865,
+    "heightMm": 1718
+  },
+  "mahindra-thar-roxx": {
+    "lengthMm": 4428,
+    "widthMm": 1870,
+    "heightMm": 1850
+  },
+  "maruti-swift": {
+    "lengthMm": 3860,
+    "widthMm": 1735,
+    "heightMm": 1495
+  },
+  "maruti-dzire": {
+    "lengthMm": 3995,
+    "widthMm": 1735,
+    "heightMm": 1515
+  },
+  "honda-amaze": {
+    "lengthMm": 3995,
+    "widthMm": 1695,
+    "heightMm": 1508
+  },
+  "skoda-kylaq": {
+    "lengthMm": 3995,
+    "widthMm": 1791,
+    "heightMm": 1612
+  },
+  "mg-zs-ev": {
+    "lengthMm": 4319,
+    "widthMm": 1809,
+    "heightMm": 1649
+  },
+  "toyota-taisor": {
+    "lengthMm": 3995,
+    "widthMm": 1795,
+    "heightMm": 1550
+  },
+  "toyota-crysta": {
+    "lengthMm": 4695,
+    "widthMm": 1830,
+    "heightMm": 1760
+  },
+  "hyundai-exter": {
+    "lengthMm": 3995,
+    "widthMm": 1795,
+    "heightMm": 1518
+  },
+  "hyundai-ioniq5": {
+    "lengthMm": 4635,
+    "widthMm": 1890,
+    "heightMm": 1605
+  },
+  "vinfast-vf6": {
+    "lengthMm": 4308,
+    "widthMm": 1820,
+    "heightMm": 1636
+  },
+  "vinfast-vf7": {
+    "lengthMm": 4545,
+    "widthMm": 1890,
+    "heightMm": 1635
+  },
+  "audi-q3": {
+    "lengthMm": 4485,
+    "widthMm": 1849,
+    "heightMm": 1616
+  },
+  "audi-q5": {
+    "lengthMm": 4689,
+    "widthMm": 1893,
+    "heightMm": 1659
+  },
+  "tata-safari": {
+    "lengthMm": 4668,
+    "widthMm": 1922,
+    "heightMm": 1795
+  },
+  "tata-altroz": {
+    "lengthMm": 3990,
+    "widthMm": 1755,
+    "heightMm": 1523
+  },
+  "mahindra-thar": {
+    "lengthMm": 3985,
+    "widthMm": 1820,
+    "heightMm": 1844
+  },
+  "mahindra-scorpio-classic": {
+    "lengthMm": 4456,
+    "widthMm": 1820,
+    "heightMm": 1995
+  },
+  "mahindra-bolero": {
+    "lengthMm": 3995,
+    "widthMm": 1745,
+    "heightMm": 1880
+  },
+  "maruti-baleno": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1500
+  },
+  "maruti-fronx": {
+    "lengthMm": 3995,
+    "widthMm": 1765,
+    "heightMm": 1550
+  },
+  "maruti-ertiga": {
+    "lengthMm": 4395,
+    "widthMm": 1735,
+    "heightMm": 1690
+  },
+  "toyota-fortuner": {
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835
+  },
+  "hyundai-i20": {
+    "lengthMm": 3995,
+    "widthMm": 1775,
+    "heightMm": 1505
+  },
+  "hyundai-tucson": {
+    "lengthMm": 4630,
+    "widthMm": 1865,
+    "heightMm": 1665
+  },
+  "kia-carens": {
+    "lengthMm": 4540,
+    "widthMm": 1800,
+    "heightMm": 1700
+  },
+  "jeep-compass": {
+    "lengthMm": 4405,
+    "widthMm": 1818,
+    "heightMm": 1640
+  },
+  "byd-atto3": {
+    "lengthMm": 4455,
+    "widthMm": 1875,
+    "heightMm": 1615
+  },
+  "byd-seal": {
+    "lengthMm": 4800,
+    "widthMm": 1875,
+    "heightMm": 1460
+  },
+  "skoda-kodiaq": {
+    "lengthMm": 4697,
+    "widthMm": 1882,
+    "heightMm": 1676
+  }
 }

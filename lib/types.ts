@@ -231,4 +231,3 @@ export interface CommunityWallPost {
   createdAt: string;
   approvedAt: string | null;
 }
-

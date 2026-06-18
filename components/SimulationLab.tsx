@@ -10,6 +10,8 @@ const BrakingLab = dynamic(() => import("./sims/BrakingLab"));
 const HillClimb = dynamic(() => import("./sims/HillClimb"));
 const GroundClearance = dynamic(() => import("./sims/GroundClearance"));
 const CityDriving = dynamic(() => import("./sims/CityDriving"));
+const CorneringLab = dynamic(() => import("./sims/CorneringLab"));
+const EmergencySwerve = dynamic(() => import("./sims/EmergencySwerve"));
 const FeaturePlayground = dynamic(() => import("./sims/FeaturePlayground"));
 
 const DragRace3D = dynamic(() => import("./three/sims/DragRace3D"), { ssr: false });
@@ -17,6 +19,7 @@ const Overtake3D = dynamic(() => import("./three/sims/Overtake3D"), { ssr: false
 const Braking3D = dynamic(() => import("./three/sims/Braking3D"), { ssr: false });
 const HillClimb3D = dynamic(() => import("./three/sims/HillClimb3D"), { ssr: false });
 const GroundClearance3D = dynamic(() => import("./three/sims/GroundClearance3D"), { ssr: false });
+const Cornering3D = dynamic(() => import("./three/sims/Cornering3D"), { ssr: false });
 
 const TABS = [
   { id: "launch", label: "Launch Challenge" },
@@ -24,6 +27,8 @@ const TABS = [
   { id: "braking", label: "Braking Lab" },
   { id: "hill-climb", label: "Hill Climb" },
   { id: "clearance", label: "Ground Clearance" },
+  { id: "cornering", label: "Cornering Lab" },
+  { id: "swerve", label: "Emergency Swerve" },
   { id: "city", label: "City Simulator" },
   { id: "playground", label: "Feature Playground" },
 ] as const;
@@ -58,7 +63,7 @@ export default function SimulationLab({
   };
 
   const is3d = mode === "3d";
-  const has3dOption = tab === "launch" || tab === "overtake" || tab === "braking" || tab === "hill-climb" || tab === "clearance";
+  const has3dOption = tab === "launch" || tab === "overtake" || tab === "braking" || tab === "hill-climb" || tab === "clearance" || tab === "cornering";
 
   return (
     <div>
@@ -111,6 +116,9 @@ export default function SimulationLab({
             (is3d ? <HillClimb3D initialVariant={initialVariants[0]} /> : <HillClimb initialVariant={initialVariants[0]} />)}
           {tab === "clearance" &&
             (is3d ? <GroundClearance3D initialVariant={initialVariants[0]} /> : <GroundClearance initialVariant={initialVariants[0]} />)}
+          {tab === "cornering" &&
+            (is3d ? <Cornering3D initialVariant={initialVariants[0]} /> : <CorneringLab initialVariant={initialVariants[0]} />)}
+          {tab === "swerve" && <EmergencySwerve initialVariant={initialVariants[0]} />}
           {tab === "city" && <CityDriving initialVariant={initialVariants[0]} />}
           {tab === "playground" && <FeaturePlayground />}
         </>

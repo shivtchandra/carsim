@@ -998,5 +998,325 @@
         "text": "The design is elegant and understated, but some owners feel it looks too similar to older model years and lacks flash."
       }
     ]
+  },
+  {
+    "modelId": "tata-safari",
+    "voices": [
+      {
+        "theme": "Road Presence & Comfort",
+        "sentiment": "positive",
+        "text": "Owners consistently praise the imposing road presence and the plush captain seats in the middle row, making it an excellent highway cruiser."
+      },
+      {
+        "theme": "City Maneuverability",
+        "sentiment": "negative",
+        "text": "The steering feels heavy at parking speeds and its sheer size makes negotiating tight city lanes and U-turns a chore."
+      },
+      {
+        "theme": "Niggles",
+        "sentiment": "mixed",
+        "text": "Frequent complaints about minor infotainment software glitches, though subsequent updates have resolved most bugs."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-altroz",
+    "voices": [
+      {
+        "theme": "Safety & Stability",
+        "sentiment": "positive",
+        "text": "5-star crash safety and rock-solid high-speed stability give owners massive confidence on highway drives."
+      },
+      {
+        "theme": "Performance",
+        "sentiment": "negative",
+        "text": "The naturally aspirated 1.2L petrol engine is sluggish and feels underpowered when climbing inclines with a full load."
+      },
+      {
+        "theme": "DCA Gearbox",
+        "sentiment": "positive",
+        "text": "The dual-clutch transmission is smooth and jerk-free, a huge upgrade over laggy AMTs."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-thar",
+    "voices": [
+      {
+        "theme": "Off-road Heroics",
+        "sentiment": "positive",
+        "text": "Go-anywhere capability and massive ground clearance make it a blast for off-road excursions and weekend trails."
+      },
+      {
+        "theme": "Tarmac Comfort",
+        "sentiment": "negative",
+        "text": "The cabin is bumpy and passenger comfort is poor for long highway trips due to ladder-frame suspension."
+      },
+      {
+        "theme": "Rear Seat Access",
+        "sentiment": "mixed",
+        "text": "3-door layout makes ingress to the rear seats extremely awkward, but kids don't mind it."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-scorpio-classic",
+    "voices": [
+      {
+        "theme": "Iconic Stance",
+        "sentiment": "positive",
+        "text": "The iconic tower tail-lamps and commanding hood view remain massive selling points for traditional SUV lovers."
+      },
+      {
+        "theme": "Ride & Roll",
+        "sentiment": "negative",
+        "text": "High speed body roll is excessive, and the steering gets vague on expressway curves."
+      },
+      {
+        "theme": "Engine Pull",
+        "sentiment": "positive",
+        "text": "The mHawk engine is extremely driveable, pulling cleanly from low revs without needing constant downshifts."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-bolero",
+    "voices": [
+      {
+        "theme": "Indestructible Feel",
+        "sentiment": "positive",
+        "text": "The metal bumpers and robust chassis take a beating on rural roads without any rattles or panel gaps."
+      },
+      {
+        "theme": "Interior Features",
+        "sentiment": "negative",
+        "text": "Extremely basic cabin with hard plastics, zero touchscreens, and old-school digital dashboard gauges."
+      },
+      {
+        "theme": "Reliability",
+        "sentiment": "positive",
+        "text": "Unmatched mechanical reliability and spare parts availability in the remotest corners of the country."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-baleno",
+    "voices": [
+      {
+        "theme": "Mileage King",
+        "sentiment": "positive",
+        "text": "Fuel efficiency is exceptional, routinely returning 17-19 km/l in the city and over 22 km/l on highways."
+      },
+      {
+        "theme": "Cabin Space",
+        "sentiment": "positive",
+        "text": "The cabin feels airy and the rear legroom is best-in-class, easily seating three adults in comfort."
+      },
+      {
+        "theme": "Sheet Metal",
+        "sentiment": "negative",
+        "text": "Owners feel the body panels are thin and prone to minor door dings and scratches in tight parking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-fronx",
+    "voices": [
+      {
+        "theme": "Stunning Looks",
+        "sentiment": "positive",
+        "text": "Coupe-like sloping roof and connected rear LED bar give it a very modern, head-turning look."
+      },
+      {
+        "theme": "Boosterjet Performance",
+        "sentiment": "positive",
+        "text": "The 1.0L turbo petrol is snappy and eager, especially when paired with the 6-speed torque converter AT."
+      },
+      {
+        "theme": "Headroom",
+        "sentiment": "negative",
+        "text": "Tall rear passengers note that the sloping roofline slightly compromises headroom compared to Baleno."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-ertiga",
+    "voices": [
+      {
+        "theme": "Practical Package",
+        "sentiment": "positive",
+        "text": "The absolute best value 7-seater in India. Third row headroom and legroom are genuinely usable by adults."
+      },
+      {
+        "theme": "Frugal Running",
+        "sentiment": "positive",
+        "text": "The factory-fitted CNG version keeps running costs unbelievably low, making it the default fleet pick."
+      },
+      {
+        "theme": "Highway Pace",
+        "sentiment": "negative",
+        "text": "With 7 people and luggage, overtaking at speeds above 90 km/h requires planning and downshifting."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-fortuner",
+    "voices": [
+      {
+        "theme": "Bulletproof Trust",
+        "sentiment": "positive",
+        "text": "Incredible durability. Many owners have clocked 2 lakh+ km with nothing but routine oil changes and brake pads."
+      },
+      {
+        "theme": "Stiff Ride",
+        "sentiment": "negative",
+        "text": "The suspension is stiff and bouncy, tossing passengers around on city speed bumps and bad patches."
+      },
+      {
+        "theme": "Road Clearance & Presence",
+        "sentiment": "positive",
+        "text": "Massive road presence clears traffic, and the 225mm ground clearance ignores water logging completely."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-i20",
+    "voices": [
+      {
+        "theme": "Premium Feel",
+        "sentiment": "positive",
+        "text": "The interior materials, fit, and overall sound insulation feel a segment above. It feels like an imported hatchback."
+      },
+      {
+        "theme": "Safety Score",
+        "sentiment": "mixed",
+        "text": "While loaded with 6 airbags and safety tech, the 3-star GNCAP score leaves some buyers wanting more."
+      },
+      {
+        "theme": "Feature Richness",
+        "sentiment": "positive",
+        "text": "The Bose 7-speaker system, digital cluster, and electric sunroof make the cabin feel premium."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-tucson",
+    "voices": [
+      {
+        "theme": "Diesel Powerhouse",
+        "sentiment": "positive",
+        "text": "The 186PS diesel motor has relentless mid-range torque, pushing the car like a rocket on the highway."
+      },
+      {
+        "theme": "ADAS Usability",
+        "sentiment": "mixed",
+        "text": "Level 2 ADAS features like active lane assist work great on expressways but are too aggressive for city lanes."
+      },
+      {
+        "theme": "Luxury Quietness",
+        "sentiment": "positive",
+        "text": "Extremely silent cabin, zero diesel rattle inside, and plush leatherette seating make it feel like a luxury SUV."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-carens",
+    "voices": [
+      {
+        "theme": "One-touch Tumble",
+        "sentiment": "positive",
+        "text": "Electric double-tumble middle seat makes accessing the third row effortless even for elderly passengers."
+      },
+      {
+        "theme": "DCT Fuel Apprehension",
+        "sentiment": "negative",
+        "text": "The punchy turbo petrol DCT returns single digit fuel efficiency (7-8 km/l) in heavy city bumper-to-bumper crawls."
+      },
+      {
+        "theme": "Refined Engines",
+        "sentiment": "positive",
+        "text": "The 1.5L CRDi diesel is incredibly smooth and quiet, delivering a very relaxing driving experience."
+      }
+    ]
+  },
+  {
+    "modelId": "jeep-compass",
+    "voices": [
+      {
+        "theme": "European Dynamics",
+        "sentiment": "positive",
+        "text": "Ride and handling balance is phenomenal. The way it flat-curves highway bends at speed is unmatched."
+      },
+      {
+        "theme": "Rear Legroom",
+        "sentiment": "negative",
+        "text": "The rear seat feels cramped for three adults, and knee-room is less than some SUVs costing half the price."
+      },
+      {
+        "theme": "Solid Build",
+        "sentiment": "positive",
+        "text": "Doors shut with a heavy German thud. It feels exceptionally safe and built to last."
+      }
+    ]
+  },
+  {
+    "modelId": "byd-atto3",
+    "voices": [
+      {
+        "theme": "Blade Battery Safety",
+        "sentiment": "positive",
+        "text": "Blade battery technology gives peace of mind. Real-world range is a solid 400-420 km on a single charge."
+      },
+      {
+        "theme": "Quirky Cabin",
+        "sentiment": "mixed",
+        "text": "The red string door pockets and rotating center screen are fun, though some passengers find it a bit toy-like."
+      },
+      {
+        "theme": "EV Performance",
+        "sentiment": "positive",
+        "text": "Linear, instant acceleration makes overtaking a breeze. The cabin remains library-quiet at high speeds."
+      }
+    ]
+  },
+  {
+    "modelId": "byd-seal",
+    "voices": [
+      {
+        "theme": "Sports Car Speed",
+        "sentiment": "positive",
+        "text": "The 530PS AWD Performance model pulls like a supercar. 0-100 in 3.8s is mind-blowing at this price point."
+      },
+      {
+        "theme": "Low Clearance",
+        "sentiment": "negative",
+        "text": "Ground clearance of 120mm is very low. You must crawl diagonally over even average speed bumps."
+      },
+      {
+        "theme": "Modern Luxury",
+        "sentiment": "positive",
+        "text": "The cockpit looks like a jet fighter. Rotating 15.6-inch screen and ventilated sports seats are highly premium."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-kodiaq",
+    "voices": [
+      {
+        "theme": "DCC Suspensions",
+        "sentiment": "positive",
+        "text": "Dynamic Chassis Control makes a massive difference. Comfort mode floats over bumps; Sport mode firms it up for corners."
+      },
+      {
+        "theme": "Thirsty Petrol",
+        "sentiment": "negative",
+        "text": "The 2.0L TSI petrol is a gem but returns 7-9 km/l in the city. Fuel stops are frequent on long drives."
+      },
+      {
+        "theme": "Clever Details",
+        "sentiment": "positive",
+        "text": "Skoda's 'Simply Clever' features like door-edge protectors and umbrellas in doors are highly practical."
+      }
+    ]
   }
 ]

@@ -35,9 +35,37 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "DriveScope — Find The Right Car. Not Just The Popular One.",
+  title: {
+    default: "DriveScope — Find The Right Car. Not Just The Popular One.",
+    template: "%s | DriveScope"
+  },
   description:
-    "India's intelligent car decision platform. Compare vehicles, simulate ownership costs, and understand which variant actually fits your life.",
+    "India's intelligent car decision platform. Compare vehicles, simulate ownership costs, and understand which variant actually fits your life. Stop guessing, start deciding.",
+  keywords: ["car comparison", "TCO calculator", "buy car in India", "car simulator", "vehicle decision engine", "DriveScope", "car specs", "ownership cost"],
+  openGraph: {
+    title: "DriveScope — Intelligent Car Decision Engine",
+    description: "Compare vehicles, simulate ownership costs, and understand which variant actually fits your life. Real physics. Real costs.",
+    url: "/",
+    siteName: "DriveScope",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DriveScope — Intelligent Car Decision Engine",
+    description: "Compare vehicles, simulate ownership costs, and understand which variant actually fits your life. Real physics. Real costs.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -51,6 +79,26 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${cormorantGaramond.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "DriveScope",
+              "url": "https://drivescope.com", // use actual domain when deployed
+              "description": "India's intelligent car decision platform.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://drivescope.com/explore?search={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
         <FirebaseAnalytics />
         <Navbar />
         <main className="flex-1">{children}</main>

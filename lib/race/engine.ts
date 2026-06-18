@@ -47,6 +47,7 @@ export interface EntrantConfig {
   kerbWeight: number;
   controller: RaceController;
   startLaneOffset?: number;
+  espAssist?: boolean;
 }
 
 export interface Entrant extends EntrantConfig {
@@ -58,6 +59,8 @@ export interface Entrant extends EntrantConfig {
   finished: boolean;
   finishTimeS: number | null;
   position: number; // standings 1..N
+  spinYaw?: number; // yaw spin angle in radians
+  spinYawVel?: number; // yaw spin velocity in radians/sec
 }
 
 export type RacePhase = "countdown" | "racing" | "finished";
@@ -89,6 +92,8 @@ export function createRaceWorld(track: CompiledTrack, configs: EntrantConfig[]):
     finished: false,
     finishTimeS: null,
     position: 0,
+    spinYaw: 0,
+    spinYawVel: 0,
   }));
   return { track, entrants, elapsedS: 0, phase: "countdown", countdownS: COUNTDOWN_S };
 }
@@ -172,6 +177,13 @@ export function stepRaceWorld(world: RaceWorld, dt: number, humanInputs: RaceInp
       ? { throttle: humanInputs.throttle, brake: humanInputs.brake }
       : e.controller.decide({ state: e.state, spec: e.spec, kerbWeight: e.kerbWeight, track: world.track });
 
+    // ESP / Active Stability Control
+    const espActive = e.espAssist ?? true;
+    if (espActive && e.state.slideAmount && e.state.slideAmount > 0.1) {
+      inputs.throttle *= Math.max(0.1, 1 - e.state.slideAmount * 1.5);
+      inputs.brake = Math.max(inputs.brake, e.state.slideAmount * 0.6);
+    }
+
     // Dynamic Grip Physics - Traction Circle & Drift sliding
     const mu = muFor(sample.surface, e.kerbWeight, e.spec.t100);
     const fMax = mu * 9.81; // Max grip acceleration in m/s2
@@ -235,6 +247,28 @@ export function stepRaceWorld(world: RaceWorld, dt: number, humanInputs: RaceInp
 
     e.laneOffset += latVel * dt;
     e.state.lateralVel = latVel;
+
+    // Yaw Spin calculations
+    if (!e.spinYaw) e.spinYaw = 0;
+    if (!e.spinYawVel) e.spinYawVel = 0;
+    
+    let yawAccel = 0;
+    if (!espActive && e.state.slideAmount && e.state.slideAmount > 0.3) {
+      // Torque applied from slip pulling the car sideways
+      yawAccel = 8.0 * (e.state.slideAmount - 0.2);
+      // Bleed forward speed due to tyre scrubbing sideways
+      e.state.speedKmh = Math.max(0, e.state.speedKmh - e.state.slideAmount * 35 * dt);
+    } else {
+      // Tyre self-aligning torque to return the car to centerline direction
+      yawAccel = -12.0 * e.spinYaw;
+    }
+
+    // Integrate angular velocity & apply heavy rotational damping
+    e.spinYawVel += yawAccel * dt;
+    e.spinYawVel *= Math.max(0, 1 - 4.5 * dt);
+    
+    // Integrate yaw angle
+    e.spinYaw += e.spinYawVel * dt;
 
     // Wall impact boundaries check
     const trackHalfWidth = world.track.width - 0.4;

@@ -1,103 +1,465 @@
 {
   "hyundai-creta": {
-    "signatureElements": ["parametric-grille", "split-headlamp", "roof-rails"],
+    "signatureElements": [
+      "parametric-grille",
+      "split-headlamp",
+      "roof-rails"
+    ],
     "environment": "highway",
     "cameraPreset": "family-suv",
     "wheelInches": 17
   },
   "kia-seltos": {
-    "signatureElements": ["tiger-nose-grille", "star-map-drl", "roof-rails", "muscle-shoulders"],
+    "signatureElements": [
+      "tiger-nose-grille",
+      "star-map-drl",
+      "roof-rails",
+      "muscle-shoulders"
+    ],
     "environment": "highway",
-    "proportions": { "shoulderWidth": 1.05 }
+    "proportions": {
+      "shoulderWidth": 1.05
+    }
   },
   "mahindra-xuv700": {
     "archetype": "midsize-suv",
-    "signatureElements": ["vertical-slat-grille", "c-shape-drl", "flush-handles", "muscle-shoulders"],
+    "signatureElements": [
+      "vertical-slat-grille",
+      "c-shape-drl",
+      "flush-handles",
+      "muscle-shoulders"
+    ],
     "environment": "highway",
     "wheelInches": 18
   },
   "mahindra-thar-roxx": {
     "archetype": "offroad-box",
-    "signatureElements": ["round-headlamps", "boxy-profile", "vertical-slat-grille"],
+    "signatureElements": [
+      "round-headlamps",
+      "boxy-profile",
+      "vertical-slat-grille"
+    ],
     "environment": "mountain-trail",
     "cameraPreset": "offroad-hero",
-    "proportions": { "boxiness": 0.95, "rideHeight": 1.2 }
+    "proportions": {
+      "boxiness": 0.95,
+      "rideHeight": 1.2
+    }
   },
   "vw-virtus": {
     "archetype": "midsize-sedan",
-    "signatureElements": ["fastback-sedan", "split-headlamp", "parametric-grille"],
+    "signatureElements": [
+      "fastback-sedan",
+      "split-headlamp",
+      "parametric-grille"
+    ],
     "environment": "expressway",
     "cameraPreset": "sport-sedan"
   },
   "hyundai-verna": {
-    "signatureElements": ["fastback-sedan", "parametric-grille", "split-headlamp", "connected-drl"],
+    "signatureElements": [
+      "fastback-sedan",
+      "parametric-grille",
+      "split-headlamp",
+      "connected-drl"
+    ],
     "environment": "expressway"
   },
   "honda-city": {
-    "signatureElements": ["notchback-sedan", "split-headlamp", "parametric-grille"],
+    "signatureElements": [
+      "notchback-sedan",
+      "split-headlamp",
+      "parametric-grille"
+    ],
     "environment": "expressway"
   },
   "tata-harrier": {
     "archetype": "midsize-suv",
-    "signatureElements": ["connected-drl", "vertical-slat-grille", "clamshell-hood", "floating-roof"],
-    "proportions": { "boxiness": 0.4, "shoulderWidth": 1.1 }
+    "signatureElements": [
+      "connected-drl",
+      "vertical-slat-grille",
+      "clamshell-hood",
+      "floating-roof"
+    ],
+    "proportions": {
+      "boxiness": 0.4,
+      "shoulderWidth": 1.1
+    }
   },
   "tata-nexon": {
     "archetype": "sub-4m-suv",
-    "signatureElements": ["connected-drl", "clamshell-hood", "split-headlamp"],
+    "signatureElements": [
+      "connected-drl",
+      "clamshell-hood",
+      "split-headlamp"
+    ],
     "environment": "urban-family"
   },
   "tata-punch": {
     "archetype": "sub-4m-suv",
-    "signatureElements": ["split-headlamp", "boxy-profile", "vertical-slat-grille"],
-    "proportions": { "boxiness": 0.55, "rideHeight": 1.12 }
+    "signatureElements": [
+      "split-headlamp",
+      "boxy-profile",
+      "vertical-slat-grille"
+    ],
+    "proportions": {
+      "boxiness": 0.55,
+      "rideHeight": 1.12
+    }
   },
   "mahindra-scorpio-n": {
     "archetype": "midsize-suv",
-    "signatureElements": ["boxy-profile", "vertical-slat-grille", "round-headlamps", "muscle-shoulders"],
-    "proportions": { "boxiness": 0.65, "rideHeight": 1.12 },
+    "signatureElements": [
+      "boxy-profile",
+      "vertical-slat-grille",
+      "round-headlamps",
+      "muscle-shoulders"
+    ],
+    "proportions": {
+      "boxiness": 0.65,
+      "rideHeight": 1.12
+    },
     "environment": "mountain-trail"
   },
   "hyundai-ioniq5": {
     "archetype": "ev-crossover",
-    "signatureElements": ["connected-drl", "clamshell-hood", "flush-handles", "floating-roof"],
+    "signatureElements": [
+      "connected-drl",
+      "clamshell-hood",
+      "flush-handles",
+      "floating-roof"
+    ],
     "environment": "futuristic-night",
     "cameraPreset": "ev-future",
     "wheelInches": 20
   },
   "mg-zs-ev": {
     "archetype": "ev-crossover",
-    "signatureElements": ["connected-drl", "floating-roof", "star-map-drl"],
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof",
+      "star-map-drl"
+    ],
     "environment": "futuristic-night"
   },
   "audi-q3": {
     "archetype": "premium-suv",
-    "signatureElements": ["vertical-slat-grille", "split-headlamp", "flush-handles"],
+    "signatureElements": [
+      "vertical-slat-grille",
+      "split-headlamp",
+      "flush-handles"
+    ],
     "environment": "expressway",
     "cameraPreset": "luxury-turntable",
     "wheelInches": 19
   },
   "audi-q5": {
     "archetype": "premium-suv",
-    "signatureElements": ["vertical-slat-grille", "c-shape-drl", "flush-handles", "muscle-shoulders"],
+    "signatureElements": [
+      "vertical-slat-grille",
+      "c-shape-drl",
+      "flush-handles",
+      "muscle-shoulders"
+    ],
     "wheelInches": 20
   },
   "maruti-swift": {
     "archetype": "compact-hatch",
-    "signatureElements": ["connected-drl", "floating-roof"],
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof"
+    ],
     "environment": "city"
   },
   "maruti-grand-vitara": {
-    "signatureElements": ["connected-drl", "parametric-grille", "roof-rails", "floating-roof"],
+    "signatureElements": [
+      "connected-drl",
+      "parametric-grille",
+      "roof-rails",
+      "floating-roof"
+    ],
     "environment": "highway",
-    "proportions": { "cabinRatio": 0.9, "shoulderWidth": 1.02 }
+    "proportions": {
+      "cabinRatio": 0.9,
+      "shoulderWidth": 1.02
+    }
   },
   "honda-elevate": {
-    "signatureElements": ["parametric-grille", "split-headlamp", "roof-rails"],
-    "proportions": { "boxiness": 0.2 }
+    "signatureElements": [
+      "parametric-grille",
+      "split-headlamp",
+      "roof-rails"
+    ],
+    "proportions": {
+      "boxiness": 0.2
+    }
   },
   "tata-curvv": {
-    "signatureElements": ["connected-drl", "clamshell-hood", "floating-roof", "fastback-sedan"],
-    "proportions": { "cabinRatio": 0.85, "shoulderWidth": 1.06 }
+    "signatureElements": [
+      "connected-drl",
+      "clamshell-hood",
+      "floating-roof",
+      "fastback-sedan"
+    ],
+    "proportions": {
+      "cabinRatio": 0.85,
+      "shoulderWidth": 1.06
+    }
+  },
+  "tata-safari": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof",
+      "vertical-slat-grille",
+      "clamshell-hood"
+    ],
+    "environment": "highway",
+    "cameraPreset": "family-suv",
+    "wheelInches": 19,
+    "proportions": {
+      "boxiness": 0.45,
+      "shoulderWidth": 1.09,
+      "rideHeight": 1.08
+    }
+  },
+  "tata-altroz": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof"
+    ],
+    "environment": "city",
+    "cameraPreset": "sport-sedan",
+    "wheelInches": 16,
+    "proportions": {
+      "boxiness": 0.2,
+      "shoulderWidth": 0.95,
+      "rideHeight": 0.9
+    }
+  },
+  "mahindra-thar": {
+    "archetype": "offroad-box",
+    "signatureElements": [
+      "round-headlamps",
+      "boxy-profile",
+      "vertical-slat-grille"
+    ],
+    "environment": "mountain-trail",
+    "cameraPreset": "offroad-hero",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.98,
+      "rideHeight": 1.22,
+      "shoulderWidth": 1.02
+    }
+  },
+  "mahindra-scorpio-classic": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "vertical-slat-grille",
+      "boxy-profile"
+    ],
+    "environment": "mountain-trail",
+    "cameraPreset": "family-suv",
+    "wheelInches": 17,
+    "proportions": {
+      "boxiness": 0.8,
+      "rideHeight": 1.15,
+      "shoulderWidth": 1.05
+    }
+  },
+  "mahindra-bolero": {
+    "archetype": "offroad-box",
+    "signatureElements": [
+      "boxy-profile",
+      "vertical-slat-grille",
+      "round-headlamps"
+    ],
+    "environment": "mountain-trail",
+    "cameraPreset": "offroad-hero",
+    "wheelInches": 15,
+    "proportions": {
+      "boxiness": 0.99,
+      "rideHeight": 1.15,
+      "shoulderWidth": 0.92
+    }
+  },
+  "maruti-baleno": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof"
+    ],
+    "environment": "city",
+    "cameraPreset": "sport-sedan",
+    "wheelInches": 16,
+    "proportions": {
+      "boxiness": 0.1,
+      "shoulderWidth": 0.94,
+      "rideHeight": 0.88
+    }
+  },
+  "maruti-fronx": {
+    "archetype": "sub-4m-suv",
+    "signatureElements": [
+      "connected-drl",
+      "split-headlamp",
+      "floating-roof"
+    ],
+    "environment": "urban-family",
+    "cameraPreset": "family-suv",
+    "wheelInches": 16,
+    "proportions": {
+      "boxiness": 0.22,
+      "shoulderWidth": 0.96,
+      "rideHeight": 1
+    }
+  },
+  "maruti-ertiga": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "connected-drl",
+      "floating-roof"
+    ],
+    "environment": "highway",
+    "cameraPreset": "family-suv",
+    "wheelInches": 15,
+    "proportions": {
+      "boxiness": 0.3,
+      "shoulderWidth": 0.95,
+      "rideHeight": 0.98
+    }
+  },
+  "toyota-fortuner": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "vertical-slat-grille",
+      "boxy-profile",
+      "muscle-shoulders",
+      "roof-rails"
+    ],
+    "environment": "mountain-trail",
+    "cameraPreset": "family-suv",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.5,
+      "shoulderWidth": 1.06,
+      "rideHeight": 1.14
+    }
+  },
+  "hyundai-i20": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "parametric-grille",
+      "split-headlamp",
+      "floating-roof"
+    ],
+    "environment": "city",
+    "cameraPreset": "sport-sedan",
+    "wheelInches": 16,
+    "proportions": {
+      "boxiness": 0.12,
+      "shoulderWidth": 0.96,
+      "rideHeight": 0.88
+    }
+  },
+  "hyundai-tucson": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "parametric-grille",
+      "split-headlamp",
+      "floating-roof",
+      "muscle-shoulders"
+    ],
+    "environment": "expressway",
+    "cameraPreset": "family-suv",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.28,
+      "shoulderWidth": 1.05,
+      "rideHeight": 1.02
+    }
+  },
+  "kia-carens": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "tiger-nose-grille",
+      "star-map-drl",
+      "floating-roof"
+    ],
+    "environment": "urban-family",
+    "cameraPreset": "family-suv",
+    "wheelInches": 16,
+    "proportions": {
+      "boxiness": 0.35,
+      "shoulderWidth": 1.02,
+      "rideHeight": 1
+    }
+  },
+  "jeep-compass": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "vertical-slat-grille",
+      "muscle-shoulders",
+      "boxy-profile"
+    ],
+    "environment": "highway",
+    "cameraPreset": "luxury-turntable",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.45,
+      "shoulderWidth": 1.03,
+      "rideHeight": 1.05
+    }
+  },
+  "byd-atto3": {
+    "archetype": "ev-crossover",
+    "signatureElements": [
+      "connected-drl",
+      "flush-handles",
+      "floating-roof"
+    ],
+    "environment": "futuristic-night",
+    "cameraPreset": "ev-future",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.18,
+      "shoulderWidth": 1.04,
+      "rideHeight": 1
+    }
+  },
+  "byd-seal": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "connected-drl",
+      "flush-handles",
+      "fastback-sedan"
+    ],
+    "environment": "futuristic-night",
+    "cameraPreset": "sport-sedan",
+    "wheelInches": 19,
+    "proportions": {
+      "boxiness": 0.05,
+      "shoulderWidth": 1.05,
+      "rideHeight": 0.88
+    }
+  },
+  "skoda-kodiaq": {
+    "archetype": "premium-suv",
+    "signatureElements": [
+      "vertical-slat-grille",
+      "muscle-shoulders",
+      "roof-rails",
+      "floating-roof"
+    ],
+    "environment": "expressway",
+    "cameraPreset": "luxury-turntable",
+    "wheelInches": 18,
+    "proportions": {
+      "boxiness": 0.35,
+      "shoulderWidth": 1.05,
+      "rideHeight": 1.04
+    }
   }
 }

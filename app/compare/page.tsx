@@ -1,6 +1,15 @@
 import CompareView from "@/components/CompareView";
 
-export const metadata = { title: "Compare — DriveScope" };
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Compare Cars",
+  description: "Compare two or three cars side-by-side. Analyze performance, safety, and ownership metrics using objective formulas to make an informed decision.",
+  openGraph: {
+    title: "Compare Cars — DriveScope",
+    description: "Compare two or three cars side-by-side. Analyze performance, safety, and ownership metrics using objective formulas to make an informed decision.",
+  }
+};
 
 export default async function ComparePage({
   searchParams,

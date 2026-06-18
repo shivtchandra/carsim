@@ -6,6 +6,7 @@ import { costParams, formatLakh, getModel, getVariant } from "@/lib/data";
 import { computeCost } from "@/lib/cost";
 import EstimatedBadge from "./EstimatedBadge";
 import VariantSelect from "./sims/VariantSelect";
+import DriveSelect from "@/components/ui/DriveSelect";
 
 const SERIES = [
   { key: "fuel", label: "Fuel", color: "#C74B32" },
@@ -66,17 +67,16 @@ export default function FinancialCommandCenter() {
             
             <label className="block text-sm">
               <span className="text-[#161616]/65 text-xs block mb-1 font-mono uppercase tracking-wider">City Location</span>
-              <select
+              <DriveSelect
                 value={cityId}
-                onChange={(e) => setCityId(e.target.value)}
-                className="w-full px-3 py-2.5 bg-[#F4F0E8] text-sm text-[#161616] border border-[#161616]/10 rounded-xl outline-none [&>option]:bg-[#ECE7DF]"
-              >
-                {costParams.cities.map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.name} · ₹{c.petrolPrice.toFixed(0)}/l
-                  </option>
-                ))}
-              </select>
+                onChange={setCityId}
+                ariaLabel="City Location"
+                options={costParams.cities.map((c) => ({
+                  value: c.id,
+                  label: `${c.name} · ₹${c.petrolPrice.toFixed(0)}/l`
+                }))}
+                className="w-full mt-2"
+              />
             </label>
 
             <label className="block text-sm">

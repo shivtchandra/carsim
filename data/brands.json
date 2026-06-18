@@ -82,5 +82,17 @@
     "name": "Audi",
     "country": "Germany",
     "color": "#000000"
+  },
+  {
+    "id": "jeep",
+    "name": "Jeep",
+    "country": "USA",
+    "color": "#153E15"
+  },
+  {
+    "id": "byd",
+    "name": "BYD",
+    "country": "China",
+    "color": "#E60012"
   }
 ]

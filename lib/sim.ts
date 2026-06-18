@@ -49,8 +49,8 @@ export function overtakeDistance(t60100: number): number {
 
 export type OvertakeVerdict = "comfortable" | "needs planning" | "avoid on two-lane roads";
 export function overtakeVerdict(durationS: number): OvertakeVerdict {
-  if (durationS < 6) return "comfortable";
-  if (durationS <= 9) return "needs planning";
+  if (durationS < 7.3) return "comfortable";
+  if (durationS <= 7.8) return "needs planning";
   return "avoid on two-lane roads";
 }
 

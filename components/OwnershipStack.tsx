@@ -6,6 +6,7 @@ import { costParams, formatLakh, getModel, getVariant } from "@/lib/data";
 import { computeCost } from "@/lib/cost";
 import EstimatedBadge from "./EstimatedBadge";
 import VariantSelect from "./sims/VariantSelect";
+import DriveSelect from "@/components/ui/DriveSelect";
 import { TrendingDown, Wrench, Disc, IndianRupee, Fuel, Shield, TrendingUp } from "lucide-react";
 
 const CARDS = [
@@ -360,18 +361,17 @@ export default function OwnershipStack() {
           <VariantSelect label="Compare against (optional)" value={idB} allowNone onChange={setIdB} />
           
           <label className="block text-sm">
-            <span className="text-secondary/70 text-xs block mb-1 font-geist uppercase tracking-wider">City Location</span>
-            <select
+            <span className="text-secondary/70 text-xs block mb-1.5 font-geist uppercase tracking-wider">City Location</span>
+            <DriveSelect
               value={cityId}
-              onChange={(e) => setCityId(e.target.value)}
-              className="w-full px-3 py-2 bg-transparent text-sm text-[#161616] border border-[#161616]/15 rounded-xl outline-none [&>option]:bg-[#F5F1E8]"
-            >
-              {costParams.cities.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.name} · ₹{c.petrolPrice.toFixed(0)}/l
-                </option>
-              ))}
-            </select>
+              onChange={setCityId}
+              ariaLabel="City Location"
+              options={costParams.cities.map((c) => ({
+                value: c.id,
+                label: `${c.name} · ₹${c.petrolPrice.toFixed(0)}/l`
+              }))}
+              className="w-full"
+            />
           </label>
 
           <label className="block text-sm">

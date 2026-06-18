@@ -239,6 +239,118 @@
       "credit": "Official Manufacturer Image",
       "license": "Press / Editorial Use",
       "url": "https://www.hondacarindia.com/honda-amaze/images/color/platinum-white-pearl.png"
+    },
+    {
+      "modelId": "tata-safari",
+      "query": "Tata Safari 2023",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Jamshedpur_Police%E2%80%99s_Patrolling_Vehicle_1%28Tata_Motors_Safari_Storme_SUV%29_at_Pardih_Chowk%2C_Jamshedpur_%28Ank_Kumar%2C_Infosys_Limited%29.jpg/1280px-Jamshedpur_Police%E2%80%99s_Patrolling_Vehicle_1%28Tata_Motors_Safari_Storme_SUV%29_at_Pardih_Chowk%2C_Jamshedpur_%28Ank_Kumar%2C_Infosys_Limited%29.jpg",
+      "credit": "Ank Kumar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "tata-altroz",
+      "query": "Tata Altroz",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Tata_Altroz_laterale_sinistra.jpg/1280px-Tata_Altroz_laterale_sinistra.jpg",
+      "credit": "Autopareri",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mahindra-thar",
+      "query": "Mahindra Thar",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg/1280px-Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg",
+      "credit": "DjDavid1998",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mahindra-scorpio-classic",
+      "query": "Mahindra Scorpio",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Mahindra_Scorpio_%28124712558%29.jpg",
+      "credit": "Thorsten Vieth from Bangalore, India",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "modelId": "mahindra-bolero",
+      "query": "Mahindra Bolero Neo",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mahindra_TUV_300_Chennai_2016_%281%29.JPG/1280px-Mahindra_TUV_300_Chennai_2016_%281%29.JPG",
+      "credit": "SnapMeUp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "maruti-baleno",
+      "query": "Suzuki Baleno 2022",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2022_Maruti_Suzuki_Baleno_Alpha_%28India%29_front_view.jpg/1280px-2022_Maruti_Suzuki_Baleno_Alpha_%28India%29_front_view.jpg",
+      "credit": "Milind Kwatra",
+      "license": "CC BY 3.0"
+    },
+    {
+      "modelId": "maruti-fronx",
+      "query": "Suzuki Fronx",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Suzuki_Fronx_in_Hamamatsu_Sta.jpg/1280px-Suzuki_Fronx_in_Hamamatsu_Sta.jpg",
+      "credit": "IXTA9839",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "maruti-ertiga",
+      "query": "Suzuki Ertiga 2019",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/2013_Suzuki_Ertiga_1.4_GX_wagon_%28ZE81S%3B_01-20-2019%29%2C_South_Tangerang.jpg/1280px-2013_Suzuki_Ertiga_1.4_GX_wagon_%28ZE81S%3B_01-20-2019%29%2C_South_Tangerang.jpg",
+      "credit": "Wilzz99",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "toyota-fortuner",
+      "query": "Toyota Fortuner 2017",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Toyota_Fortuner_II_002_China_2017-04-05.jpg/1280px-Toyota_Fortuner_II_002_China_2017-04-05.jpg",
+      "credit": "Navigator84",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "hyundai-i20",
+      "query": "Hyundai i20 2020",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Hyundai_i20_%28BC3%29_IMG_3542.jpg/1280px-Hyundai_i20_%28BC3%29_IMG_3542.jpg",
+      "credit": "Alexander Migl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "hyundai-tucson",
+      "query": "Hyundai Tucson 2021",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hyundai_Tucson_%28NX4%29_PHEV_IMG_4375.jpg/1280px-Hyundai_Tucson_%28NX4%29_PHEV_IMG_4375.jpg",
+      "credit": "Alexander Migl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "kia-carens",
+      "query": "Kia Carens 2022",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/KIA_CARENS_%28RP%29_China.jpg/1280px-KIA_CARENS_%28RP%29_China.jpg",
+      "credit": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "jeep-compass",
+      "query": "Jeep Compass 2020",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Hospital_dos_Olhos_de_Mossor%C3%B3_%28RN%29.jpg/1280px-Hospital_dos_Olhos_de_Mossor%C3%B3_%28RN%29.jpg",
+      "credit": "Marcos Elias de Oliveira Júnior",
+      "license": "CC0"
+    },
+    {
+      "modelId": "byd-atto3",
+      "query": "BYD Atto 3",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/BYD_Atto_3_1X7A6454.jpg/1280px-BYD_Atto_3_1X7A6454.jpg",
+      "credit": "Alexander Migl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "byd-seal",
+      "query": "BYD Seal",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/BYD_Seal_IAA_2023_1X7A0371.jpg/1280px-BYD_Seal_IAA_2023_1X7A0371.jpg",
+      "credit": "Alexander-93",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "skoda-kodiaq",
+      "query": "Skoda Kodiaq 2017",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%C5%A0koda_Kodiaq_%28MSP17%29.jpg/1280px-%C5%A0koda_Kodiaq_%28MSP17%29.jpg",
+      "credit": "Jakub \"flyz1\" Maciejewski",
+      "license": "CC BY-SA 3.0"
     }
   ]
 }

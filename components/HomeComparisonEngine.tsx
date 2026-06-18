@@ -8,6 +8,7 @@ import { models, getBrand, getVariantsForModel, getTestData, features } from "@/
 import { radarScores } from "@/lib/scores";
 import EstimatedBadge from "./EstimatedBadge";
 import CarPhoto from "./CarPhoto";
+import DriveSelect from "@/components/ui/DriveSelect";
 import { theme } from "@/lib/theme";
 
 const AXES = [
@@ -173,18 +174,18 @@ export default function HomeComparisonEngine() {
         <div className="flex flex-wrap gap-3 w-full sm:w-auto">
           {ids.map((id, index) => (
             <div key={index} className="flex-1 sm:flex-initial min-w-[150px]">
-              <select
+              <DriveSelect
                 value={id}
-                onChange={(e) => handleSelectChange(index, e.target.value)}
-                className="w-full px-3 py-2.5 text-sm bg-[#F4F0E8] outline-none border border-[#161616]/10 rounded-xl [&>option]:bg-[#ECE7DF] text-primary"
-                aria-label={`Select Vehicle Slot ${index + 1}`}
-              >
-                {models.map((m) => (
-                  <option key={m.id} value={m.id} disabled={ids.includes(m.id) && m.id !== id}>
-                    {getBrand(m.brandId)?.name} {m.name}
-                  </option>
-                ))}
-              </select>
+                onChange={(val) => handleSelectChange(index, val)}
+                ariaLabel={`Select Vehicle Slot ${index + 1}`}
+                options={models
+                  .filter((m) => !ids.includes(m.id) || m.id === id)
+                  .map((m) => ({
+                    value: m.id,
+                    label: `${getBrand(m.brandId)?.name} ${m.name}`
+                  }))}
+                className="w-full"
+              />
             </div>
           ))}
           {ids.length < 3 && (

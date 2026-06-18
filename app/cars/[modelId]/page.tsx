@@ -28,7 +28,22 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ modelId: string }> }) {
   const { modelId } = await params;
   const m = getModel(modelId);
-  return { title: m ? `${m.name} — DriveScope` : "DriveScope" };
+  if (!m) return { title: "DriveScope" };
+  const brand = getBrand(m.brandId);
+  
+  const title = `${brand?.name} ${m.name} Price, Specs & True Cost`;
+  const description = `${m.aiSummary} See real-world mileage, ownership costs, and detailed comparisons for the ${brand?.name} ${m.name}.`;
+
+  return { 
+    title,
+    description,
+    keywords: [m.name, brand?.name, "car price", "car specs", "mileage", "ownership cost", m.segment],
+    openGraph: {
+      title,
+      description,
+      images: [m.heroImage],
+    }
+  };
 }
 
 export default async function CarPage({ params }: { params: Promise<{ modelId: string }> }) {
@@ -65,6 +80,29 @@ export default async function CarPage({ params }: { params: Promise<{ modelId: s
     <CarDetailPageLayout
       overviewSection={
         <section className="mx-auto max-w-6xl px-6 py-12">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                "name": `${brand.name} ${model.name}`,
+                "image": `https://drivescope.com${model.heroImage}`,
+                "description": model.aiSummary,
+                "brand": {
+                  "@type": "Brand",
+                  "name": brand.name
+                },
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "priceCurrency": "INR",
+                  "lowPrice": model.priceRange.min,
+                  "highPrice": model.priceRange.max,
+                  "offerCount": variants.length
+                }
+              })
+            }}
+          />
           <div className="grid gap-10 lg:grid-cols-2 items-center">
             <div>
               <p className="text-sm text-secondary">{brand.name}</p>

@@ -1,7 +1,16 @@
 import RaceModeGate from "@/components/three/race/RaceModeGate";
 import type { RaceMode } from "@/components/three/race/RaceView";
 
-export const metadata = { title: "Race — DriveScope" };
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Drag Race Simulator",
+  description: "Simulate a 400m drag race between cars. See realistic physics, power-to-weight ratios, and top speeds visualized in an interactive 3D environment.",
+  openGraph: {
+    title: "Drag Race Simulator — DriveScope",
+    description: "Simulate a 400m drag race between cars. See realistic physics, power-to-weight ratios, and top speeds visualized in an interactive 3D environment.",
+  }
+};
 
 export default async function RacePage({
   searchParams,

@@ -35,6 +35,8 @@ export default function RaceSetup({
   ]);
   const [trackId, setTrackId] = useState(initialTrack ?? "highway-sprint");
   const [mode, setMode] = useState<RaceMode>(initialMode ?? "drive");
+  const [autoGas, setAutoGas] = useState(false);
+  const [espAssist, setEspAssist] = useState(true);
 
   useEffect(() => {
     if (initialCar) return;
@@ -51,6 +53,8 @@ export default function RaceSetup({
         rivalVariantIds={rivals}
         trackId={trackId}
         mode={mode}
+        autoGas={autoGas}
+        espAssist={espAssist}
         onExit={() => setStage("setup")}
       />
     );
@@ -101,6 +105,52 @@ export default function RaceSetup({
           onChange={(id) => setRivals((p) => [p[0], id])}
         />
       </div>
+
+      {/* Driving Assists */}
+      {mode === "drive" && (
+        <div>
+          <p className="section-label mb-2">Driving Assists</p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <button
+              onClick={() => setAutoGas((g) => !g)}
+              className={`text-left rounded-2xl border p-4 transition-all ${
+                autoGas
+                  ? "border-[#C84C31] bg-[rgba(200,76,49,0.06)]"
+                  : "border-[#161616]/12 bg-white hover:bg-[#161616]/[0.03]"
+              }`}
+            >
+              <div className="flex justify-between items-center">
+                <span className="font-semibold text-primary">Auto-Throttle</span>
+                <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded ${autoGas ? "bg-[#C84C31] text-[#F5F1E8]" : "bg-[#161616]/8 text-secondary"}`}>
+                  {autoGas ? "Active" : "Off"}
+                </span>
+              </div>
+              <p className="mt-2 text-xs leading-relaxed text-secondary">
+                Focus on steering and braking. The simulator applies gas automatically on straights.
+              </p>
+            </button>
+
+            <button
+              onClick={() => setEspAssist((e) => !e)}
+              className={`text-left rounded-2xl border p-4 transition-all ${
+                espAssist
+                  ? "border-[#C84C31] bg-[rgba(200,76,49,0.06)]"
+                  : "border-[#161616]/12 bg-white hover:bg-[#161616]/[0.03]"
+              }`}
+            >
+              <div className="flex justify-between items-center">
+                <span className="font-semibold text-primary">ABS & ESP Assist</span>
+                <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded ${espAssist ? "bg-[#C84C31] text-[#F5F1E8]" : "bg-[#161616]/8 text-secondary"}`}>
+                  {espAssist ? "Active" : "Raw Physics"}
+                </span>
+              </div>
+              <p className="mt-2 text-xs leading-relaxed text-secondary">
+                Electronic Stability Program prevents slide spins. Turn off for manual drift/spin physics.
+              </p>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Track */}
       <div>

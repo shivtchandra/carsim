@@ -30,6 +30,17 @@ export const SIM_MODEL_COLORS: Record<string, string> = {
   "nissan-magnite": "#475569",
   "hyundai-exter": "#F97316",
   "skoda-kylaq": "#4F46E5",
+  "tata-safari": "#0369A1",
+  "tata-altroz": "#4B5563",
+  "mahindra-thar": "#B45309",
+  "mahindra-scorpio-classic": "#1E293B",
+  "mahindra-bolero": "#4D7C0F",
+  "maruti-baleno": "#1E40AF",
+  "maruti-fronx": "#991B1B",
+  "maruti-ertiga": "#854D0E",
+  "hyundai-i20": "#DC2626",
+  "kia-carens": "#4338CA",
+  "jeep-compass": "#166534",
 
   // ── Larger SUVs often compared ──
   "mahindra-scorpio-n": "#92400E",
@@ -39,6 +50,11 @@ export const SIM_MODEL_COLORS: Record<string, string> = {
   "mahindra-thar-roxx": "#374151",
   "vinfast-vf7": "#115E59",
   "audi-q5": "#334155",
+  "toyota-fortuner": "#0F172A",
+  "hyundai-tucson": "#0284C7",
+  "byd-atto3": "#0891B2",
+  "byd-seal": "#2563EB",
+  "skoda-kodiaq": "#5B21B6",
 };
 
 export function getSimCarColor(modelId: string, brandFallback?: string): string {

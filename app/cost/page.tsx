@@ -1,7 +1,16 @@
 import CostSimulator from "@/components/CostSimulator";
 import FuelDecisionCard from "@/components/FuelDecisionCard";
 
-export const metadata = { title: "Ownership Cost — DriveScope" };
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cost Simulator",
+  description: "Calculate the 5-year true cost of ownership (TCO) for cars in India. Include fuel, maintenance, insurance, depreciation, and loan interest.",
+  openGraph: {
+    title: "Car Ownership Cost Simulator — DriveScope",
+    description: "Calculate the 5-year true cost of ownership (TCO) for cars in India. Include fuel, maintenance, insurance, depreciation, and loan interest.",
+  }
+};
 
 export default async function CostPage({
   searchParams,

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { brands, models, getBrand, getVariantsForModel, formatLakh } from "@/lib/data";
 import type { Fuel, Segment, Transmission } from "@/lib/types";
 import CarPhoto from "./CarPhoto";
+import DriveSelect from "./ui/DriveSelect";
 
 const PRICE_BANDS = [
   { id: "all", label: "Any price", min: 0, max: Infinity },
@@ -49,38 +50,53 @@ export default function ExplorerGrid() {
     });
   }, [brandId, band, trans, fuel, segment]);
 
-  const selectCls =
-    "glass px-3 py-2 text-sm bg-transparent text-primary outline-none [&>option]:bg-elevated";
-
   return (
     <div>
       <div className="flex flex-wrap gap-3 mb-10">
-        <select value={brandId} onChange={(e) => setBrandId(e.target.value)} className={selectCls} aria-label="Brand">
-          <option value="all">All brands</option>
-          {brands.map((b) => (
-            <option key={b.id} value={b.id}>{b.name}</option>
-          ))}
-        </select>
-        <select value={band} onChange={(e) => setBand(e.target.value)} className={selectCls} aria-label="Price band">
-          {PRICE_BANDS.map((p) => (
-            <option key={p.id} value={p.id}>{p.label}</option>
-          ))}
-        </select>
-        <select value={trans} onChange={(e) => setTrans(e.target.value as typeof trans)} className={selectCls} aria-label="Transmission">
-          {TRANSMISSIONS.map((t) => (
-            <option key={t} value={t}>{t === "all" ? "Any transmission" : t}</option>
-          ))}
-        </select>
-        <select value={fuel} onChange={(e) => setFuel(e.target.value as typeof fuel)} className={selectCls} aria-label="Fuel">
-          {FUELS.map((f) => (
-            <option key={f} value={f}>{f === "all" ? "Any fuel" : f[0].toUpperCase() + f.slice(1)}</option>
-          ))}
-        </select>
-        <select value={segment} onChange={(e) => setSegment(e.target.value as typeof segment)} className={selectCls} aria-label="Segment">
-          {SEGMENTS.map((s) => (
-            <option key={s.id} value={s.id}>{s.label}</option>
-          ))}
-        </select>
+        <DriveSelect
+          value={brandId}
+          onChange={setBrandId}
+          ariaLabel="Brand"
+          options={[
+            { value: "all", label: "All brands" },
+            ...brands.map((brand) => ({ value: brand.id, label: brand.name })),
+          ]}
+          className="w-48"
+        />
+        <DriveSelect
+          value={band}
+          onChange={setBand}
+          ariaLabel="Price band"
+          options={PRICE_BANDS.map((priceBand) => ({ value: priceBand.id, label: priceBand.label }))}
+          className="w-44"
+        />
+        <DriveSelect
+          value={trans}
+          onChange={(next) => setTrans(next as "all" | Transmission)}
+          ariaLabel="Transmission"
+          options={TRANSMISSIONS.map((item) => ({
+            value: item,
+            label: item === "all" ? "Any transmission" : item,
+          }))}
+          className="w-56"
+        />
+        <DriveSelect
+          value={fuel}
+          onChange={(next) => setFuel(next as "all" | Fuel)}
+          ariaLabel="Fuel"
+          options={FUELS.map((item) => ({
+            value: item,
+            label: item === "all" ? "Any fuel" : item[0].toUpperCase() + item.slice(1),
+          }))}
+          className="w-40"
+        />
+        <DriveSelect
+          value={segment}
+          onChange={(next) => setSegment(next as "all" | Segment)}
+          ariaLabel="Segment"
+          options={SEGMENTS.map((item) => ({ value: item.id, label: item.label }))}
+          className="w-64"
+        />
       </div>
 
       {filtered.length === 0 ? (
@@ -110,15 +126,15 @@ export default function ExplorerGrid() {
                   </p>
                   <div className="mt-4 grid grid-cols-3 gap-2 text-center">
                     <div>
-                      <p className="stat-num text-base">{topPs}</p>
+                      <p className="stat-num text-base font-medium" style={{ color: "#4b4b4b" }}>{topPs}</p>
                       <p className="text-[11px] text-secondary">PS (top)</p>
                     </div>
                     <div>
-                      <p className="stat-num text-base">{bestFE.toFixed(1)}</p>
+                      <p className="stat-num text-base font-medium" style={{ color: "#4b4b4b" }}>{bestFE.toFixed(1)}</p>
                       <p className="text-[11px] text-secondary">km/l ARAI</p>
                     </div>
                     <div>
-                      <p className="stat-num text-base">{m.ncap.adultStars ?? "—"}</p>
+                      <p className="stat-num text-base font-medium" style={{ color: "#4b4b4b" }}>{m.ncap.adultStars ?? "—"}</p>
                       <p className="text-[11px] text-secondary">
                         {m.ncap.agency ? `${m.ncap.agency} ★` : "not rated"}
                       </p>

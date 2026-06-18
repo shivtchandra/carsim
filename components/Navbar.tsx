@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/explore", label: "Explore" },
+  { href: "/wall", label: "Wall" },
   { href: "/compare", label: "Compare" },
   { href: "/simulate", label: "Simulate" },
   { href: "/race", label: "Race" },
@@ -43,7 +44,7 @@ export default function Navbar() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`px-3 py-1.5 rounded-lg text-sm transition-all duration-200 font-mono ${
+                className={`px-3 py-1.5 rounded-lg text-sm font-mono transition-all duration-200 ${
                   active
                     ? "text-[#161616] bg-[#161616]/5 font-bold"
                     : "text-[#161616]/65 hover:text-[#161616] hover:bg-[#161616]/3"
@@ -59,7 +60,7 @@ export default function Navbar() {
         <div className="hidden sm:flex">
           <Link
             href="/compare"
-            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm font-semibold text-[#F5F1E8] transition-all duration-200 hover:opacity-90 font-mono bg-[#C84C31]"
+            className="flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm font-semibold text-[#F5F1E8] transition-all duration-200 hover:opacity-90 bg-[#C84C31]"
           >
             Compare Cars
           </Link>

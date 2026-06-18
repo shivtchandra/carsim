@@ -2,10 +2,70 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // TODO: tighten before production — restrict writes to authenticated admins.
+    function validWallCategory(category) {
+      return category in [
+        "mileage",
+        "comfort",
+        "features",
+        "service",
+        "reliability",
+        "value",
+        "future wish",
+        "discussion"
+      ];
+    }
+
+    function validWallSentiment(sentiment) {
+      return sentiment in ["positive", "mixed", "negative", "question"];
+    }
+
+    function validWallOwnershipStage(stage) {
+      return stage in ["considering", "booked", "0-6 months", "6-24 months", "2+ years"];
+    }
+
+    function validWallCreate() {
+      let data = request.resource.data;
+      return data.keys().hasOnly([
+          "modelId",
+          "modelName",
+          "authorName",
+          "ownershipStage",
+          "category",
+          "sentiment",
+          "text",
+          "status",
+          "createdAt",
+          "approvedAt"
+        ])
+        && data.modelId is string
+        && data.modelId.size() >= 2
+        && data.modelId.size() <= 80
+        && data.modelName is string
+        && data.modelName.size() >= 2
+        && data.modelName.size() <= 80
+        && data.authorName is string
+        && data.authorName.size() >= 1
+        && data.authorName.size() <= 40
+        && validWallOwnershipStage(data.ownershipStage)
+        && validWallCategory(data.category)
+        && validWallSentiment(data.sentiment)
+        && data.text is string
+        && data.text.size() >= 20
+        && data.text.size() <= 420
+        && data.status == "pending"
+        && data.approvedAt == null
+        && data.createdAt == request.time;
+    }
+
+    match /communityWallPosts/{postId} {
+      allow read: if resource.data.status == "approved";
+      allow create: if validWallCreate();
+      allow update, delete: if false;
+    }
+
     match /{document=**} {
       allow read: if true;
-      allow write: if true;
+      allow write: if false;
     }
   }
 }

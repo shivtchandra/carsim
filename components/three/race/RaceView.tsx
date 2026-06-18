@@ -97,6 +97,7 @@ function RaceScene({
   onPhase,
   onFinish,
   onLiveStandings,
+  autoGas,
 }: {
   world: RaceWorld;
   track: CompiledTrack;
@@ -111,6 +112,7 @@ function RaceScene({
   onPhase: (p: RaceWorld["phase"]) => void;
   onFinish: (s: Standing[]) => void;
   onLiveStandings: (s: Standing[]) => void;
+  autoGas: boolean;
 }) {
   const groups = useRef<(THREE.Group | null)[]>([]);
   const motions = useRef<React.MutableRefObject<CarMotionRef>[]>(
@@ -123,13 +125,21 @@ function RaceScene({
   const hudRef = useRef<HudState>({ speed: "0", position: "—", gap: "" });
   const finishedReported = useRef(false);
   const frameCount = useRef(0);
+  const smoothedG = useRef({ long: 0, lat: 0 });
 
   useFrame(({ camera }, delta) => {
     const dt = Math.min(delta, 0.05);
     const steer = (inputsRef.current.steerRight ? 1 : 0) - (inputsRef.current.steerLeft ? 1 : 0);
+    
+    let throttle = inputsRef.current.throttle;
+    const brake = inputsRef.current.brake;
+    if (autoGas && mode === "drive" && world.phase === "racing") {
+      throttle = brake > 0 ? 0 : 1;
+    }
+
     const humanInputs: RaceInputs = {
-      throttle: inputsRef.current.throttle,
-      brake: inputsRef.current.brake,
+      throttle,
+      brake,
       steer,
     };
 
@@ -154,7 +164,7 @@ function RaceScene({
           smp.elevation + bump + e.state.suspensionOffsetM + camH,
           smp.pos.z + nrm.z * e.laneOffset
         );
-        g.rotation.y = -smp.heading;
+        g.rotation.y = -smp.heading + (e.spinYaw ?? 0);
       }
       const mref = motions.current[i];
       mref.current.wheelSpeed = (e.state.speedKmh / 3.6) / infos[i].wheelR;
@@ -246,9 +256,11 @@ function RaceScene({
       if (gDot) {
         const throttle = inputsRef.current.throttle;
         const brake = inputsRef.current.brake;
-        const longG = clamp(throttle * 0.4 - brake * 0.9, -1.2, 0.6);
-        const latG = clamp(((player.state.lateralVel ?? 0) * 1.5) / 9.81, -1.5, 1.5);
-        gDot.style.transform = `translate(${(latG * 25).toFixed(1)}px, ${(-longG * 25).toFixed(1)}px)`;
+        const targetLongG = clamp(throttle * 0.4 - brake * 0.9, -1.2, 0.6);
+        const targetLatG = clamp(((player.state.lateralVel ?? 0) * 1.5) / 9.81, -1.5, 1.5);
+        smoothedG.current.long += (targetLongG - smoothedG.current.long) * Math.min(1.0, dt * 10.0);
+        smoothedG.current.lat += (targetLatG - smoothedG.current.lat) * Math.min(1.0, dt * 10.0);
+        gDot.style.transform = `translate(${(smoothedG.current.lat * 25).toFixed(1)}px, ${(-smoothedG.current.long * 25).toFixed(1)}px)`;
       }
 
       // Standings lists update every 10 frames
@@ -366,12 +378,16 @@ export default function RaceView({
   rivalVariantIds,
   trackId,
   mode,
+  autoGas = false,
+  espAssist = true,
   onExit,
 }: {
   playerVariantId: string;
   rivalVariantIds: string[];
   trackId: string;
   mode: RaceMode;
+  autoGas?: boolean;
+  espAssist?: boolean;
   onExit: () => void;
 }) {
   const audio = useRaceAudio();
@@ -393,14 +409,17 @@ export default function RaceView({
       .map((id, idx) => buildRacer(id, mode === "spectate" ? true : idx !== 0))
       .filter((b): b is { config: EntrantConfig; info: RacerInfo } => !!b);
     const offsets = gridOffsets(built.length, track.width);
-    built.forEach((b, idx) => { b.config.startLaneOffset = offsets[idx]; });
+    built.forEach((b, idx) => {
+      b.config.startLaneOffset = offsets[idx];
+      b.config.espAssist = mode === "drive" && idx === 0 ? espAssist : true;
+    });
     return {
       track,
       configs: built.map((b) => b.config),
       infos: built.map((b) => b.info),
       playerIndex: 0,
     };
-  }, [playerVariantId, rivalVariantIds, trackId, mode]);
+  }, [playerVariantId, rivalVariantIds, trackId, mode, espAssist]);
 
   // Fresh world each run.
   const world = useMemo(
@@ -470,6 +489,7 @@ export default function RaceView({
               setStarted(false);
             }}
             onLiveStandings={setLiveStandings}
+            autoGas={autoGas}
           />
         </RaceStage>
 

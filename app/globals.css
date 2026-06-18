@@ -56,8 +56,8 @@
   --color-warning: var(--warning);
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
-  --font-display: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
-  --font-hero: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+  --font-display: var(--font-cormorant-garamond), Georgia, serif;
+  --font-hero: var(--font-cormorant-garamond), Georgia, serif;
   --font-geist: var(--font-geist-sans), monospace;
 }
 
@@ -70,15 +70,38 @@ body {
 
 /* Custom Typography classes */
 .font-hero {
-  font-family: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+  font-family: var(--font-cormorant-garamond), Georgia, serif;
 }
 
 .font-display {
-  font-family: "PP Editorial New", var(--font-cormorant-garamond), Georgia, serif;
+  font-family: var(--font-cormorant-garamond), Georgia, serif;
 }
 
 .font-geist {
   font-family: var(--font-geist-sans), monospace;
+}
+
+/* Global Font Size & Boldness Reductions */
+@layer utilities {
+  .text-xs { font-size: 0.7rem !important; }
+  .text-sm { font-size: 0.8rem !important; }
+  .text-base { font-size: 0.9rem !important; }
+  .text-lg { font-size: 1rem !important; }
+  .text-xl { font-size: 1.125rem !important; }
+  .text-2xl { font-size: 1.25rem !important; }
+  .text-3xl { font-size: 1.5rem !important; }
+  .text-4xl { font-size: 1.875rem !important; }
+  .text-5xl { font-size: 2.25rem !important; }
+
+  .font-medium { font-weight: 400 !important; }
+  .font-semibold { font-weight: 500 !important; }
+  .font-bold { font-weight: 600 !important; }
+  .font-extrabold { font-weight: 700 !important; }
+  .font-black { font-weight: 800 !important; }
+}
+
+b, strong {
+  font-weight: 600;
 }
 
 /* Glassmorphism panel -> paper panel */

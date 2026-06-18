@@ -1,8 +1,17 @@
 import SimulationLab, { type SimTab } from "@/components/SimulationLab";
 
-export const metadata = { title: "Simulation Lab — DriveScope" };
+import { Metadata } from "next";
 
-const VALID_SIMS = new Set(["launch", "overtake", "braking", "hill-climb", "clearance", "city", "playground"]);
+export const metadata: Metadata = {
+  title: "Physics Simulator",
+  description: "Experience realistic car physics. Test cars in our 3D simulation bay for braking, cornering, hill climbing, and ground clearance.",
+  openGraph: {
+    title: "Car Physics Simulator — DriveScope",
+    description: "Experience realistic car physics. Test cars in our 3D simulation bay for braking, cornering, hill climbing, and ground clearance.",
+  }
+};
+
+const VALID_SIMS = new Set(["launch", "overtake", "braking", "hill-climb", "clearance", "cornering", "swerve", "city", "playground"]);
 
 export default async function SimulatePage({
   searchParams,
@@ -15,7 +24,7 @@ export default async function SimulatePage({
 
   return (
     <div className="mx-auto max-w-6xl px-6 pt-36 pb-24">
-      <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-3">Simulation Lab</h1>
+      <h1 className="text-4xl sm:text-5xl font-normal tracking-tight mb-3">Simulation Lab</h1>
       <p className="text-secondary mb-10 max-w-xl">
         Physics-derived, interactive scenarios showing real-world capability. Compare options and features before visiting the showroom.
       </p>

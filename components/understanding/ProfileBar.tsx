@@ -7,6 +7,7 @@ import {
   formatProfileChip,
   saveProfile,
 } from "@/lib/understanding/profile";
+import DriveSelect from "@/components/ui/DriveSelect";
 
 export default function ProfileBar({
   profile,
@@ -41,18 +42,14 @@ export default function ProfileBar({
       {open && (
         <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm">
           <label className="block">
-            <span className="text-xs text-secondary">City</span>
-            <select
+            <span className="text-xs text-secondary mb-1 block">City</span>
+            <DriveSelect
               value={profile.cityId}
-              onChange={(e) => update({ cityId: e.target.value })}
-              className="mt-1 w-full rounded-lg bg-white/[0.06] border border-white/[0.1] px-3 py-2.5 min-h-[48px]"
-            >
-              {costParams.cities.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.name}
-                </option>
-              ))}
-            </select>
+              onChange={(val) => update({ cityId: val })}
+              ariaLabel="City"
+              options={costParams.cities.map((c) => ({ value: c.id, label: c.name }))}
+              className="w-full"
+            />
           </label>
           <label className="block">
             <span className="text-xs text-secondary">

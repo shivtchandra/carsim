@@ -8,6 +8,7 @@ import { costParams, formatLakh, getModel, getVariant } from "@/lib/data";
 import { computeCost } from "@/lib/cost";
 import EstimatedBadge from "./EstimatedBadge";
 import VariantSelect from "./sims/VariantSelect";
+import DriveSelect from "@/components/ui/DriveSelect";
 import { TrendingDown, Wrench, Disc } from "lucide-react";
 
 const SERIES = [
@@ -52,16 +53,17 @@ export default function CostSimulator({ initialVariants = [] }: { initialVariant
         <VariantSelect label="Variant" value={idA} onChange={setIdA} />
         <VariantSelect label="Compare against (optional)" value={idB} allowNone onChange={setIdB} />
         <label className="block text-sm">
-          <span className="text-secondary text-xs">City</span>
-          <select
+          <span className="mb-1.5 block text-secondary text-xs">City</span>
+          <DriveSelect
             value={cityId}
-            onChange={(e) => setCityId(e.target.value)}
-            className="glass mt-1 block w-full px-3 py-2 bg-transparent text-sm outline-none [&>option]:bg-[#ECE7DF] text-primary"
-          >
-            {costParams.cities.map((c) => (
-              <option key={c.id} value={c.id}>{c.name} · ₹{c.petrolPrice.toFixed(0)}/l</option>
-            ))}
-          </select>
+            onChange={setCityId}
+            ariaLabel="City"
+            options={costParams.cities.map((c) => ({
+              value: c.id,
+              label: `${c.name} · ₹${c.petrolPrice.toFixed(0)}/l`
+            }))}
+            className="w-full"
+          />
         </label>
         <label className="block text-sm">
           <span className="text-secondary text-xs">

@@ -45,17 +45,18 @@ for (const src of manifest.sources) {
     continue;
   }
   try {
+    await new Promise((r) => setTimeout(r, 3000)); // stay under Commons and upload rate limits
     let pick = null;
     if (src.url) {
       pick = { url: src.url, credit: src.credit ?? "direct", license: src.license ?? "direct" };
     } else {
-      await new Promise((r) => setTimeout(r, 3000)); // stay under Commons rate limits
       pick = await commonsSearch(src.query);
     }
     if (!pick) {
       console.log(`MISS  ${src.modelId} — no candidate found (silhouette fallback will show)`);
       continue;
     }
+    await new Promise((r) => setTimeout(r, 2000)); // sleep before downloading image to avoid rate limits
     const img = await fetch(pick.url, { headers: { "User-Agent": UA } });
     if (!img.ok) throw new Error(`HTTP ${img.status}`);
     writeFileSync(dest, Buffer.from(await img.arrayBuffer()));

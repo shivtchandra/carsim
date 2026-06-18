@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { costParams, formatLakh, getModel, getVariant, models, variants } from "@/lib/data";
 import { dieselPairsForModel, fuelDecision } from "@/lib/cost";
 import EstimatedBadge from "./EstimatedBadge";
+import DriveSelect from "@/components/ui/DriveSelect";
 
 export default function FuelDecisionCard({ initialModelId }: { initialModelId?: string }) {
   const dieselModels = useMemo(
@@ -41,40 +42,34 @@ export default function FuelDecisionCard({ initialModelId }: { initialModelId?: 
 
       <div className="grid gap-4 sm:grid-cols-4 mb-6">
         <label className="block text-sm">
-          <span className="text-secondary text-xs">Car</span>
-          <select
-            value={modelId}
-            onChange={(e) => { setModelId(e.target.value); setPairIdx(0); }}
-            className="glass mt-1 block w-full px-3 py-2 bg-transparent text-sm outline-none [&>option]:bg-[#ECE7DF] text-primary"
-          >
-            {dieselModels.map((m) => (
-              <option key={m.id} value={m.id}>{m.name}</option>
-            ))}
-          </select>
+          <span className="mb-1.5 block text-secondary text-xs">Car</span>
+          <DriveSelect
+            value={modelId!}
+            onChange={(val) => { setModelId(val); setPairIdx(0); }}
+            ariaLabel="Car"
+            options={dieselModels.map((m) => ({ value: m.id, label: m.name }))}
+            className="w-full"
+          />
         </label>
         <label className="block text-sm">
-          <span className="text-secondary text-xs">Trim pair</span>
-          <select
-            value={pairIdx}
-            onChange={(e) => setPairIdx(Number(e.target.value))}
-            className="glass mt-1 block w-full px-3 py-2 bg-transparent text-sm outline-none [&>option]:bg-[#ECE7DF] text-primary"
-          >
-            {pairs.map((p, i) => (
-              <option key={p.dieselId} value={i}>{p.label}</option>
-            ))}
-          </select>
+          <span className="mb-1.5 block text-secondary text-xs">Trim pair</span>
+          <DriveSelect
+            value={pairIdx.toString()}
+            onChange={(val) => setPairIdx(Number(val))}
+            ariaLabel="Trim pair"
+            options={pairs.map((p, i) => ({ value: i.toString(), label: p.label }))}
+            className="w-full"
+          />
         </label>
         <label className="block text-sm">
-          <span className="text-secondary text-xs">City</span>
-          <select
+          <span className="mb-1.5 block text-secondary text-xs">City</span>
+          <DriveSelect
             value={cityId}
-            onChange={(e) => setCityId(e.target.value)}
-            className="glass mt-1 block w-full px-3 py-2 bg-transparent text-sm outline-none [&>option]:bg-[#ECE7DF] text-primary"
-          >
-            {costParams.cities.map((c) => (
-              <option key={c.id} value={c.id}>{c.name}</option>
-            ))}
-          </select>
+            onChange={setCityId}
+            ariaLabel="City"
+            options={costParams.cities.map((c) => ({ value: c.id, label: c.name }))}
+            className="w-full"
+          />
         </label>
         <label className="block text-sm">
           <span className="text-secondary text-xs">

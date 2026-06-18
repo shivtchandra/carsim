@@ -134,6 +134,10 @@ export function brandSignatureHints(brandId: string): SignatureElement[] {
       return ["vertical-slat-grille", "split-headlamp", "flush-handles"];
     case "vinfast":
       return ["connected-drl", "floating-roof"];
+    case "jeep":
+      return ["vertical-slat-grille", "boxy-profile"];
+    case "byd":
+      return ["connected-drl", "flush-handles"];
     default:
       return [];
   }
