@@ -200,3 +200,35 @@ export interface DetailedReview {
   upvotes: number;
 }
 
+export type CommunityWallStatus = "pending" | "approved" | "rejected";
+export type CommunityWallSentiment = "positive" | "mixed" | "negative" | "question";
+export type CommunityWallCategory =
+  | "mileage"
+  | "comfort"
+  | "features"
+  | "service"
+  | "reliability"
+  | "value"
+  | "future wish"
+  | "discussion";
+export type CommunityWallOwnershipStage =
+  | "considering"
+  | "booked"
+  | "0-6 months"
+  | "6-24 months"
+  | "2+ years";
+
+export interface CommunityWallPost {
+  id: string;
+  modelId: string;
+  modelName: string;
+  authorName: string;
+  ownershipStage: CommunityWallOwnershipStage;
+  category: CommunityWallCategory;
+  sentiment: CommunityWallSentiment;
+  text: string;
+  status: CommunityWallStatus;
+  createdAt: string;
+  approvedAt: string | null;
+}
+

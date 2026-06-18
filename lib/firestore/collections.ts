@@ -13,4 +13,5 @@ export const COLLECTIONS = {
   upgradeInsights: "upgradeInsights",
   imageSources: "imageSources",
   meta: "meta",
+  communityWallPosts: "communityWallPosts",
 } as const;
