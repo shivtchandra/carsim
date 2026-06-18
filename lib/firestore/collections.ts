@@ -14,5 +14,4 @@ export const COLLECTIONS = {
   imageSources: "imageSources",
   communityWallPosts: "communityWallPosts",
   meta: "meta",
-  communityWallPosts: "communityWallPosts",
 } as const;
