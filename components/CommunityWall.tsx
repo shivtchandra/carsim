@@ -251,8 +251,9 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
       setText("");
       setStatusMessage("Pinned for review. Once approved, it joins the public wall.");
       setIsComposerOpen(false);
-    } catch {
-      setFormError("Could not submit right now. Firebase may be unavailable in this environment.");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      setFormError(`Submit failed: ${msg}`);
     } finally {
       setIsSubmitting(false);
     }

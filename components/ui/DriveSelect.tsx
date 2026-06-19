@@ -87,7 +87,7 @@ export default function DriveSelect<T extends string>({
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Search"
-                className="w-full bg-transparent text-base outline-none placeholder:text-[#8a8a8a] sm:text-sm"
+                className="w-full bg-transparent text-[#161616] text-base outline-none placeholder:text-[#8a8a8a] sm:text-sm"
                 autoFocus
               />
             </label>
