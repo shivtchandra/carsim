@@ -58,9 +58,12 @@ service cloud.firestore {
     }
 
     match /communityWallPosts/{postId} {
-      allow read: if resource.data.status == "approved";
+      allow read: if true;
       allow create: if validWallCreate();
-      allow update, delete: if false;
+      allow update: if request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(["status", "approvedAt", "rejectedAt"])
+        && request.resource.data.status in ["approved", "rejected"];
+      allow delete: if false;
     }
 
     match /{document=**} {
