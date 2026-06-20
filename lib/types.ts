@@ -214,6 +214,30 @@ export type CommunityWallOwnershipStage =
   | "0-6 months"
   | "6-24 months"
   | "2+ years";
+export type CommunityWallVariant =
+  | "Petrol Manual"
+  | "Petrol Automatic"
+  | "Diesel Manual"
+  | "Diesel Automatic"
+  | "Hybrid"
+  | "Electric"
+  | "CNG";
+export type CommunityWallOdometer =
+  | "< 5,000 km"
+  | "5k – 15k km"
+  | "15k – 30k km"
+  | "30k – 60k km"
+  | "60k+ km";
+export type CommunityWallYearBought =
+  | "2018" | "2019" | "2020" | "2021" | "2022" | "2023" | "2024" | "2025" | "2026";
+export type CommunityWallPostFormat = "quick" | "structured";
+export interface CommunityWallSections {
+  engine?: string;
+  ride?: string;
+  cabin?: string;
+  tech?: string;
+  ownership?: string;
+}
 
 export interface CommunityWallPost {
   id: string;
@@ -221,10 +245,16 @@ export interface CommunityWallPost {
   modelName: string;
   authorName: string;
   ownershipStage: CommunityWallOwnershipStage;
+  variant?: CommunityWallVariant;
+  yearBought?: CommunityWallYearBought;
+  odometer?: CommunityWallOdometer;
   category: CommunityWallCategory;
   sentiment: CommunityWallSentiment;
   text: string;
   status: CommunityWallStatus;
   createdAt: string;
   approvedAt: string | null;
+  postFormat?: CommunityWallPostFormat;
+  sections?: CommunityWallSections;
+  helpfulCount?: number;
 }

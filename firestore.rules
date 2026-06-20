@@ -34,15 +34,21 @@ service cloud.firestore {
         && request.resource.data.createdAt == request.time
         && request.resource.data.text is string
         && request.resource.data.text.size() >= 20
-        && request.resource.data.text.size() <= 420
+        && request.resource.data.text.size() <= 1500
         && request.resource.data.authorName is string
         && request.resource.data.authorName.size() >= 1
         && request.resource.data.authorName.size() <= 40
         && request.resource.data.modelId is string
         && request.resource.data.modelId.size() >= 2
         && request.resource.data.modelId.size() <= 80;
-      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','approvedAt','rejectedAt'])
-        && request.resource.data.status in ['approved','rejected'];
+      allow update: if (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['helpfulCount'])
+          && request.resource.data.helpfulCount is int
+          && request.resource.data.helpfulCount == resource.data.get('helpfulCount', 0) + 1
+        ) || (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','approvedAt','rejectedAt'])
+          && request.resource.data.status in ['approved','rejected']
+        );
       allow delete: if false;
     }
 

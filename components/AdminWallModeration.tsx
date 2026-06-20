@@ -191,6 +191,11 @@ export default function AdminWallModeration() {
                   <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#161616]/55">
                     {post.modelName} / {post.category}
                   </p>
+                  {(post.variant ?? post.yearBought ?? post.odometer) && (
+                    <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-[#161616]/40">
+                      {[post.variant, post.yearBought, post.odometer].filter(Boolean).join(" · ")}
+                    </p>
+                  )}
                   <h2 className="mt-1 text-xl font-semibold">{post.authorName}</h2>
                 </div>
                 <span className="rounded-full border border-[#161616]/10 bg-[#F5F1E8] px-2.5 py-1 font-mono text-[10px] uppercase text-[#161616]/60">
