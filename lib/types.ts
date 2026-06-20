@@ -203,14 +203,11 @@ export interface DetailedReview {
 export type CommunityWallStatus = "pending" | "approved" | "rejected";
 export type CommunityWallSentiment = "positive" | "mixed" | "negative" | "question";
 export type CommunityWallCategory =
-  | "mileage"
-  | "comfort"
-  | "features"
-  | "service"
-  | "reliability"
-  | "value"
-  | "future wish"
-  | "discussion";
+  | "performance & comfort"
+  | "features & tech"
+  | "ownership & service"
+  | "value & cost"
+  | "general";
 export type CommunityWallOwnershipStage =
   | "considering"
   | "booked"

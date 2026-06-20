@@ -26,17 +26,12 @@ import type {
 type ModelOption = Pick<Model, "id" | "name">;
 
 const categories: CommunityWallCategory[] = [
-  "mileage",
-  "comfort",
-  "features",
-  "service",
-  "reliability",
-  "value",
-  "future wish",
-  "discussion",
+  "performance & comfort",
+  "features & tech",
+  "ownership & service",
+  "value & cost",
+  "general",
 ];
-
-const sentiments: CommunityWallSentiment[] = ["positive", "mixed", "negative", "question"];
 
 const ownershipStages: CommunityWallOwnershipStage[] = [
   "considering",
@@ -46,12 +41,38 @@ const ownershipStages: CommunityWallOwnershipStage[] = [
   "2+ years",
 ];
 
-const promptStarters = [
-  "What surprised you after 6 months?",
-  "Feature you stopped using?",
-  "One thing future buyers should know?",
-  "Service visit that changed your opinion?",
-];
+const stagePrompts: Record<CommunityWallOwnershipStage, string[]> = {
+  considering: [
+    "What's stopping you from deciding?",
+    "What are you most unsure about?",
+    "What do you wish reviews told you?",
+  ],
+  booked: [
+    "Why did you pick this over the alternatives?",
+    "What tipped the decision?",
+  ],
+  "0-6 months": [
+    "What surprised you most in the first few weeks?",
+    "Anything you wish the dealer had told you?",
+  ],
+  "6-24 months": [
+    "What's held up well? What hasn't?",
+    "Any unexpected running costs?",
+  ],
+  "2+ years": [
+    "Would you buy it again?",
+    "What do long-term owners know that buyers don't?",
+  ],
+};
+
+const sentiments: CommunityWallSentiment[] = ["positive", "mixed", "negative", "question"];
+
+const sentimentTone: Record<CommunityWallSentiment, string> = {
+  positive: "text-[#2d6a4f] border-[#2d6a4f]/30 bg-[#2d6a4f]/10",
+  mixed: "text-[#8a5a00] border-[#d97706]/35 bg-[#d97706]/10",
+  negative: "text-[#C84C31] border-[#C84C31]/35 bg-[#C84C31]/10",
+  question: "text-[#4F6B8A] border-[#4F6B8A]/35 bg-[#4F6B8A]/10",
+};
 
 const noteStyles = [
   { bg: "#F8E36D", tape: "#F5F1E8", rotate: "-rotate-2" },
@@ -62,12 +83,11 @@ const noteStyles = [
   { bg: "#FFD166", tape: "#ECE7DF", rotate: "-rotate-2" },
 ];
 
-const sentimentTone: Record<CommunityWallSentiment, string> = {
-  positive: "text-[#2d6a4f] border-[#2d6a4f]/30 bg-[#2d6a4f]/10",
-  mixed: "text-[#8a5a00] border-[#d97706]/35 bg-[#d97706]/10",
-  negative: "text-[#C84C31] border-[#C84C31]/35 bg-[#C84C31]/10",
-  question: "text-[#4F6B8A] border-[#4F6B8A]/35 bg-[#4F6B8A]/10",
-};
+function charFeedback(len: number): string {
+  if (len < 40) return "Add a bit more — even one specific detail helps.";
+  if (len <= 100) return "Good start.";
+  return "✓ That's a useful note.";
+}
 
 function fieldFromDoc(data: DocumentData, fallback: Partial<CommunityWallPost>): CommunityWallPost {
   const createdAt = data.createdAt?.toDate?.().toISOString?.() ?? fallback.createdAt ?? new Date().toISOString();
@@ -79,7 +99,7 @@ function fieldFromDoc(data: DocumentData, fallback: Partial<CommunityWallPost>):
     modelName: String(data.modelName ?? fallback.modelName ?? "Unknown car"),
     authorName: String(data.authorName ?? fallback.authorName ?? "Owner"),
     ownershipStage: (data.ownershipStage ?? fallback.ownershipStage ?? "considering") as CommunityWallOwnershipStage,
-    category: (data.category ?? fallback.category ?? "discussion") as CommunityWallCategory,
+    category: (data.category ?? fallback.category ?? "general") as CommunityWallCategory,
     sentiment: (data.sentiment ?? fallback.sentiment ?? "mixed") as CommunityWallSentiment,
     text: String(data.text ?? fallback.text ?? ""),
     status: (data.status ?? fallback.status ?? "approved") as CommunityWallPost["status"],
@@ -100,8 +120,7 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
   const [authorName, setAuthorName] = useState("");
   const [modelId, setModelId] = useState(models[0]?.id ?? "");
   const [ownershipStage, setOwnershipStage] = useState<CommunityWallOwnershipStage>("0-6 months");
-  const [category, setCategory] = useState<CommunityWallCategory>("comfort");
-  const [sentiment, setSentiment] = useState<CommunityWallSentiment>("mixed");
+  const [category, setCategory] = useState<CommunityWallCategory>("performance & comfort");
   const [text, setText] = useState("");
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [formError, setFormError] = useState<string | null>(null);
@@ -240,7 +259,7 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
         authorName: cleanName,
         ownershipStage,
         category,
-        sentiment,
+        sentiment: "mixed",
         text: cleanText,
         status: "pending",
         createdAt: serverTimestamp(),
@@ -451,19 +470,6 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="block">
                 <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
-                  Name
-                </span>
-                <input
-                  value={authorName}
-                  onChange={(event) => setAuthorName(event.target.value)}
-                  maxLength={40}
-                  placeholder="Anonymous owner"
-                  className="min-h-11 w-full rounded-md border border-[#161616]/10 bg-[#F5F1E8] px-3 text-sm outline-none transition focus:border-[#C84C31]"
-                />
-              </label>
-
-              <label className="block">
-                <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
                   Car
                 </span>
                 <DriveSelect value={modelId} onChange={setModelId} ariaLabel="Car" options={modelOptions} />
@@ -480,31 +486,7 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
                   options={ownershipStages.map((item) => ({ value: item, label: item }))}
                 />
               </label>
-
-              <label className="block">
-                <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
-                  Tone
-                </span>
-                <DriveSelect
-                  value={sentiment}
-                  onChange={(next) => setSentiment(next as CommunityWallSentiment)}
-                  ariaLabel="Tone"
-                  options={sentiments.map((item) => ({ value: item, label: item }))}
-                />
-              </label>
             </div>
-
-            <label className="mt-4 block">
-              <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
-                Topic
-              </span>
-              <DriveSelect
-                value={category}
-                onChange={(next) => setCategory(next as CommunityWallCategory)}
-                ariaLabel="Topic"
-                options={categories.map((item) => ({ value: item, label: item }))}
-              />
-            </label>
 
             <label className="mt-4 block">
               <span className="mb-1.5 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
@@ -519,10 +501,11 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
                 placeholder="What should another buyer know before choosing this car?"
                 className="w-full resize-none rounded-md border border-[#161616]/10 bg-[#F5F1E8] px-3 py-3 text-sm leading-relaxed outline-none transition placeholder:text-[#161616]/38 focus:border-[#C84C31]"
               />
+              <p className="mt-1.5 text-xs text-[#161616]/48">{charFeedback(text.length)}</p>
             </label>
 
-            <div className="mt-4 grid gap-2 sm:grid-cols-2">
-              {promptStarters.map((prompt) => (
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {stagePrompts[ownershipStage].map((prompt) => (
                 <button
                   key={prompt}
                   type="button"
@@ -532,6 +515,33 @@ export default function CommunityWall({ models }: { models: ModelOption[] }) {
                   {prompt}
                 </button>
               ))}
+            </div>
+
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <label className="block">
+                <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
+                  Topic
+                </span>
+                <DriveSelect
+                  value={category}
+                  onChange={(next) => setCategory(next as CommunityWallCategory)}
+                  ariaLabel="Topic"
+                  options={categories.map((item) => ({ value: item, label: item }))}
+                />
+              </label>
+
+              <label className="block">
+                <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.16em] text-[#161616]/55">
+                  Name <span className="normal-case tracking-normal opacity-60">(optional)</span>
+                </span>
+                <input
+                  value={authorName}
+                  onChange={(event) => setAuthorName(event.target.value)}
+                  maxLength={40}
+                  placeholder="First name or nickname"
+                  className="min-h-11 w-full rounded-md border border-[#161616]/10 bg-[#F5F1E8] px-3 text-sm text-[#161616] outline-none transition focus:border-[#C84C31]"
+                />
+              </label>
             </div>
 
             {formError && (
