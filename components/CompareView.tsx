@@ -213,8 +213,8 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
   );
 
   const radarBlock = (
-    <div className="glass p-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+    <div className="glass p-4 sm:p-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 sm:mb-6">
         <h2 className="text-sm text-secondary flex items-center gap-1.5 flex-wrap">
           Six axes, scored 1–10 by formula
           <EstimatedBadge tooltip="Scores are normalized across all combinations of models and fuels." />
@@ -228,9 +228,9 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
           ))}
         </div>
       </div>
-      <div className="h-80 sm:h-96">
+      <div className="h-72 sm:h-96">
         <ResponsiveContainer>
-          <RadarChart data={chartData} outerRadius="62%">
+          <RadarChart data={chartData} outerRadius="74%" margin={{ top: 8, right: 12, bottom: 8, left: 12 }}>
             <PolarGrid stroke="rgba(255,255,255,0.12)" />
             <PolarAngleAxis dataKey="axis" tick={{ fill: "#A1A1AA", fontSize: 11 }} />
             <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />

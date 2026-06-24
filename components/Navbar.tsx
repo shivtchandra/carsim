@@ -19,7 +19,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 px-4 sm:px-6">
+    <>
+      {/* Top mask so scrolled page content doesn't bleed through above/around the floating navbar */}
+      <div
+        className="fixed top-0 inset-x-0 h-24 z-40 pointer-events-none"
+        style={{ background: "linear-gradient(to bottom, #F5F1E8 38%, rgba(245,241,232,0.85) 62%, rgba(245,241,232,0))" }}
+        aria-hidden="true"
+      />
+      <header className="fixed top-0 inset-x-0 z-50 px-4 sm:px-6">
       <nav
         className="mx-auto max-w-6xl px-4 py-3 mt-3 flex items-center justify-between rounded-2xl border border-[#161616]/10 relative"
         style={{
@@ -115,5 +122,6 @@ export default function Navbar() {
         )}
       </nav>
     </header>
+    </>
   );
 }

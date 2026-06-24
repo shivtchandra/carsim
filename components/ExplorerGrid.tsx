@@ -3,6 +3,7 @@
 import { useMemo, useState, useCallback } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Search, X } from "lucide-react";
 import { brands, models, getBrand, getVariantsForModel, formatLakh } from "@/lib/data";
 import type { Fuel, Segment, Transmission } from "@/lib/types";
 import CarPhoto from "./CarPhoto";
@@ -37,6 +38,7 @@ type ExploreFilters = {
   trans: "all" | Transmission;
   fuel: "all" | Fuel;
   segment: "all" | Segment;
+  query: string;
 };
 
 const EXPLORE_DEFAULTS: ExploreFilters = {
@@ -45,24 +47,32 @@ const EXPLORE_DEFAULTS: ExploreFilters = {
   trans: "all",
   fuel: "all",
   segment: "all",
+  query: "",
 };
 
 export default function ExplorerGrid() {
   const [filters, setFilters] = usePersistedPageState("explore", EXPLORE_DEFAULTS);
-  const { brandId, band, trans, fuel, segment } = filters;
+  const { brandId, band, trans, fuel, segment, query } = filters;
   const setBrandId = useCallback((v: string) => setFilters((p) => ({ ...p, brandId: v })), [setFilters]);
   const setBand = useCallback((v: string) => setFilters((p) => ({ ...p, band: v })), [setFilters]);
   const setTrans = useCallback((v: "all" | Transmission) => setFilters((p) => ({ ...p, trans: v })), [setFilters]);
   const setFuel = useCallback((v: "all" | Fuel) => setFilters((p) => ({ ...p, fuel: v })), [setFilters]);
   const setSegment = useCallback((v: "all" | Segment) => setFilters((p) => ({ ...p, segment: v })), [setFilters]);
+  const setQuery = useCallback((v: string) => setFilters((p) => ({ ...p, query: v })), [setFilters]);
   usePersistedScroll("explore");
   const [openFilter, setOpenFilter] = useState<FilterKey>(null);
 
   const filtered = useMemo(() => {
     const b = PRICE_BANDS.find((p) => p.id === band)!;
+    const q = query.trim().toLowerCase();
     return models.filter((m) => {
       if (brandId !== "all" && m.brandId !== brandId) return false;
       if (segment !== "all" && m.segment !== segment) return false;
+      if (q) {
+        const brand = getBrand(m.brandId);
+        const haystack = `${brand?.name ?? ""} ${m.name} ${m.id}`.toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
       const vs = getVariantsForModel(m.id).filter(
         (v) =>
           v.priceExShowroom >= b.min &&
@@ -72,7 +82,7 @@ export default function ExplorerGrid() {
       );
       return vs.length > 0;
     });
-  }, [brandId, band, trans, fuel, segment]);
+  }, [brandId, band, trans, fuel, segment, query]);
 
   const brandLabel = brandId === "all" ? "All brands" : getBrand(brandId)?.name ?? "Brand";
   const priceLabel = PRICE_BANDS.find((p) => p.id === band)?.label ?? "Price";
@@ -90,6 +100,28 @@ export default function ExplorerGrid() {
 
   return (
     <div>
+      <div className="relative mb-6 sm:mb-8">
+        <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#161616]/40" aria-hidden />
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search by car or brand (e.g. Creta, Tata, SUV)…"
+          aria-label="Search cars"
+          className="w-full min-h-11 rounded-xl border border-[#161616]/12 bg-[#F5F1E8] py-2.5 pl-10 pr-10 text-sm text-[#161616] placeholder:text-[#161616]/45 shadow-[inset_0_1px_0_rgba(255,255,255,0.45),0_8px_20px_rgba(22,22,22,0.04)] transition focus:border-[#C84C31]/40 focus:outline-none focus:ring-4 focus:ring-[#C84C31]/12"
+        />
+        {query && (
+          <button
+            type="button"
+            onClick={() => setQuery("")}
+            aria-label="Clear search"
+            className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg text-[#161616]/50 transition hover:bg-[#161616]/5 hover:text-[#161616]"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        )}
+      </div>
+
       {/* Mobile filter chips */}
       <div className="sm:hidden flex gap-2 overflow-x-auto scrollbar-none mb-6 -mx-1 px-1">
         {filterChips.map((chip) => (
@@ -167,11 +199,14 @@ export default function ExplorerGrid() {
         <DriveSelect value={segment} onChange={(v) => setSegment(v as "all" | Segment)} ariaLabel="Segment" options={SEGMENTS.map((item) => ({ value: item.id, label: item.label }))} className="w-64" />
       </div>
 
-      <p className="text-xs text-secondary mb-4 sm:hidden">{filtered.length} cars match</p>
+      <p className="text-xs text-[#4b4b4b] mb-4">
+        {filtered.length} {filtered.length === 1 ? "car" : "cars"} match
+        {query.trim() ? ` for “${query.trim()}”` : ""}
+      </p>
 
       {filtered.length === 0 ? (
-        <div className="glass p-12 text-center text-secondary">
-          No cars match those filters — try widening the price band or transmission.
+        <div className="glass p-12 text-center text-[#4b4b4b]">
+          No cars match{query.trim() ? ` “${query.trim()}”` : ""} — try a different search or widen your filters.
         </div>
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

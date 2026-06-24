@@ -9,14 +9,10 @@ import SimulationBay from "@/components/SimulationBay";
 import HomeComparisonEngine from "@/components/HomeComparisonEngine";
 import LuxuryShowroom from "@/components/LuxuryShowroom";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
-import IntroSequence from "@/components/IntroSequence";
 
 export default function Home() {
   return (
     <div className="relative w-full pb-20 sm:pb-0 bg-[#F5F1E8] text-[#161616]">
-      {/* First-load blueprint → color intro overlay (once per session) */}
-      <IntroSequence />
-
       {/* Giant Unified F1 Engineering Blueprint Backdrop */}
       <UnifiedCanvas />
 
