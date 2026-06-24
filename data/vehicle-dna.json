@@ -461,5 +461,661 @@
       "shoulderWidth": 1.05,
       "rideHeight": 1.04
     }
+  },
+  "maruti-alto-k10": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-s-presso": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-celerio": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-wagon-r": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-xl6": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "maruti-jimny": {
+    "archetype": "sub-4m-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-invicto": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "maruti-e-vitara": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "maruti-victoris": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "maruti-eeco": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "maruti-ignis": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "tata-tiago": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "tata-tiago-ev": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "tata-punch-ev": {
+    "archetype": "sub-4m-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "tata-tigor": {
+    "archetype": "compact-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "tata-tigor-ev": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "tata-nexon-ev": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "tata-curvv-ev": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "tata-sierra": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "tata-harrier-ev": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "mahindra-bolero-neo": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mahindra-bolero-neo-plus": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mahindra-xuv-3xo-ev": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mahindra-xuv-7xo": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mahindra-scorpio": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mahindra-marazzo": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mahindra-xuv400": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "mahindra-be-6": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mahindra-be-6-fe": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mahindra-xev-9e": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mahindra-xev-9s": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "hyundai-grand-i10-nios": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "hyundai-aura": {
+    "archetype": "compact-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "hyundai-i20-n-line": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "hyundai-venue-n-line": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "hyundai-creta-n-line": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "hyundai-creta-electric": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "hyundai-alcazar": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-glanza": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "toyota-rumion": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-urban-cruiser-ebella": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-innova-hycross": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-hilux": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-camry": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-vellfire": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "toyota-land-cruiser": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "kia-carens-clavis": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "kia-carens-clavis-ev": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "kia-syros": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "kia-carnival": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "kia-ev6": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "kia-ev9": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "honda-city-e-hev": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "skoda-superb": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "skoda-octavia-rs": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "volkswagen-tiguan-r-line": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "volkswagen-golf-gti": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "mg-comet-ev": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mg-hector-plus": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mg-gloster": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mg-majestor": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "mg-cyberster": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "mg-m9": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "renault-kwid": {
+    "archetype": "compact-hatch",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "renault-triber": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "renault-duster": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "nissan-x-trail": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "nissan-tekton": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "jeep-meridian": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "jeep-wrangler": {
+    "archetype": "sub-4m-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "jeep-grand-cherokee": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "byd-sealion-7": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "byd-emax-7": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 17
+  },
+  "audi-a4": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "audi-a6": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "audi-q3-sportback": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "audi-q7": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "audi-q8": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 16
+  },
+  "audi-s5-sportback": {
+    "archetype": "midsize-sedan",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "audi-rs-q8": {
+    "archetype": "midsize-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "highway",
+    "wheelInches": 17
+  },
+  "audi-e-tron-gt": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
+  },
+  "audi-rs-e-tron-gt": {
+    "archetype": "compact-suv",
+    "signatureElements": [
+      "roof-rails"
+    ],
+    "environment": "urban-ev",
+    "wheelInches": 16
   }
 }

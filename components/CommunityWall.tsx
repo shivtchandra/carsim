@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState, useCallback } from "react";
 import {
   addDoc,
   collection,
@@ -33,6 +33,7 @@ import type {
   CommunityWallYearBought,
   Model,
 } from "@/lib/types";
+import { usePersistedPageState, usePersistedScroll } from "@/lib/use-persisted-page-state";
 
 type ModelOption = Pick<Model, "id" | "name">;
 type SectionKey = keyof CommunityWallSections;
@@ -187,9 +188,22 @@ function loadVotedPosts(): Set<string> {
 
 export default function CommunityWall({ models }: { models: ModelOption[] }) {
   const [posts,          setPosts]          = useState<CommunityWallPost[]>(communityWallSeedPosts);
-  const [modelFilter,    setModelFilter]    = useState("all");
-  const [categoryFilter, setCategoryFilter] = useState<"all" | CommunityWallCategory>("all");
-  const [sentimentFilter,setSentimentFilter]= useState<"all" | CommunityWallSentiment>("all");
+  const [filters, setFilters] = usePersistedPageState("wall", {
+    modelFilter: "all",
+    categoryFilter: "all" as "all" | CommunityWallCategory,
+    sentimentFilter: "all" as "all" | CommunityWallSentiment,
+  });
+  const { modelFilter, categoryFilter, sentimentFilter } = filters;
+  const setModelFilter = useCallback((v: string) => setFilters((p) => ({ ...p, modelFilter: v })), [setFilters]);
+  const setCategoryFilter = useCallback(
+    (v: "all" | CommunityWallCategory) => setFilters((p) => ({ ...p, categoryFilter: v })),
+    [setFilters],
+  );
+  const setSentimentFilter = useCallback(
+    (v: "all" | CommunityWallSentiment) => setFilters((p) => ({ ...p, sentimentFilter: v })),
+    [setFilters],
+  );
+  usePersistedScroll("wall");
   const [authorName,     setAuthorName]     = useState("");
   const [modelId,        setModelId]        = useState(models[0]?.id ?? "");
   const [ownershipStage, setOwnershipStage] = useState<CommunityWallOwnershipStage>("0-6 months");

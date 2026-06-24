@@ -351,6 +351,491 @@
       "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%C5%A0koda_Kodiaq_%28MSP17%29.jpg/1280px-%C5%A0koda_Kodiaq_%28MSP17%29.jpg",
       "credit": "Jakub \"flyz1\" Maciejewski",
       "license": "CC BY-SA 3.0"
+    },
+    {
+      "modelId": "maruti-alto-k10",
+      "query": "Maruti Suzuki Alto K10 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/SuzukiAltok10.jpg/1280px-SuzukiAltok10.jpg",
+      "credit": "Gonzalo M. Garcia",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "modelId": "maruti-s-presso",
+      "query": "Maruti Suzuki S-Presso India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2021_Suzuki_S-Presso_1.0_GLX.jpg/1280px-2021_Suzuki_S-Presso_1.0_GLX.jpg",
+      "credit": "RL GNZLZ from Chile",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "modelId": "maruti-celerio",
+      "query": "Maruti Suzuki Celerio India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Maruti_Suzuki_-_Celerio_VXi_-_WB_06_P_2535_-_Kolkata_20170915131207.jpg/1280px-Maruti_Suzuki_-_Celerio_VXi_-_WB_06_P_2535_-_Kolkata_20170915131207.jpg",
+      "credit": "Biswarup Ganguly",
+      "license": "CC BY 3.0"
+    },
+    {
+      "modelId": "maruti-wagon-r",
+      "query": "Maruti Suzuki Wagon R India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2013_facelift_Maruti_Suzuki_Wagon_R_%28Mathura%29.jpg/1280px-2013_facelift_Maruti_Suzuki_Wagon_R_%28Mathura%29.jpg",
+      "credit": "Aleksandr Zykov from Russia",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "modelId": "maruti-xl6",
+      "query": "Maruti Suzuki XL6 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Maruti_Suzuki_XL6_%28front%29.jpg/1280px-Maruti_Suzuki_XL6_%28front%29.jpg",
+      "credit": "Agratsa",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "maruti-jimny",
+      "query": "Maruti Suzuki Jimny India"
+    },
+    {
+      "modelId": "maruti-invicto",
+      "query": "Maruti Suzuki Invicto India"
+    },
+    {
+      "modelId": "maruti-e-vitara",
+      "query": "Maruti Suzuki e Vitara India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Maruti_Suzuki%27s_Vitara_Brezza_ZDi_Plus_compact_SUV_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg/1280px-Maruti_Suzuki%27s_Vitara_Brezza_ZDi_Plus_compact_SUV_%28Ank_Kumar%2C_Infosys_Limited%29_01.jpg",
+      "credit": "Ank Kumar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "maruti-victoris",
+      "query": "Maruti Suzuki Victoris India"
+    },
+    {
+      "modelId": "maruti-eeco",
+      "query": "Maruti Suzuki Eeco India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/White_Maruti_Eeco_01.jpg/1280px-White_Maruti_Eeco_01.jpg",
+      "credit": "Bams siblings",
+      "license": "CC BY 3.0"
+    },
+    {
+      "modelId": "maruti-ignis",
+      "query": "Maruti Suzuki Ignis India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Maruti_Suzuki_Ignis_in_India.jpg/1280px-Maruti_Suzuki_Ignis_in_India.jpg",
+      "credit": "Raghavan2010",
+      "license": "CC0"
+    },
+    {
+      "modelId": "tata-tiago",
+      "query": "Tata Motors Tiago India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tata_tiago.jpg/1280px-Tata_tiago.jpg",
+      "credit": "Bharadwaj 7645",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "tata-tiago-ev",
+      "query": "Tata Motors Tiago EV India"
+    },
+    {
+      "modelId": "tata-punch-ev",
+      "query": "Tata Motors Punch EV India"
+    },
+    {
+      "modelId": "tata-tigor",
+      "query": "Tata Motors Tigor India"
+    },
+    {
+      "modelId": "tata-tigor-ev",
+      "query": "Tata Motors Tigor EV India"
+    },
+    {
+      "modelId": "tata-nexon-ev",
+      "query": "Tata Motors Nexon EV India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Nexon_1.jpg/1280px-Salon_de_l%27auto_de_Gen%C3%A8ve_2014_-_20140305_-_Tata_Nexon_1.jpg",
+      "credit": "Clément Bucco-Lechat",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "modelId": "tata-curvv-ev",
+      "query": "Tata Motors Curvv EV India"
+    },
+    {
+      "modelId": "tata-sierra",
+      "query": "Tata Motors Sierra India"
+    },
+    {
+      "modelId": "tata-harrier-ev",
+      "query": "Tata Motors Harrier EV India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/4th_International_Auto_Show%2C_Bangalore_%282025%29_110.jpg/1280px-4th_International_Auto_Show%2C_Bangalore_%282025%29_110.jpg",
+      "credit": "Gpkp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mahindra-bolero-neo",
+      "query": "Mahindra Bolero Neo India"
+    },
+    {
+      "modelId": "mahindra-bolero-neo-plus",
+      "query": "Mahindra Bolero Neo Plus India"
+    },
+    {
+      "modelId": "mahindra-xuv-3xo-ev",
+      "query": "Mahindra XUV 3XO EV India"
+    },
+    {
+      "modelId": "mahindra-xuv-7xo",
+      "query": "Mahindra XUV 7XO India"
+    },
+    {
+      "modelId": "mahindra-scorpio",
+      "query": "Mahindra Scorpio India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mahindra_Scorpio_%28124712669%29.jpg",
+      "credit": "Thorsten Vieth from Bangalore, India",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "modelId": "mahindra-marazzo",
+      "query": "Mahindra Marazzo India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mahindra_Marazzo_MPV_SEP_18_%281%29.jpg/1280px-Mahindra_Marazzo_MPV_SEP_18_%281%29.jpg",
+      "credit": "SnapMeUp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mahindra-xuv400",
+      "query": "Mahindra XUV400 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2023_Mahindra_XUV_400_EL_EV_%2C_Ashiana_Brahmananda%2C_Jamshedpur%2C_Jharkhand%2C_India_%28_Ank_Kumar%2C_Infosys_Limited_%29_03.jpg/1280px-2023_Mahindra_XUV_400_EL_EV_%2C_Ashiana_Brahmananda%2C_Jamshedpur%2C_Jharkhand%2C_India_%28_Ank_Kumar%2C_Infosys_Limited_%29_03.jpg",
+      "credit": "Ank Kumar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mahindra-be-6",
+      "query": "Mahindra BE 6 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mahindra_Goa_5door_in_Avellino.JPG/1280px-Mahindra_Goa_5door_in_Avellino.JPG",
+      "credit": "Corvettec6r",
+      "license": "CC0"
+    },
+    {
+      "modelId": "mahindra-be-6-fe",
+      "query": "Mahindra BE 6 FE India"
+    },
+    {
+      "modelId": "mahindra-xev-9e",
+      "query": "Mahindra XEV 9e India"
+    },
+    {
+      "modelId": "mahindra-xev-9s",
+      "query": "Mahindra XEV 9S India"
+    },
+    {
+      "modelId": "hyundai-grand-i10-nios",
+      "query": "Hyundai Grand i10 Nios India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hyundai_i10_in_blue.jpg/1280px-Hyundai_i10_in_blue.jpg",
+      "credit": "Lewis Collard",
+      "license": "Attribution"
+    },
+    {
+      "modelId": "hyundai-aura",
+      "query": "Hyundai Aura India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hyundai_i10_in_blue.jpg/1280px-Hyundai_i10_in_blue.jpg",
+      "credit": "Lewis Collard",
+      "license": "Attribution"
+    },
+    {
+      "modelId": "hyundai-i20-n-line",
+      "query": "Hyundai i20 N Line India"
+    },
+    {
+      "modelId": "hyundai-venue-n-line",
+      "query": "Hyundai Venue N Line India"
+    },
+    {
+      "modelId": "hyundai-creta-n-line",
+      "query": "Hyundai Creta N Line India"
+    },
+    {
+      "modelId": "hyundai-creta-electric",
+      "query": "Hyundai Creta Electric India"
+    },
+    {
+      "modelId": "hyundai-alcazar",
+      "query": "Hyundai Alcazar India"
+    },
+    {
+      "modelId": "toyota-glanza",
+      "query": "Toyota Glanza India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Toyota_Glanza_%28front%29.jpg/1280px-Toyota_Glanza_%28front%29.jpg",
+      "credit": "Agratsa",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "toyota-rumion",
+      "query": "Toyota Rumion India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/2013_Suzuki_Ertiga_1.4_GX_wagon_%28ZE81S%3B_01-20-2019%29%2C_South_Tangerang.jpg/1280px-2013_Suzuki_Ertiga_1.4_GX_wagon_%28ZE81S%3B_01-20-2019%29%2C_South_Tangerang.jpg",
+      "credit": "Wilzz99",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "toyota-urban-cruiser-ebella",
+      "query": "Toyota Urban Cruiser Ebella India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Suzuki_eVX.jpg/1280px-Suzuki_eVX.jpg",
+      "credit": "TTTNIS",
+      "license": "CC0"
+    },
+    {
+      "modelId": "toyota-innova-hycross",
+      "query": "Toyota Innova Hycross India"
+    },
+    {
+      "modelId": "toyota-hilux",
+      "query": "Toyota Hilux India"
+    },
+    {
+      "modelId": "toyota-camry",
+      "query": "Toyota Camry India"
+    },
+    {
+      "modelId": "toyota-vellfire",
+      "query": "Toyota Vellfire India"
+    },
+    {
+      "modelId": "toyota-land-cruiser",
+      "query": "Toyota Land Cruiser India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/20120524_WN_C1022490_0002_-_Flickr_-_NZ_Defence_Force.jpg/1280px-20120524_WN_C1022490_0002_-_Flickr_-_NZ_Defence_Force.jpg",
+      "credit": "New Zealand Defence Force from Wellington, New Zealand",
+      "license": "CC BY 2.0"
+    },
+    {
+      "modelId": "kia-carens-clavis",
+      "query": "Kia Carens Clavis India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/2025_kia_Carens_Clavis_Facelift_1.5_T-GDi_7DCT_%283%29.jpg/1280px-2025_kia_Carens_Clavis_Facelift_1.5_T-GDi_7DCT_%283%29.jpg",
+      "credit": "Avante2025",
+      "license": "CC BY 4.0"
+    },
+    {
+      "modelId": "kia-carens-clavis-ev",
+      "query": "Kia Carens Clavis EV India"
+    },
+    {
+      "modelId": "kia-syros",
+      "query": "Kia Syros India"
+    },
+    {
+      "modelId": "kia-carnival",
+      "query": "Kia Carnival India"
+    },
+    {
+      "modelId": "kia-ev6",
+      "query": "Kia EV6 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kia_EV6.jpg/1280px-Kia_EV6.jpg",
+      "credit": "Ganesh Mohan T",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "kia-ev9",
+      "query": "Kia EV9 India"
+    },
+    {
+      "modelId": "honda-city-e-hev",
+      "query": "Honda City e:HEV India"
+    },
+    {
+      "modelId": "skoda-superb",
+      "query": "Skoda Superb India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Skoda_Superb_India_1656.JPG/1280px-Skoda_Superb_India_1656.JPG",
+      "credit": "Krokodyl",
+      "license": "CC BY 3.0"
+    },
+    {
+      "modelId": "skoda-octavia-rs",
+      "query": "Skoda Octavia RS India"
+    },
+    {
+      "modelId": "volkswagen-tiguan-r-line",
+      "query": "Volkswagen Tiguan R-Line India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/VOLKSWAGEN_TIGUAN_R-LINE_%28AD%2CBW%29_China.jpg/1280px-VOLKSWAGEN_TIGUAN_R-LINE_%28AD%2CBW%29_China.jpg",
+      "credit": "Dinkun Chen",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "volkswagen-golf-gti",
+      "query": "Volkswagen Golf GTI India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Maria_W%C3%B6rth_Reifnitz_VW_Golf_GTI-Denkmal_22062015_1250.jpg/1280px-Maria_W%C3%B6rth_Reifnitz_VW_Golf_GTI-Denkmal_22062015_1250.jpg",
+      "credit": "Johann Jaritz",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mg-comet-ev",
+      "query": "MG Motor Comet EV India"
+    },
+    {
+      "modelId": "mg-hector-plus",
+      "query": "MG Motor Hector Plus India"
+    },
+    {
+      "modelId": "mg-gloster",
+      "query": "MG Motor Gloster India"
+    },
+    {
+      "modelId": "mg-majestor",
+      "query": "MG Motor Majestor India"
+    },
+    {
+      "modelId": "mg-cyberster",
+      "query": "MG Motor Cyberster India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/MG_Cyberster_IAA_2023_1X7A0183.jpg/1280px-MG_Cyberster_IAA_2023_1X7A0183.jpg",
+      "credit": "Alexander-93",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "mg-m9",
+      "query": "MG Motor M9 India"
+    },
+    {
+      "modelId": "renault-kwid",
+      "query": "Renault Kwid India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Streets_of_vidisha_india.jpg/1280px-Streets_of_vidisha_india.jpg",
+      "credit": "Neelesh6116",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "renault-triber",
+      "query": "Renault Triber India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Renault_Triber_%281%29.jpg",
+      "credit": "Hindi DriveSpark",
+      "license": "CC BY 3.0"
+    },
+    {
+      "modelId": "renault-duster",
+      "query": "Renault Duster India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/A_Renault_Duster_at_Ramgarh_Villa%2C_Himachal_Pradesh_%2810442125876%29.jpg/1280px-A_Renault_Duster_at_Ramgarh_Villa%2C_Himachal_Pradesh_%2810442125876%29.jpg",
+      "credit": "Vikramdeep Sidhu from Jhajjar, India",
+      "license": "CC BY 2.0"
+    },
+    {
+      "modelId": "nissan-x-trail",
+      "query": "Nissan X-Trail India"
+    },
+    {
+      "modelId": "nissan-tekton",
+      "query": "Nissan Tekton India"
+    },
+    {
+      "modelId": "jeep-meridian",
+      "query": "Jeep Meridian India"
+    },
+    {
+      "modelId": "jeep-wrangler",
+      "query": "Jeep Wrangler India"
+    },
+    {
+      "modelId": "jeep-grand-cherokee",
+      "query": "Jeep Grand Cherokee India"
+    },
+    {
+      "modelId": "byd-sealion-7",
+      "query": "BYD Sealion 7 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/BYD_Sealion_07_EV_DSC_8264.jpg/1280px-BYD_Sealion_07_EV_DSC_8264.jpg",
+      "credit": "Alexander Migl",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "byd-emax-7",
+      "query": "BYD eMAX 7 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/BYD_Song_Max_IMG003.jpg/1280px-BYD_Song_Max_IMG003.jpg",
+      "credit": "Zotyefan",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "audi-a4",
+      "query": "Audi A4 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Audi_Showroom%283%29.JPG/1280px-Audi_Showroom%283%29.JPG",
+      "credit": "Yash Y. Vadiwala",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "modelId": "audi-a6",
+      "query": "Audi A6 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/6/6b/At_the_Audi_Quattro_Golf_Tournament.jpg",
+      "credit": "V Malik",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "modelId": "audi-q3-sportback",
+      "query": "Audi Q3 Sportback India"
+    },
+    {
+      "modelId": "audi-q7",
+      "query": "Audi Q7 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Audi_Showroom%283%29.JPG/1280px-Audi_Showroom%283%29.JPG",
+      "credit": "Yash Y. Vadiwala",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "modelId": "audi-q8",
+      "query": "Audi Q8 India"
+    },
+    {
+      "modelId": "audi-s5-sportback",
+      "query": "Audi S5 Sportback India"
+    },
+    {
+      "modelId": "audi-rs-q8",
+      "query": "Audi RS Q8 India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Felicidade_A_very_happy_boy.jpg/1280px-Felicidade_A_very_happy_boy.jpg",
+      "credit": "Luis Miguel Bugallo Sánchez (Lmbuga Commons)(Lmbuga Galipedia)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "audi-e-tron-gt",
+      "query": "Audi e-tron GT India",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Audi_e-tron_GT_concept%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1005%29.jpg/1280px-Audi_e-tron_GT_concept%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS1005%29.jpg",
+      "credit": "Matti Blume",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "audi-rs-e-tron-gt",
+      "query": "Audi RS e-tron GT India"
+    },
+    {
+      "modelId": "audi-q3",
+      "query": "Audi Q3 India 2024"
+    },
+    {
+      "modelId": "audi-q5",
+      "query": "Audi Q5 India 2024"
+    },
+    {
+      "modelId": "hyundai-exter",
+      "query": "Hyundai Exter India 2024"
+    },
+    {
+      "modelId": "hyundai-ioniq5",
+      "query": "Hyundai Ioniq 5 India 2024"
+    },
+    {
+      "modelId": "mg-zs-ev",
+      "query": "MG Motor ZS EV India 2024",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/MG_ZS_EV_in_France_%28side%29.jpg/1280px-MG_ZS_EV_in_France_%28side%29.jpg",
+      "credit": "Cannonball walk",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "skoda-kylaq",
+      "query": "Skoda Kylaq India 2024",
+      "fetchedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/4th_International_Auto_Show%2C_Bangalore_%282025%29_81.jpg/1280px-4th_International_Auto_Show%2C_Bangalore_%282025%29_81.jpg",
+      "credit": "Gpkp",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "modelId": "toyota-crysta",
+      "query": "Toyota Innova Crysta India 2024"
+    },
+    {
+      "modelId": "toyota-taisor",
+      "query": "Toyota Urban Cruiser Taisor India 2024"
+    },
+    {
+      "modelId": "vinfast-vf6",
+      "query": "VinFast VF 6 India 2024"
+    },
+    {
+      "modelId": "vinfast-vf7",
+      "query": "VinFast VF 7 India 2024"
     }
   ]
 }

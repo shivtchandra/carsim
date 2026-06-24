@@ -1318,5 +1318,1645 @@
         "text": "Skoda's 'Simply Clever' features like door-edge protectors and umbrellas in doors are highly practical."
       }
     ]
+  },
+  {
+    "modelId": "maruti-alto-k10",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Alto K10's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-s-presso",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the S-Presso's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-celerio",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Celerio's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-wagon-r",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Wagon R's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-xl6",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XL6's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-jimny",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Jimny's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-invicto",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Invicto's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the hybrid petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-e-vitara",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the e Vitara's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-victoris",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Victoris's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, hybrid, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-eeco",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Eeco's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "maruti-ignis",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Ignis's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-tiago",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tiago's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-tiago-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tiago EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-punch-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Punch EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-tigor",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tigor's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-tigor-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tigor EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-nexon-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Nexon EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-curvv-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Curvv EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-sierra",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Sierra's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "tata-harrier-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Harrier EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-bolero-neo",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Bolero Neo's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-bolero-neo-plus",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Bolero Neo Plus's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xuv-3xo-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XUV 3XO EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xuv-7xo",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XUV 7XO's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-scorpio",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Scorpio's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-marazzo",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Marazzo's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xuv400",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XUV400's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-be-6",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the BE 6's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-be-6-fe",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the BE 6 FE's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xev-9e",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XEV 9e's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mahindra-xev-9s",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the XEV 9S's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-grand-i10-nios",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Grand i10 Nios's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-aura",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Aura's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-i20-n-line",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the i20 N Line's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the turbo petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-venue-n-line",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Venue N Line's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the turbo petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-creta-n-line",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Creta N Line's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the turbo petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-creta-electric",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Creta Electric's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "hyundai-alcazar",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Alcazar's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-glanza",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Glanza's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-rumion",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Rumion's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, cng powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-urban-cruiser-ebella",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Urban Cruiser Ebella's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the hybrid powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-innova-hycross",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Innova Hycross's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, hybrid powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-hilux",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Hilux's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-camry",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Camry's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the hybrid powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-vellfire",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Vellfire's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the hybrid powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "toyota-land-cruiser",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Land Cruiser's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-carens-clavis",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Carens Clavis's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-carens-clavis-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Carens Clavis EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-syros",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Syros's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-carnival",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Carnival's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-ev6",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the EV6's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "kia-ev9",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the EV9's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "honda-city-e-hev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the City e:HEV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the hybrid powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-superb",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Superb's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "skoda-octavia-rs",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Octavia RS's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "volkswagen-tiguan-r-line",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tiguan R-Line's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "volkswagen-golf-gti",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Golf GTI's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-comet-ev",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Comet EV's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-hector-plus",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Hector Plus's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-gloster",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Gloster's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-majestor",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Majestor's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-cyberster",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Cyberster's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "mg-m9",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the M9's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "renault-kwid",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Kwid's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "renault-triber",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Triber's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "renault-duster",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Duster's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol, turbo petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "nissan-x-trail",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the X-Trail's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "nissan-tekton",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Tekton's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "jeep-meridian",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Meridian's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the diesel powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "jeep-wrangler",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Wrangler's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "jeep-grand-cherokee",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Grand Cherokee's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "byd-sealion-7",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Sealion 7's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "byd-emax-7",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the eMAX 7's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-a4",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the A4's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-a6",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the A6's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-q3-sportback",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Q3 Sportback's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-q7",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Q7's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-q8",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the Q8's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-s5-sportback",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the S5 Sportback's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-rs-q8",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the RS Q8's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the petrol powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-e-tron-gt",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the e-tron GT's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
+  },
+  {
+    "modelId": "audi-rs-e-tron-gt",
+    "voices": [
+      {
+        "theme": "Value & variants",
+        "sentiment": "positive",
+        "text": "Owners like the RS e-tron GT's trim spread — you can match budget to must-have features without jumping to the top variant."
+      },
+      {
+        "theme": "Running costs",
+        "sentiment": "mixed",
+        "text": "Real-world efficiency depends heavily on how you use the electric powertrain; city traffic dulls brochure figures."
+      },
+      {
+        "theme": "Dealer experience",
+        "sentiment": "mixed",
+        "text": "Waiting periods and accessory bundles vary by city — worth comparing two dealers before booking."
+      }
+    ]
   }
 ]

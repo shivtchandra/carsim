@@ -1,8 +1,10 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState, useCallback } from "react";
 import useWebGLSupport from "./three/useWebGLSupport";
+import MobileSegmentedTabs from "@/components/mobile/MobileSegmentedTabs";
+import { usePersistedPageState, usePersistedScroll } from "@/lib/use-persisted-page-state";
 
 const LaunchChallenge = dynamic(() => import("./sims/LaunchChallenge"));
 const HighwayOvertake = dynamic(() => import("./sims/HighwayOvertake"));
@@ -22,15 +24,22 @@ const GroundClearance3D = dynamic(() => import("./three/sims/GroundClearance3D")
 const Cornering3D = dynamic(() => import("./three/sims/Cornering3D"), { ssr: false });
 
 const TABS = [
-  { id: "launch", label: "Launch Challenge" },
-  { id: "overtake", label: "Highway Overtake" },
-  { id: "braking", label: "Braking Lab" },
-  { id: "hill-climb", label: "Hill Climb" },
-  { id: "clearance", label: "Ground Clearance" },
-  { id: "cornering", label: "Cornering Lab" },
-  { id: "swerve", label: "Emergency Swerve" },
-  { id: "city", label: "City Simulator" },
-  { id: "playground", label: "Feature Playground" },
+  { id: "launch", label: "Launch Challenge", category: "speed" },
+  { id: "overtake", label: "Highway Overtake", category: "speed" },
+  { id: "braking", label: "Braking Lab", category: "safety" },
+  { id: "swerve", label: "Emergency Swerve", category: "safety" },
+  { id: "cornering", label: "Cornering Lab", category: "safety" },
+  { id: "hill-climb", label: "Hill Climb", category: "terrain" },
+  { id: "clearance", label: "Ground Clearance", category: "terrain" },
+  { id: "city", label: "City Simulator", category: "terrain" },
+  { id: "playground", label: "Feature Playground", category: "features" },
+] as const;
+
+const CATEGORIES = [
+  { id: "speed", label: "Speed" },
+  { id: "safety", label: "Safety" },
+  { id: "terrain", label: "Terrain" },
+  { id: "features", label: "Features" },
 ] as const;
 
 export type SimTab = (typeof TABS)[number]["id"];
@@ -45,11 +54,35 @@ export default function SimulationLab({
   initialVariants?: string[];
   initialFeature?: string;
 }) {
-  const [tab, setTab] = useState<SimTab>(initialSim);
+  const initialTab = TABS.find((t) => t.id === initialSim) ?? TABS[0];
+  const [persisted, setPersisted] = usePersistedPageState("simulate", {
+    tab: initialSim,
+    category: initialTab.category,
+  });
+  const { tab, category } = persisted;
+  const setTab = useCallback(
+    (id: SimTab) => setPersisted((p) => ({ ...p, tab: id })),
+    [setPersisted],
+  );
+  const setCategory = useCallback(
+    (id: (typeof CATEGORIES)[number]["id"]) => setPersisted((p) => ({ ...p, category: id })),
+    [setPersisted],
+  );
+  usePersistedScroll("simulate");
   const webgl = useWebGLSupport();
   const [mode, setMode] = useState<"3d" | "2d" | null>(null);
 
-  // default to 3D when supported, respect a saved preference
+  const categorySims = useMemo(
+    () => TABS.filter((t) => t.category === category),
+    [category]
+  );
+
+  useEffect(() => {
+    if (!categorySims.some((t) => t.id === tab)) {
+      setTab(categorySims[0].id);
+    }
+  }, [category, categorySims, tab]);
+
   useEffect(() => {
     if (webgl === null) return;
     const saved = typeof window !== "undefined" ? localStorage.getItem(MODE_KEY) : null;
@@ -65,13 +98,39 @@ export default function SimulationLab({
   const is3d = mode === "3d";
   const has3dOption = tab === "launch" || tab === "overtake" || tab === "braking" || tab === "hill-climb" || tab === "clearance" || tab === "cornering";
 
+  const tabPicker = (className = "") => (
+    <MobileSegmentedTabs
+      className={className}
+      tabs={categorySims.map((t) => ({ id: t.id, label: t.label }))}
+      activeId={tab}
+      onChange={(id) => setTab(id as SimTab)}
+    />
+  );
+
   return (
-    <div>
-      <div className="flex flex-wrap items-center gap-2 mb-6">
+    <div className="pb-safe">
+      <p className="text-sm text-secondary mb-4 sm:hidden">Pick a scenario, choose cars, then run the test.</p>
+
+      {/* Mobile: category then sim */}
+      <div className="sm:hidden space-y-3 mb-6">
+        <MobileSegmentedTabs
+          tabs={CATEGORIES.map((c) => ({ id: c.id, label: c.label }))}
+          activeId={category}
+          onChange={(id) => setCategory(id as typeof category)}
+        />
+        {tabPicker()}
+      </div>
+
+      {/* Desktop: all tabs */}
+      <div className="hidden sm:flex flex-wrap items-center gap-2 mb-6">
         {TABS.map((t) => (
           <button
             key={t.id}
-            onClick={() => setTab(t.id)}
+            type="button"
+            onClick={() => {
+              setTab(t.id);
+              setCategory(t.category);
+            }}
             className={`px-4 py-2 rounded-full text-sm border transition-colors duration-200 ${
               tab === t.id
                 ? "border-[var(--accent)] text-primary bg-[rgba(232,89,12,0.1)]"
@@ -86,6 +145,7 @@ export default function SimulationLab({
             {(["3d", "2d"] as const).map((m) => (
               <button
                 key={m}
+                type="button"
                 onClick={() => pickMode(m)}
                 className={`px-3.5 py-1.5 uppercase tracking-wide transition-colors duration-200 ${
                   mode === m ? "bg-[rgba(232,89,12,0.15)] text-primary" : "text-secondary hover:text-primary"
@@ -97,6 +157,24 @@ export default function SimulationLab({
           </div>
         )}
       </div>
+
+      {/* Mobile 3d/2d toggle */}
+      {has3dOption && webgl && mode && (
+        <div className="sm:hidden flex rounded-full border border-[#161616]/10 overflow-hidden text-xs mb-4 w-fit">
+          {(["3d", "2d"] as const).map((m) => (
+            <button
+              key={m}
+              type="button"
+              onClick={() => pickMode(m)}
+              className={`px-3.5 py-2 uppercase tracking-wide ${
+                mode === m ? "bg-[rgba(232,89,12,0.15)] text-primary" : "text-secondary"
+              }`}
+            >
+              {m}
+            </button>
+          ))}
+        </div>
+      )}
 
       {mode === null && has3dOption ? (
         <div className="glass h-72 animate-pulse" />

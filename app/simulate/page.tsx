@@ -1,4 +1,5 @@
 import SimulationLab, { type SimTab } from "@/components/SimulationLab";
+import CompactPageHeader from "@/components/mobile/CompactPageHeader";
 
 import { Metadata } from "next";
 
@@ -23,12 +24,15 @@ export default async function SimulatePage({
   const initialVariants = sp.variants?.split(",").filter(Boolean) ?? [];
 
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-36 pb-24">
-      <h1 className="text-4xl sm:text-5xl font-normal tracking-tight mb-3">Simulation Lab</h1>
-      <p className="text-secondary mb-10 max-w-xl">
-        Physics-derived, interactive scenarios showing real-world capability. Compare options and features before visiting the showroom.
-      </p>
-      <SimulationLab initialSim={sim} initialVariants={initialVariants} initialFeature={sp.feature} />
+    <div>
+      <CompactPageHeader
+        title="Simulation Lab"
+        description="Physics-derived, interactive scenarios showing real-world capability. Pick a scenario, choose cars, run the test."
+        className="pb-6 sm:pb-10"
+      />
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 pb-24">
+        <SimulationLab initialSim={sim} initialVariants={initialVariants} initialFeature={sp.feature} />
+      </div>
     </div>
   );
 }

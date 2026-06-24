@@ -278,5 +278,415 @@
     "lengthMm": 4697,
     "widthMm": 1882,
     "heightMm": 1676
+  },
+  "maruti-alto-k10": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "maruti-s-presso": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "maruti-celerio": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "maruti-wagon-r": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "maruti-xl6": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "maruti-jimny": {
+    "lengthMm": 3995,
+    "widthMm": 1765,
+    "heightMm": 1580
+  },
+  "maruti-invicto": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "maruti-e-vitara": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "maruti-victoris": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "maruti-eeco": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "maruti-ignis": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "tata-tiago": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "tata-tiago-ev": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "tata-punch-ev": {
+    "lengthMm": 3995,
+    "widthMm": 1765,
+    "heightMm": 1580
+  },
+  "tata-tigor": {
+    "lengthMm": 3990,
+    "widthMm": 1740,
+    "heightMm": 1510
+  },
+  "tata-tigor-ev": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "tata-nexon-ev": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "tata-curvv-ev": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "tata-sierra": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "tata-harrier-ev": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-bolero-neo": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-bolero-neo-plus": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-xuv-3xo-ev": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "mahindra-xuv-7xo": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-scorpio": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-marazzo": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-xuv400": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mahindra-be-6": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "mahindra-be-6-fe": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "mahindra-xev-9e": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "mahindra-xev-9s": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "hyundai-grand-i10-nios": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "hyundai-aura": {
+    "lengthMm": 3990,
+    "widthMm": 1740,
+    "heightMm": 1510
+  },
+  "hyundai-i20-n-line": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "hyundai-venue-n-line": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "hyundai-creta-n-line": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "hyundai-creta-electric": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "hyundai-alcazar": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-glanza": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "toyota-rumion": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-urban-cruiser-ebella": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-innova-hycross": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-hilux": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-camry": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "toyota-vellfire": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "toyota-land-cruiser": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "kia-carens-clavis": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "kia-carens-clavis-ev": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "kia-syros": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "kia-carnival": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "kia-ev6": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "kia-ev9": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "honda-city-e-hev": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "skoda-superb": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "skoda-octavia-rs": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "volkswagen-tiguan-r-line": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "volkswagen-golf-gti": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "mg-comet-ev": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "mg-hector-plus": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mg-gloster": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mg-majestor": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "mg-cyberster": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "mg-m9": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "renault-kwid": {
+    "lengthMm": 3990,
+    "widthMm": 1745,
+    "heightMm": 1520
+  },
+  "renault-triber": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "renault-duster": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "nissan-x-trail": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "nissan-tekton": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "jeep-meridian": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "jeep-wrangler": {
+    "lengthMm": 3995,
+    "widthMm": 1765,
+    "heightMm": 1580
+  },
+  "jeep-grand-cherokee": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "byd-sealion-7": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "byd-emax-7": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "audi-a4": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "audi-a6": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "audi-q3-sportback": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "audi-q7": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "audi-q8": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "audi-s5-sportback": {
+    "lengthMm": 4540,
+    "widthMm": 1790,
+    "heightMm": 1490
+  },
+  "audi-rs-q8": {
+    "lengthMm": 4600,
+    "widthMm": 1830,
+    "heightMm": 1700
+  },
+  "audi-e-tron-gt": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
+  },
+  "audi-rs-e-tron-gt": {
+    "lengthMm": 4300,
+    "widthMm": 1790,
+    "heightMm": 1640
   }
 }

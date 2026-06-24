@@ -1,16 +1,20 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useCallback } from "react";
 import Link from "next/link";
 import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer,
 } from "recharts";
-import { formatLakh, getBrand, getModel, getTestData, getVariantsForModel, models } from "@/lib/data";
+import { formatLakh, getBrand, getModel, getTestData, getVariantsForModel } from "@/lib/data";
+import type { Fuel } from "@/lib/types";
 import { estimate5yrCost, radarScoresWithFuel } from "@/lib/scores";
 import EstimatedBadge from "./EstimatedBadge";
 import CarPhoto from "./CarPhoto";
 import OwnerVoicesPanel from "./OwnerVoicesPanel";
 import ModelSelect from "./sims/ModelSelect";
+import MobileSwipePanels from "@/components/mobile/MobileSwipePanels";
+import { usePersistedPageState, usePersistedScroll } from "@/lib/use-persisted-page-state";
+
 const AXES = [
   { key: "performance", label: "Performance" },
   { key: "efficiency", label: "Efficiency" },
@@ -21,17 +25,94 @@ const AXES = [
 ] as const;
 
 const PALETTE = ["#E8590C", "#60A5FA", "#4ADE80"];
+const CAR_LABELS = ["Car A", "Car B", "Car C"];
+
+function buildDefaultSelections(initialIds: string[]) {
+  const initialModels = initialIds.length >= 2 ? initialIds.slice(0, 3) : ["hyundai-creta", "kia-seltos"];
+  return initialModels.map((modelId) => {
+    const m = getModel(modelId);
+    const vs = m ? getVariantsForModel(m.id) : [];
+    const defaultFuel = vs[0]?.fuel ?? "petrol";
+    return { modelId, fuel: defaultFuel };
+  });
+}
+
+function CarPicker({
+  index,
+  selection,
+  setSlotModel,
+  setSlotFuel,
+  allowNone,
+}: {
+  index: number;
+  selection?: { modelId: string; fuel: Fuel };
+  setSlotModel: (i: number, modelId: string) => void;
+  setSlotFuel: (i: number, fuel: Fuel) => void;
+  allowNone?: boolean;
+}) {
+  const model = selection ? getModel(selection.modelId) : null;
+  const vs = model ? getVariantsForModel(model.id) : [];
+  const uniqueFuels = Array.from(new Set(vs.map((v) => v.fuel)));
+
+  return (
+    <div className="flex flex-col gap-2 glass p-4">
+      <span className="text-[10px] text-secondary uppercase tracking-wider font-semibold">{CAR_LABELS[index]}</span>
+      <ModelSelect
+        value={selection?.modelId ?? ""}
+        onChange={(val) => setSlotModel(index, val)}
+        label={index < 2 ? "Pick a car" : "Add a third car (optional)"}
+        allowNone={allowNone}
+      />
+      {selection && uniqueFuels.length > 0 && (
+        <div className="flex gap-2 items-center text-xs mt-1.5">
+          <span className="text-secondary">Fuel:</span>
+          <div className="flex flex-wrap gap-1.5">
+            {uniqueFuels.map((f) => (
+              <button
+                key={f}
+                type="button"
+                onClick={() => setSlotFuel(index, f as Fuel)}
+                className={`min-h-9 px-2.5 py-1 rounded-lg border text-xs uppercase tracking-wider transition-all duration-150 ${
+                  selection.fuel === f
+                    ? "border-[#C84C31] bg-[#C84C31]/5 text-[#C84C31] font-bold"
+                    : "border-[#161616]/10 bg-[#ECE7DF]/60 text-[#161616]/75 hover:bg-[#ECE7DF]"
+                }`}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function CompareView({ initialIds }: { initialIds: string[] }) {
-  const [selections, setSelections] = useState<{ modelId: string; fuel: string }[]>(() => {
-    const initialModels = initialIds.length >= 2 ? initialIds.slice(0, 3) : ["hyundai-creta", "kia-seltos"];
-    return initialModels.map((modelId) => {
-      const m = getModel(modelId);
-      const vs = m ? getVariantsForModel(m.id) : [];
-      const defaultFuel = vs[0]?.fuel ?? "petrol";
-      return { modelId, fuel: defaultFuel };
-    });
+  const [persisted, setPersisted] = usePersistedPageState("compare", {
+    selections: buildDefaultSelections(initialIds),
+    mobileResultTab: "radar",
+    reviewCarIndex: 0,
   });
+  const { selections, mobileResultTab, reviewCarIndex } = persisted;
+  const setSelections = useCallback(
+    (updater: React.SetStateAction<{ modelId: string; fuel: Fuel }[]>) => {
+      setPersisted((prev) => ({
+        ...prev,
+        selections: typeof updater === "function" ? updater(prev.selections) : updater,
+      }));
+    },
+    [setPersisted],
+  );
+  const setMobileResultTab = useCallback(
+    (tab: string) => setPersisted((prev) => ({ ...prev, mobileResultTab: tab })),
+    [setPersisted],
+  );
+  const setReviewCarIndex = useCallback(
+    (index: number) => setPersisted((prev) => ({ ...prev, reviewCarIndex: index })),
+    [setPersisted],
+  );
+  usePersistedScroll("compare");
 
   const selected = useMemo(() => {
     return selections
@@ -62,15 +143,12 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
     });
   }, [selected, scores]);
 
-  // stat cards with winner highlighting
   const stats = useMemo(() => {
     return selected.map((m) => {
       const vs = getVariantsForModel(m.id).filter((v) => v.fuel === m.selectedFuel);
       const activeVs = vs.length > 0 ? vs : getVariantsForModel(m.id);
       const top = activeVs.reduce((a, b) => (b.priceExShowroom > a.priceExShowroom ? b : a), activeVs[0]);
-      const best100 = Math.min(
-        ...activeVs.map((v) => getTestData(v.id)?.zeroTo100.value ?? 99)
-      );
+      const best100 = Math.min(...activeVs.map((v) => getTestData(v.id)?.zeroTo100.value ?? 99));
       return {
         model: m,
         displayName: m.displayName,
@@ -122,12 +200,10 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
     });
   };
 
-  const setSlotFuel = (i: number, fuel: string) => {
+  const setSlotFuel = (i: number, fuel: Fuel) => {
     setSelections((prev) => {
       const next = [...prev];
-      if (next[i]) {
-        next[i] = { ...next[i], fuel };
-      }
+      if (next[i]) next[i] = { ...next[i], fuel };
       return next;
     });
   };
@@ -136,224 +212,245 @@ export default function CompareView({ initialIds }: { initialIds: string[] }) {
     <span className={on ? "text-accent font-semibold" : undefined}>{children}</span>
   );
 
-  return (
-    <div className="space-y-10">
-      {/* pickers */}
-      <div className="grid gap-4 sm:grid-cols-3">
-        {[0, 1, 2].map((i) => {
-          const selection = selections[i];
-          const model = selection ? getModel(selection.modelId) : null;
-          const vs = model ? getVariantsForModel(model.id) : [];
-          const uniqueFuels = Array.from(new Set(vs.map((v) => v.fuel)));
-
-          return (
-            <div key={i} className="flex flex-col gap-2 glass p-4">
-              <span className="text-[10px] font-mono text-secondary uppercase tracking-wider">Slot {i + 1}</span>
-              <ModelSelect
-                value={selection?.modelId ?? ""}
-                onChange={(val) => setSlotModel(i, val)}
-                label={i < 2 ? "Pick a car" : "— add a third (optional) —"}
-                allowNone={i >= 2}
-              />
-
-              {selection && uniqueFuels.length > 0 && (
-                <div className="flex gap-2 items-center text-xs mt-1.5">
-                  <span className="text-secondary font-mono">Fuel:</span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {uniqueFuels.map((f) => (
-                      <button
-                        key={f}
-                        onClick={() => setSlotFuel(i, f)}
-                        className={`px-2.5 py-1 rounded-lg border text-[10px] font-mono uppercase tracking-wider transition-all duration-150 ${
-                          selection.fuel === f
-                            ? "border-[#C84C31] bg-[#C84C31]/5 text-[#C84C31] font-bold"
-                            : "border-[#161616]/10 bg-[#ECE7DF]/60 text-[#161616]/75 hover:bg-[#ECE7DF]"
-                        }`}
-                      >
-                        {f}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+  const radarBlock = (
+    <div className="glass p-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+        <h2 className="text-sm text-secondary flex items-center gap-1.5 flex-wrap">
+          Six axes, scored 1–10 by formula
+          <EstimatedBadge tooltip="Scores are normalized across all combinations of models and fuels." />
+        </h2>
+        <div className="flex gap-4 text-xs flex-wrap">
+          {selected.map((m, i) => (
+            <div key={m.uniqueKey} className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: PALETTE[i] }} />
+              <span className="text-primary font-medium">{m.displayName}</span>
             </div>
-          );
-        })}
+          ))}
+        </div>
+      </div>
+      <div className="h-80 sm:h-96">
+        <ResponsiveContainer>
+          <RadarChart data={chartData} outerRadius="62%">
+            <PolarGrid stroke="rgba(255,255,255,0.12)" />
+            <PolarAngleAxis dataKey="axis" tick={{ fill: "#A1A1AA", fontSize: 11 }} />
+            <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />
+            {selected.map((m, i) => (
+              <Radar
+                key={m.uniqueKey}
+                name={m.displayName}
+                dataKey={m.displayName}
+                stroke={PALETTE[i]}
+                fill={PALETTE[i]}
+                fillOpacity={0.12}
+                strokeWidth={2}
+              />
+            ))}
+          </RadarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
+
+  const specsTable = (
+    <div className="glass overflow-hidden">
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b border-[#161616]/10 bg-[#ECE7DF]/50">
+              <th className="p-3 text-xs uppercase tracking-widest text-[#161616]/50 font-bold sticky left-0 bg-[#ECE7DF]/95 z-10">Spec</th>
+              {stats.map((s) => (
+                <th key={s.uniqueKey} className="p-3 text-center min-w-[100px]">
+                  <div className="flex flex-col items-center gap-1.5">
+                    <CarPhoto src={s.model.heroImage} alt={s.displayName} color={getBrand(s.model.brandId)?.color ?? "#666"} className="w-16 h-8 object-contain" />
+                    <span className="font-semibold text-xs text-primary">{s.displayName}</span>
+                  </div>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-[#161616]/5">
+            {[
+              { label: "Starts at", key: "price" as const, fmt: (s: typeof stats[0]) => formatLakh(s.price), win: (s: typeof stats[0]) => s.price === winner.price },
+              { label: "Max power", key: "ps" as const, fmt: (s: typeof stats[0]) => `${s.ps} PS`, win: (s: typeof stats[0]) => s.ps === winner.ps },
+              { label: "Best real FE", key: "fe" as const, fmt: (s: typeof stats[0]) => `~${s.fe.toFixed(1)} km/l`, win: (s: typeof stats[0]) => s.fe === winner.fe },
+              { label: "Best 0–100", key: "zeroTo100" as const, fmt: (s: typeof stats[0]) => `${s.zeroTo100.toFixed(1)} s`, win: (s: typeof stats[0]) => s.zeroTo100 === winner.zeroTo100 },
+              { label: "NCAP adult", key: "ncap" as const, fmt: (s: typeof stats[0]) => `${s.ncap || "—"}★`, win: (s: typeof stats[0]) => s.ncap === winner.ncap },
+              { label: "5-yr cost ~", key: "cost5yr" as const, fmt: (s: typeof stats[0]) => formatLakh(s.cost5yr), win: (s: typeof stats[0]) => s.cost5yr === winner.cost5yr },
+            ].map((row) => (
+              <tr key={row.label}>
+                <td className="p-3 font-medium text-[#161616]/70 text-xs sticky left-0 bg-[#F5F1E8] z-10">{row.label}</td>
+                {stats.map((s) => (
+                  <td key={s.uniqueKey} className="p-3 text-center stat-num text-xs">
+                    <Win on={row.win(s)}>{row.fmt(s)}</Win>
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="sm:hidden border-t border-[#161616]/10 p-4 space-y-4">
+        {selected.map((m) => (
+          <div key={m.uniqueKey} className="text-sm">
+            <h4 className="font-semibold mb-2">{m.displayName}</h4>
+            <ul className="space-y-1">
+              {m.prosCons.pros.map((p) => (
+                <li key={p} className="flex gap-2 text-secondary"><span className="text-[var(--positive)]">+</span>{p}</li>
+              ))}
+              {m.prosCons.cons.map((c) => (
+                <li key={c} className="flex gap-2 text-secondary"><span className="text-[var(--negative)]">−</span>{c}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const summaryStrip = selected.length >= 2 && (
+    <div className="glass p-4 flex gap-3 overflow-x-auto scrollbar-none">
+      {stats.map((s, i) => (
+        <div key={s.uniqueKey} className="shrink-0 min-w-[140px] border border-[#161616]/10 rounded-xl p-3">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: PALETTE[i] }} />
+            <span className="text-xs font-semibold truncate">{s.displayName}</span>
+          </div>
+          <p className="text-sm font-bold text-primary">{formatLakh(s.price)}</p>
+          <p className="text-[10px] text-secondary mt-0.5">5yr ~{formatLakh(s.cost5yr)}</p>
+        </div>
+      ))}
+    </div>
+  );
+
+  const reviewsPanel = (
+    <div className="space-y-4">
+      <div className="flex gap-2 overflow-x-auto scrollbar-none">
+        {selected.map((m, i) => (
+          <button
+            key={m.uniqueKey}
+            type="button"
+            onClick={() => setReviewCarIndex(i)}
+            className={`shrink-0 px-3 py-2 rounded-full text-xs font-medium border ${
+              reviewCarIndex === i ? "bg-[#C84C31] text-[#F5F1E8] border-[#C84C31]" : "border-[#161616]/10 text-secondary"
+            }`}
+          >
+            {m.displayName}
+          </button>
+        ))}
+      </div>
+      <div className="glass p-5">
+        <OwnerVoicesPanel modelId={selected[reviewCarIndex]?.id ?? selected[0].id} showDisclaimer />
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="space-y-10 pb-safe">
+      {/* Mobile: flat pickers + live swipeable results */}
+      <div className="sm:hidden space-y-5">
+        <div className="glass p-5 space-y-4">
+          <CarPicker index={0} selection={selections[0]} setSlotModel={setSlotModel} setSlotFuel={setSlotFuel} />
+          <CarPicker index={1} selection={selections[1]} setSlotModel={setSlotModel} setSlotFuel={setSlotFuel} />
+          {selections.length >= 3 ? (
+            <CarPicker index={2} selection={selections[2]} setSlotModel={setSlotModel} setSlotFuel={setSlotFuel} allowNone />
+          ) : (
+            <button
+              type="button"
+              onClick={() => setSelections((prev) => [...prev, { modelId: "", fuel: "petrol" }])}
+              className="w-full min-h-11 border border-dashed border-[#161616]/20 rounded-xl text-sm text-secondary hover:border-[#C84C31]/40"
+            >
+              + Add third car (optional)
+            </button>
+          )}
+        </div>
+
+        {selected.length < 2 && (
+          <p className="text-sm text-secondary text-center px-4">Pick two cars above — results update as you go.</p>
+        )}
+
+        {selected.length >= 2 && (
+          <>
+            {summaryStrip}
+            <MobileSwipePanels
+              activeId={mobileResultTab}
+              onChange={setMobileResultTab}
+              panels={[
+                { id: "radar", label: "Radar", content: radarBlock },
+                { id: "specs", label: "Specs", content: specsTable },
+                { id: "reviews", label: "Reviews", content: reviewsPanel },
+              ]}
+            />
+            <div className="flex flex-wrap gap-3">
+              <Link href={`/simulate?sim=drag&variants=${variantIdsForSims}`} className="glass glass-hover px-4 py-2.5 text-sm">Race →</Link>
+              <Link href={`/cost?variants=${variantIdsForSims.split(",").slice(0, 2).join(",")}`} className="glass glass-hover px-4 py-2.5 text-sm">5-yr cost →</Link>
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* Desktop pickers */}
+      <div className="hidden sm:grid gap-4 sm:grid-cols-3">
+        {[0, 1, 2].map((i) => (
+          <CarPicker
+            key={i}
+            index={i}
+            selection={selections[i]}
+            setSlotModel={setSlotModel}
+            setSlotFuel={setSlotFuel}
+            allowNone={i >= 2}
+          />
+        ))}
       </div>
 
       {selected.length >= 2 && (
         <>
-          {/* radar */}
-          <div className="glass p-6">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
-              <h2 className="text-sm text-secondary flex items-center gap-1.5 flex-wrap">
-                Six axes, scored 1–10 by formula (lib/scores.ts)
-                <EstimatedBadge tooltip="Scores are normalized across all combinations of models and fuels; ownership axis uses the estimated cost model." />
-              </h2>
-              {/* Custom Legend */}
-              <div className="flex gap-4 text-xs font-mono flex-wrap">
-                {selected.map((m, i) => (
-                  <div key={m.uniqueKey} className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: PALETTE[i] }} />
-                    <span className="text-primary font-medium">{m.displayName}</span>
-                  </div>
-                ))}
-              </div>
+          <div className="hidden sm:block space-y-10">
+            {radarBlock}
+            <div className={`grid gap-6 ${selected.length === 2 ? "grid-cols-2" : "grid-cols-3"}`}>
+              {stats.map((s) => (
+                <div key={s.uniqueKey} className="glass p-7">
+                  <CarPhoto src={s.model.heroImage} alt={s.displayName} color={getBrand(s.model.brandId)?.color ?? "#666"} className="w-full h-28 mb-4" />
+                  <h3 className="font-semibold text-lg mb-4">{s.displayName}</h3>
+                  <dl className="space-y-3 text-sm">
+                    <div className="flex justify-between"><dt className="text-secondary">Starts at</dt><dd className="stat-num"><Win on={s.price === winner.price}>{formatLakh(s.price)}</Win></dd></div>
+                    <div className="flex justify-between"><dt className="text-secondary">Max power</dt><dd className="stat-num"><Win on={s.ps === winner.ps}>{s.ps} PS</Win></dd></div>
+                    <div className="flex justify-between"><dt className="text-secondary">Best real FE</dt><dd className="stat-num"><Win on={s.fe === winner.fe}>~{s.fe.toFixed(1)} km/l</Win></dd></div>
+                    <div className="flex justify-between"><dt className="text-secondary">Best 0–100</dt><dd className="stat-num"><Win on={s.zeroTo100 === winner.zeroTo100}>{s.zeroTo100.toFixed(1)} s</Win></dd></div>
+                    <div className="flex justify-between"><dt className="text-secondary">NCAP adult</dt><dd className="stat-num"><Win on={s.ncap === winner.ncap}>{s.ncap || "—"}★</Win></dd></div>
+                    <div className="flex justify-between"><dt className="text-secondary">5-yr cost ~</dt><dd className="stat-num"><Win on={s.cost5yr === winner.cost5yr}>{formatLakh(s.cost5yr)}</Win></dd></div>
+                  </dl>
+                </div>
+              ))}
             </div>
-            <div className="h-72 sm:h-96">
-              <ResponsiveContainer>
-                <RadarChart data={chartData} outerRadius="62%">
-                  <PolarGrid stroke="rgba(255,255,255,0.12)" />
-                  <PolarAngleAxis dataKey="axis" tick={{ fill: "#A1A1AA", fontSize: 11 }} />
-                  <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />
-                  {selected.map((m, i) => (
-                    <Radar
-                      key={m.uniqueKey}
-                      name={m.displayName}
-                      dataKey={m.displayName}
-                      stroke={PALETTE[i]}
-                      fill={PALETTE[i]}
-                      fillOpacity={0.12}
-                      strokeWidth={2}
-                    />
-                  ))}
-                </RadarChart>
-              </ResponsiveContainer>
+            <div className={`grid gap-6 grid-cols-1 ${selected.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
+              {selected.map((m) => (
+                <div key={m.uniqueKey} className="glass p-7 text-sm">
+                  <h3 className="font-semibold mb-3">{m.displayName}</h3>
+                  <ul className="space-y-1.5">
+                    {m.prosCons.pros.map((p) => (
+                      <li key={p} className="flex gap-2"><span style={{ color: "var(--positive)" }}>+</span><span className="text-secondary">{p}</span></li>
+                    ))}
+                  </ul>
+                  <ul className="space-y-1.5 mt-3">
+                    {m.prosCons.cons.map((c) => (
+                      <li key={c} className="flex gap-2"><span style={{ color: "var(--negative)" }}>−</span><span className="text-secondary">{c}</span></li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          </div>
-
-          {/* stat cards (desktop/tablet only) */}
-          <div className={`hidden sm:grid gap-6 ${selected.length === 2 ? "grid-cols-2" : "grid-cols-3"}`}>
-            {stats.map((s) => (
-              <div key={s.uniqueKey} className="glass p-7">
-                <CarPhoto
-                  src={s.model.heroImage}
-                  alt={s.displayName}
-                  color={getBrand(s.model.brandId)?.color ?? "#666"}
-                  className="w-full h-28 mb-4"
-                />
-                <h3 className="font-semibold text-lg mb-4">{s.displayName}</h3>
-                <dl className="space-y-3 text-sm">
-                  <div className="flex justify-between"><dt className="text-secondary">Starts at</dt><dd className="stat-num"><Win on={s.price === winner.price}>{formatLakh(s.price)}</Win></dd></div>
-                  <div className="flex justify-between"><dt className="text-secondary">Max power</dt><dd className="stat-num"><Win on={s.ps === winner.ps}>{s.ps} PS</Win></dd></div>
-                  <div className="flex justify-between"><dt className="text-secondary">Best real FE</dt><dd className="stat-num"><Win on={s.fe === winner.fe}>~{s.fe.toFixed(1)} km/l</Win></dd></div>
-                  <div className="flex justify-between"><dt className="text-secondary">Best 0–100</dt><dd className="stat-num"><Win on={s.zeroTo100 === winner.zeroTo100}>{s.zeroTo100.toFixed(1)} s</Win></dd></div>
-                  <div className="flex justify-between"><dt className="text-secondary">NCAP adult</dt><dd className="stat-num"><Win on={s.ncap === winner.ncap}>{s.ncap || "—"}★</Win></dd></div>
-                  <div className="flex justify-between"><dt className="text-secondary">5-yr cost ~</dt><dd className="stat-num"><Win on={s.cost5yr === winner.cost5yr}>{formatLakh(s.cost5yr)}</Win></dd></div>
-                </dl>
-              </div>
-            ))}
-          </div>
-
-          {/* stat table (mobile only) */}
-          <div className="block sm:hidden glass overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse text-left text-sm">
-                <thead>
-                  <tr className="border-b border-[#161616]/10 bg-[#ECE7DF]/50">
-                    <th className="p-3 text-xs font-mono uppercase tracking-widest text-[#161616]/50 font-bold">Spec</th>
-                    {stats.map((s) => (
-                      <th key={s.uniqueKey} className="p-3 text-center">
-                        <div className="flex flex-col items-center gap-1.5">
-                          <CarPhoto
-                            src={s.model.heroImage}
-                            alt={s.displayName}
-                            color={getBrand(s.model.brandId)?.color ?? "#666"}
-                            className="w-16 h-8 object-contain"
-                          />
-                          <span className="font-semibold text-xs text-primary">{s.displayName}</span>
-                        </div>
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#161616]/5">
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">Starts at</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.price === winner.price}>{formatLakh(s.price)}</Win>
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">Max power</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.ps === winner.ps}>{s.ps} PS</Win>
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">Best real FE</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.fe === winner.fe}>~{s.fe.toFixed(1)} km/l</Win>
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">Best 0–100</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.zeroTo100 === winner.zeroTo100}>{s.zeroTo100.toFixed(1)} s</Win>
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">NCAP adult</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.ncap === winner.ncap}>{s.ncap || "—"}★</Win>
-                      </td>
-                    ))}
-                  </tr>
-                  <tr>
-                    <td className="p-3 font-medium text-[#161616]/70 text-xs">5-yr cost ~</td>
-                    {stats.map((s) => (
-                      <td key={s.uniqueKey} className="p-3 text-center stat-num">
-                        <Win on={s.cost5yr === winner.cost5yr}>{formatLakh(s.cost5yr)}</Win>
-                      </td>
-                    ))}
-                  </tr>
-                </tbody>
-              </table>
+            <div className={`grid gap-6 grid-cols-1 ${selected.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
+              {selected.map((m, i) => (
+                <div key={m.uniqueKey} className="glass p-7">
+                  <OwnerVoicesPanel modelId={m.id} showDisclaimer={i === 0} />
+                </div>
+              ))}
             </div>
-          </div>
-
-          {/* pros & cons */}
-          <div className={`grid gap-6 grid-cols-1 ${selected.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
-            {selected.map((m) => (
-              <div key={m.uniqueKey} className="glass p-7 text-sm">
-                <h3 className="font-semibold mb-3">{m.displayName}</h3>
-                <ul className="space-y-1.5">
-                  {m.prosCons.pros.map((p) => (
-                    <li key={p} className="flex gap-2"><span style={{ color: "var(--positive)" }}>+</span><span className="text-secondary">{p}</span></li>
-                  ))}
-                </ul>
-                <ul className="space-y-1.5 mt-3">
-                  {m.prosCons.cons.map((c) => (
-                    <li key={c} className="flex gap-2"><span style={{ color: "var(--negative)" }}>−</span><span className="text-secondary">{c}</span></li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          {/* owner voices */}
-          <div className={`grid gap-6 grid-cols-1 ${selected.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
-            {selected.map((m, i) => (
-              <div key={m.uniqueKey} className="glass p-7">
-                <OwnerVoicesPanel modelId={m.id} showDisclaimer={i === 0} />
-              </div>
-            ))}
-          </div>
-
-          {/* deep links */}
-          <div className="flex flex-wrap gap-3">
-            <Link href={`/simulate?sim=drag&variants=${variantIdsForSims}`} className="glass glass-hover px-5 py-3 text-sm">Race these →</Link>
-            <Link href={`/simulate?sim=braking&variants=${variantIdsForSims}`} className="glass glass-hover px-5 py-3 text-sm">Braking duel →</Link>
-            <Link href={`/cost?variants=${variantIdsForSims.split(",").slice(0, 2).join(",")}`} className="glass glass-hover px-5 py-3 text-sm">5-year cost →</Link>
+            <div className="flex flex-wrap gap-3">
+              <Link href={`/simulate?sim=drag&variants=${variantIdsForSims}`} className="glass glass-hover px-5 py-3 text-sm">Race these →</Link>
+              <Link href={`/simulate?sim=braking&variants=${variantIdsForSims}`} className="glass glass-hover px-5 py-3 text-sm">Braking duel →</Link>
+              <Link href={`/cost?variants=${variantIdsForSims.split(",").slice(0, 2).join(",")}`} className="glass glass-hover px-5 py-3 text-sm">5-year cost →</Link>
+            </div>
           </div>
         </>
       )}

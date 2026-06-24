@@ -15,19 +15,22 @@ const force = process.argv.includes("--force");
 const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
 const UA = "DriveScopeBot/1.0 (car decision platform; image seeding script)";
 
-async function commonsSearch(query) {
+async function commonsSearch(query, { relaxed = false } = {}) {
   const api =
     "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search" +
-    `&gsrsearch=${encodeURIComponent("filetype:bitmap " + query)}&gsrlimit=8&gsrnamespace=6` +
+    `&gsrsearch=${encodeURIComponent((relaxed ? "" : "filetype:bitmap ") + query)}&gsrlimit=${relaxed ? 12 : 8}&gsrnamespace=6` +
     "&prop=imageinfo&iiprop=url|extmetadata|size&iiurlwidth=1280";
   const res = await fetch(api, { headers: { "User-Agent": UA } });
   if (!res.ok) return null;
   const data = await res.json();
   const pages = Object.values(data?.query?.pages ?? {});
-  // prefer wide landscape jpgs
   const candidates = pages
     .map((p) => p.imageinfo?.[0])
-    .filter((i) => i && /\.jpe?g$/i.test(i.url) && i.width > i.height && i.width >= 1000);
+    .filter((i) => {
+      if (!i || !/\.jpe?g$/i.test(i.url)) return false;
+      if (relaxed) return i.width >= 640;
+      return i.width > i.height && i.width >= 1000;
+    });
   if (candidates.length === 0) return null;
   const best = candidates[0];
   const meta = best.extmetadata ?? {};
@@ -36,6 +39,29 @@ async function commonsSearch(query) {
     credit: (meta.Artist?.value ?? "Wikimedia Commons").replace(/<[^>]+>/g, "").trim(),
     license: meta.LicenseShortName?.value ?? "see Commons",
   };
+}
+
+async function findImage(src) {
+  if (src.url) {
+    return { url: src.url, credit: src.credit ?? "direct", license: src.license ?? "direct" };
+  }
+  const queries = [
+    src.query,
+    ...(src.fallbackQueries ?? []),
+    `${src.query} car`,
+    src.query?.replace(/ India.*$/i, ""),
+  ].filter(Boolean);
+  const seen = new Set();
+  for (const q of queries) {
+    if (seen.has(q)) continue;
+    seen.add(q);
+    const hit = await commonsSearch(q);
+    if (hit) return hit;
+    await new Promise((r) => setTimeout(r, 1200));
+    const relaxed = await commonsSearch(q, { relaxed: true });
+    if (relaxed) return relaxed;
+  }
+  return null;
 }
 
 for (const src of manifest.sources) {
@@ -47,11 +73,7 @@ for (const src of manifest.sources) {
   try {
     await new Promise((r) => setTimeout(r, 3000)); // stay under Commons and upload rate limits
     let pick = null;
-    if (src.url) {
-      pick = { url: src.url, credit: src.credit ?? "direct", license: src.license ?? "direct" };
-    } else {
-      pick = await commonsSearch(src.query);
-    }
+    pick = await findImage(src);
     if (!pick) {
       console.log(`MISS  ${src.modelId} — no candidate found (silhouette fallback will show)`);
       continue;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Check, ChevronDown, Search } from "lucide-react";
 
@@ -15,6 +15,10 @@ interface Anchor {
   left: number;
   width: number;
 }
+
+const DROPDOWN_MAX_H = 340;
+const OPTION_ROW_H = 44;
+const LIST_PADDING = 16;
 
 export default function DriveSelect<T extends string>({
   value,
@@ -32,61 +36,96 @@ export default function DriveSelect<T extends string>({
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [anchor, setAnchor] = useState<Anchor | null>(null);
+  const [listOverflows, setListOverflows] = useState(false);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const listboxRef = useRef<HTMLDivElement | null>(null);
+  const scrollAreaRef = useRef<HTMLDivElement | null>(null);
   const listboxId = useId();
   const selected = options.find((option) => option.value === value) ?? options[0];
   const filteredOptions = options.filter((option) =>
     option.label.toLowerCase().includes(query.trim().toLowerCase())
   );
 
-  function openMenu() {
-    if (!triggerRef.current) return;
+  const closeMenu = useCallback(() => {
+    setOpen(false);
+    setQuery("");
+  }, []);
+
+  const measureAnchor = useCallback(() => {
+    if (!triggerRef.current) return null;
     const rect = triggerRef.current.getBoundingClientRect();
-    const dropdownH = 340;
     const gap = 6;
     const spaceBelow = window.innerHeight - rect.bottom - gap;
-    if (spaceBelow >= dropdownH || spaceBelow >= rect.top) {
-      setAnchor({ top: rect.bottom + gap, left: rect.left, width: rect.width });
-    } else {
-      setAnchor({ bottom: window.innerHeight - rect.top + gap, left: rect.left, width: rect.width });
+    if (spaceBelow >= DROPDOWN_MAX_H || spaceBelow >= rect.top) {
+      return { top: rect.bottom + gap, left: rect.left, width: rect.width };
     }
+    return { bottom: window.innerHeight - rect.top + gap, left: rect.left, width: rect.width };
+  }, []);
+
+  function openMenu() {
+    const next = measureAnchor();
+    if (!next) return;
+    setAnchor(next);
     setOpen(true);
   }
+
+  useLayoutEffect(() => {
+    if (!open || !scrollAreaRef.current) return;
+    const el = scrollAreaRef.current;
+    setListOverflows(el.scrollHeight > el.clientHeight + 1);
+  }, [open, filteredOptions.length, query]);
 
   useEffect(() => {
     if (!open) return undefined;
 
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
     function onPointerDown(event: PointerEvent) {
-      if (!triggerRef.current?.contains(event.target as Node)) {
-        setOpen(false);
-        setQuery("");
+      const target = event.target as Node;
+      if (triggerRef.current?.contains(target) || listboxRef.current?.contains(target)) {
+        return;
       }
+      closeMenu();
     }
 
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setOpen(false);
-        setQuery("");
-      }
+      if (event.key === "Escape") closeMenu();
     }
 
-    function onScroll() {
-      setOpen(false);
-      setQuery("");
+    function onScrollOrResize() {
+      if (!triggerRef.current) return;
+      const rect = triggerRef.current.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) {
+        closeMenu();
+        return;
+      }
+      const next = measureAnchor();
+      if (next) setAnchor(next);
     }
 
     document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
-    window.addEventListener("scroll", onScroll, true);
+    window.addEventListener("scroll", onScrollOrResize, true);
+    window.addEventListener("resize", onScrollOrResize);
     return () => {
+      document.body.style.overflow = prevOverflow;
       document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
-      window.removeEventListener("scroll", onScroll, true);
+      window.removeEventListener("scroll", onScrollOrResize, true);
+      window.removeEventListener("resize", onScrollOrResize);
     };
-  }, [open]);
+  }, [open, closeMenu, measureAnchor]);
+
+  const estimatedListH = Math.max(
+    filteredOptions.length * OPTION_ROW_H + LIST_PADDING,
+    filteredOptions.length === 0 ? 88 : 0
+  );
+  const cappedListH = Math.min(estimatedListH, 288);
 
   const dropdown = open && anchor ? (
     <div
+      ref={listboxRef}
       id={listboxId}
       role="listbox"
       onClick={(e) => e.stopPropagation()}
@@ -114,7 +153,15 @@ export default function DriveSelect<T extends string>({
         </label>
       </div>
 
-      <div className="max-h-72 min-w-56 overflow-y-auto py-2">
+      <div
+        ref={scrollAreaRef}
+        style={{
+          maxHeight: cappedListH,
+          overscrollBehavior: "contain",
+          WebkitOverflowScrolling: "touch",
+        }}
+        className={`min-w-56 py-2 ${listOverflows ? "overflow-y-auto" : "overflow-y-hidden"}`}
+      >
         {filteredOptions.length === 0 ? (
           <div className="px-3 py-6 text-center text-sm text-[#161616]/52">No matches</div>
         ) : (
@@ -128,8 +175,7 @@ export default function DriveSelect<T extends string>({
                 aria-selected={active}
                 onClick={() => {
                   onChange(option.value);
-                  setOpen(false);
-                  setQuery("");
+                  closeMenu();
                 }}
                 className={`flex min-h-11 w-full items-center gap-3 px-4 py-2 text-left text-sm font-medium transition ${
                   active
@@ -152,6 +198,17 @@ export default function DriveSelect<T extends string>({
           })
         )}
       </div>
+
+      {filteredOptions.length > 0 && !listOverflows && (
+        <div className="border-t border-[#161616]/8 px-4 py-2 text-center text-[11px] text-[#161616]/42">
+          All options shown
+        </div>
+      )}
+      {filteredOptions.length > 0 && listOverflows && (
+        <div className="border-t border-[#161616]/8 px-4 py-2 text-center text-[11px] text-[#161616]/42">
+          Scroll for more
+        </div>
+      )}
     </div>
   ) : null;
 
@@ -164,7 +221,7 @@ export default function DriveSelect<T extends string>({
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listboxId}
-        onClick={() => (open ? (setOpen(false), setQuery("")) : openMenu())}
+        onClick={() => (open ? closeMenu() : openMenu())}
         className="flex min-h-11 w-full items-center justify-between gap-4 rounded-xl border border-[#161616]/12 bg-[#F5F1E8] px-3 py-2 text-left text-sm text-[#161616] shadow-[inset_0_1px_0_rgba(255,255,255,0.45),0_8px_20px_rgba(22,22,22,0.04)] transition hover:border-[#C84C31]/30 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_10px_24px_rgba(22,22,22,0.07)] focus:outline-none focus:ring-4 focus:ring-[#C84C31]/15"
       >
         <span className="truncate">{selected?.label}</span>

@@ -3134,17 +3134,17 @@
   {
     "variantId": "creta-ev-executive-42",
     "zeroTo100": {
-      "value": 8.8,
+      "value": 11.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.8,
+      "value": 7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3152,17 +3152,17 @@
   {
     "variantId": "creta-ev-premium-51",
     "zeroTo100": {
-      "value": 7.9,
+      "value": 10.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.2,
+      "value": 6.4,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 38.5,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3170,17 +3170,17 @@
   {
     "variantId": "creta-ev-excellence-51",
     "zeroTo100": {
-      "value": 7.9,
+      "value": 10.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.2,
+      "value": 6.4,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 38.5,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3188,17 +3188,17 @@
   {
     "variantId": "curvv-ev-accomplished-x-55",
     "zeroTo100": {
-      "value": 8.6,
+      "value": 10.5,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.6,
+      "value": 6.5,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.2,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3206,17 +3206,17 @@
   {
     "variantId": "curvv-ev-empowered-x-55",
     "zeroTo100": {
-      "value": 8.6,
+      "value": 10.5,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.6,
+      "value": 6.5,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.2,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3224,17 +3224,17 @@
   {
     "variantId": "curvv-ev-empowered-x-dark-55",
     "zeroTo100": {
-      "value": 8.6,
+      "value": 10.5,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.6,
+      "value": 6.5,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.2,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3242,17 +3242,17 @@
   {
     "variantId": "nexon-ev-creative-plus-30",
     "zeroTo100": {
-      "value": 9.2,
+      "value": 10.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.2,
+      "value": 6.8,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3260,17 +3260,17 @@
   {
     "variantId": "nexon-ev-fearless-plus-45",
     "zeroTo100": {
-      "value": 8.9,
+      "value": 10.7,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.9,
+      "value": 6.6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.5,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3278,17 +3278,17 @@
   {
     "variantId": "nexon-ev-empowered-plus-45",
     "zeroTo100": {
-      "value": 8.9,
+      "value": 10.7,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.9,
+      "value": 6.6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.5,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3296,12 +3296,12 @@
   {
     "variantId": "punch-ev-smart-30",
     "zeroTo100": {
-      "value": 11,
+      "value": 12.8,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 6.2,
+      "value": 7.9,
       "source": "estimated-model",
       "estimated": true
     },
@@ -3314,17 +3314,17 @@
   {
     "variantId": "punch-ev-adventure-40",
     "zeroTo100": {
-      "value": 9.5,
+      "value": 10.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.4,
+      "value": 6.8,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3332,17 +3332,17 @@
   {
     "variantId": "punch-ev-empowered-plus-40",
     "zeroTo100": {
-      "value": 9.5,
+      "value": 11,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.4,
+      "value": 6.8,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3350,17 +3350,17 @@
   {
     "variantId": "windsor-ev-excite-38",
     "zeroTo100": {
-      "value": 9.8,
+      "value": 11.1,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.5,
+      "value": 6.9,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40.2,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3368,17 +3368,17 @@
   {
     "variantId": "windsor-ev-exclusive-53",
     "zeroTo100": {
-      "value": 9.6,
+      "value": 11.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.4,
+      "value": 7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3386,17 +3386,17 @@
   {
     "variantId": "windsor-ev-essence-53",
     "zeroTo100": {
-      "value": 9.6,
+      "value": 11.4,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.4,
+      "value": 7.1,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3404,17 +3404,17 @@
   {
     "variantId": "thar-roxx-mx1-petrol-mt",
     "zeroTo100": {
-      "value": 10.2,
+      "value": 10.4,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.9,
+      "value": 6.4,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.5,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3422,7 +3422,25 @@
   {
     "variantId": "thar-roxx-mx5-diesel-mt",
     "zeroTo100": {
-      "value": 11.5,
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "thar-roxx-ax7l-diesel-at-4wd",
+    "zeroTo100": {
+      "value": 10.5,
       "source": "estimated-model",
       "estimated": true
     },
@@ -3432,25 +3450,7 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 42,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "thar-roxx-ax7l-diesel-at-4wd",
-    "zeroTo100": {
-      "value": 10.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.8,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
@@ -3458,12 +3458,12 @@
   {
     "variantId": "swift-lxi-mt",
     "zeroTo100": {
-      "value": 12.5,
+      "value": 11,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 7.5,
+      "value": 6.8,
       "source": "estimated-model",
       "estimated": true
     },
@@ -3476,509 +3476,23 @@
   {
     "variantId": "swift-vxi-cng",
     "zeroTo100": {
-      "value": 13.8,
+      "value": 12.6,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8.5,
+      "value": 7.8,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.5,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
     "variantId": "swift-zxi-plus-amt",
-    "zeroTo100": {
-      "value": 12.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "dzire-lxi-mt",
-    "zeroTo100": {
-      "value": 12.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.8,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "dzire-vxi-cng",
-    "zeroTo100": {
-      "value": 13.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 8.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "dzire-zxi-plus-amt",
-    "zeroTo100": {
-      "value": 12.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.9,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "amaze-v-mt",
-    "zeroTo100": {
-      "value": 12,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "amaze-vx-cvt",
-    "zeroTo100": {
-      "value": 12.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.7,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "amaze-zx-cvt",
-    "zeroTo100": {
-      "value": 12.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.7,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "kylaq-classic-mt",
-    "zeroTo100": {
-      "value": 10.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 39.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "kylaq-signature-mt",
-    "zeroTo100": {
-      "value": 10.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 39.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "kylaq-signature-at",
-    "zeroTo100": {
-      "value": 11.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "zs-ev-executive",
-    "zeroTo100": {
-      "value": 8.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "zs-ev-exclusive-plus",
-    "zeroTo100": {
-      "value": 8.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "taisor-e-mt",
-    "zeroTo100": {
-      "value": 12.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 8.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "taisor-g-turbo-mt",
-    "zeroTo100": {
-      "value": 10.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.3,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 39.8,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "taisor-v-turbo-at",
-    "zeroTo100": {
-      "value": 10.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.6,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 40.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "crysta-gx-mt",
-    "zeroTo100": {
-      "value": 12.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "crysta-zx-mt",
-    "zeroTo100": {
-      "value": 12.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "exter-ex-mt",
-    "zeroTo100": {
-      "value": 13.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 8.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "exter-sx-mt",
-    "zeroTo100": {
-      "value": 13.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 8.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "ioniq5-rwd",
-    "zeroTo100": {
-      "value": 7.6,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 3.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 37.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "vf6-eco",
-    "zeroTo100": {
-      "value": 8.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 39,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "vf6-plus",
-    "zeroTo100": {
-      "value": 8.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.8,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "vf7-eco",
-    "zeroTo100": {
-      "value": 8.3,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.6,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "vf7-plus-awd",
-    "zeroTo100": {
-      "value": 5.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 2.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 36.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "q3-premium-plus",
-    "zeroTo100": {
-      "value": 7.3,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "q3-technology",
-    "zeroTo100": {
-      "value": 7.3,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 4.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 38.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "q5-technology",
-    "zeroTo100": {
-      "value": 6.3,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 3.4,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 37.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "safari-smart-mt",
     "zeroTo100": {
       "value": 11.2,
       "source": "estimated-model",
@@ -3990,20 +3504,20 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.5,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "safari-adventure-plus-at",
+    "variantId": "dzire-lxi-mt",
     "zeroTo100": {
-      "value": 10.8,
+      "value": 11.1,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 6.2,
+      "value": 6.9,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4014,117 +3528,9 @@
     }
   },
   {
-    "variantId": "safari-accomplished-plus-at",
+    "variantId": "dzire-vxi-cng",
     "zeroTo100": {
-      "value": 10.8,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "altroz-xe-mt",
-    "zeroTo100": {
-      "value": 14.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 9.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "altroz-xz-plus-iturbo",
-    "zeroTo100": {
-      "value": 11.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "altroz-xza-plus-dca",
-    "zeroTo100": {
-      "value": 14.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 9.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "thar-ax-opt-diesel-mt",
-    "zeroTo100": {
-      "value": 14.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 9.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 44.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "thar-lx-petrol-at-4wd",
-    "zeroTo100": {
-      "value": 10.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 6.1,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 43.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "thar-lx-diesel-at-4wd",
-    "zeroTo100": {
-      "value": 12.5,
+      "value": 12.7,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4134,87 +3540,537 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 43.8,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "scorpio-classic-s-mt",
+    "variantId": "dzire-zxi-plus-amt",
     "zeroTo100": {
-      "value": 13,
+      "value": 11.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8,
+      "value": 7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 43,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "scorpio-classic-s11-mt",
+    "variantId": "amaze-v-mt",
     "zeroTo100": {
-      "value": 13,
+      "value": 10.7,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8,
+      "value": 6.6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 43,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "bolero-b4-mt",
+    "variantId": "amaze-vx-cvt",
     "zeroTo100": {
-      "value": 19.5,
+      "value": 11.2,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 13.5,
+      "value": 6.9,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 46,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "bolero-b6-opt-mt",
+    "variantId": "amaze-zx-cvt",
     "zeroTo100": {
-      "value": 19.5,
+      "value": 11.3,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 13.5,
+      "value": 7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 46,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "baleno-sigma-mt",
+    "variantId": "kylaq-classic-mt",
     "zeroTo100": {
-      "value": 11.5,
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kylaq-signature-mt",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kylaq-signature-at",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "zs-ev-executive",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "zs-ev-exclusive-plus",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "taisor-e-mt",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "taisor-g-turbo-mt",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "taisor-v-turbo-at",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "crysta-gx-mt",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "crysta-zx-mt",
+    "zeroTo100": {
+      "value": 10.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "exter-ex-mt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "exter-sx-mt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ioniq5-rwd",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vf6-eco",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vf6-plus",
+    "zeroTo100": {
+      "value": 9.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vf7-eco",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vf7-plus-awd",
+    "zeroTo100": {
+      "value": 8.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q3-premium-plus",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q3-technology",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q5-technology",
+    "zeroTo100": {
+      "value": 8.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "safari-smart-mt",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "safari-adventure-plus-at",
+    "zeroTo100": {
+      "value": 10.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "safari-accomplished-plus-at",
+    "zeroTo100": {
+      "value": 10.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "altroz-xe-mt",
+    "zeroTo100": {
+      "value": 11.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "altroz-xz-plus-iturbo",
+    "zeroTo100": {
+      "value": 9.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "altroz-xza-plus-dca",
+    "zeroTo100": {
+      "value": 11.6,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4224,7 +4080,151 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 40.8,
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "thar-ax-opt-diesel-mt",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "thar-lx-petrol-at-4wd",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "thar-lx-diesel-at-4wd",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "scorpio-classic-s-mt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "scorpio-classic-s11-mt",
+    "zeroTo100": {
+      "value": 11.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-b4-mt",
+    "zeroTo100": {
+      "value": 14.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-b6-opt-mt",
+    "zeroTo100": {
+      "value": 14.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "baleno-sigma-mt",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
@@ -4232,17 +4232,17 @@
   {
     "variantId": "baleno-delta-amt",
     "zeroTo100": {
-      "value": 12.5,
+      "value": 10.6,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8,
+      "value": 6.6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.2,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
@@ -4250,17 +4250,17 @@
   {
     "variantId": "baleno-alpha-amt",
     "zeroTo100": {
-      "value": 12.5,
+      "value": 10.8,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8,
+      "value": 6.7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.2,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
@@ -4268,12 +4268,12 @@
   {
     "variantId": "fronx-sigma-mt",
     "zeroTo100": {
-      "value": 11.8,
+      "value": 10.8,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 7.5,
+      "value": 6.7,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4286,17 +4286,17 @@
   {
     "variantId": "fronx-delta-plus-amt",
     "zeroTo100": {
-      "value": 12.8,
+      "value": 10.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8.2,
+      "value": 6.8,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.5,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
@@ -4304,12 +4304,102 @@
   {
     "variantId": "fronx-alpha-turbo-at",
     "zeroTo100": {
-      "value": 9.9,
+      "value": 9.8,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 5.9,
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ertiga-lxi-mt",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ertiga-zxi-cng",
+    "zeroTo100": {
+      "value": 12.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ertiga-zxi-plus-at",
+    "zeroTo100": {
+      "value": 11.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "fortuner-petrol-mt",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "fortuner-diesel-at-4wd",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4320,81 +4410,99 @@
     }
   },
   {
-    "variantId": "ertiga-lxi-mt",
+    "variantId": "i20-era-mt",
     "zeroTo100": {
-      "value": 13.5,
+      "value": 11.4,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8.5,
+      "value": 7.1,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 42.5,
+      "value": 41,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "ertiga-zxi-cng",
+    "variantId": "i20-asta-opt-ivt",
     "zeroTo100": {
-      "value": 15.5,
+      "value": 11.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 10.2,
+      "value": 7.4,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 43.5,
+      "value": 39,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "ertiga-zxi-plus-at",
+    "variantId": "tucson-platinum-petrol-at",
     "zeroTo100": {
-      "value": 13.9,
+      "value": 10.4,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tucson-signature-diesel-at-awd",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-premium-petrol-mt",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-luxury-plus-turbo-dct",
+    "zeroTo100": {
       "value": 8.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 42.5,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "fortuner-petrol-mt",
-    "zeroTo100": {
-      "value": 12.2,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7.9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 43,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "fortuner-diesel-at-4wd",
-    "zeroTo100": {
-      "value": 9.8,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4404,105 +4512,87 @@
       "estimated": true
     },
     "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "compass-sport-diesel-mt",
+    "zeroTo100": {
+      "value": 9.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
       "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "i20-era-mt",
+    "variantId": "compass-model-s-diesel-at-4wd",
     "zeroTo100": {
-      "value": 12.8,
+      "value": 9.7,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8.1,
+      "value": 6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.2,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "i20-asta-opt-ivt",
+    "variantId": "atto3-dynamic-50",
     "zeroTo100": {
-      "value": 12.9,
+      "value": 9.7,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 8.3,
+      "value": 6,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 41.2,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "tucson-platinum-petrol-at",
+    "variantId": "atto3-superior-60",
     "zeroTo100": {
-      "value": 10.9,
+      "value": 9.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 6.5,
+      "value": 6.1,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.8,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "tucson-signature-diesel-at-awd",
+    "variantId": "seal-dynamic-rwd",
     "zeroTo100": {
-      "value": 9,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 39.2,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "carens-premium-petrol-mt",
-    "zeroTo100": {
-      "value": 11.5,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "sixtyTo100": {
-      "value": 7,
-      "source": "estimated-model",
-      "estimated": true
-    },
-    "braking100to0": {
-      "value": 41.8,
-      "source": "estimated-model",
-      "estimated": true
-    }
-  },
-  {
-    "variantId": "carens-luxury-plus-turbo-dct",
-    "zeroTo100": {
-      "value": 9.5,
+      "value": 8.7,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4518,9 +4608,1377 @@
     }
   },
   {
-    "variantId": "compass-sport-diesel-mt",
+    "variantId": "seal-performance-awd",
+    "zeroTo100": {
+      "value": 7.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 4.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kodiaq-style-tsi-at-4wd",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kodiaq-laurin-klement-tsi-at-4wd",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alto-k10-std",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alto-k10-lxi-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alto-k10-vxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "maruti-alto-k10-vxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "s-presso-std",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "s-presso-vxi-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "s-presso-vxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "maruti-s-presso-vxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "celerio-lxi",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "celerio-vxi-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "celerio-zxi-amt",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "maruti-celerio-zxi-amt",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "wagon-r-lxi",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "wagon-r-lxi-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "wagon-r-zxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "maruti-wagon-r-zxi-ags",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xl6-zeta",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xl6-zeta-at",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xl6-alpha-at",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xl6-zeta-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "jimny-zeta-mt",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "jimny-alpha-at",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "jimny-alpha-dual-tone-mt",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "jimny-alpha-dual-tone-at",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "invicto-zeta-7-seater",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "invicto-zeta-8-seater",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "invicto-alpha-7-seater",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "e-vitara-delta",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "e-vitara-alpha",
+    "zeroTo100": {
+      "value": 10.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "e-vitara-49kwh",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "e-vitara-61kwh",
+    "zeroTo100": {
+      "value": 10.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "victoris-lxi",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "victoris-zxi",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "victoris-cng",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "victoris-awd",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "eeco-5-seater-std",
+    "zeroTo100": {
+      "value": 12,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "eeco-cargo",
+    "zeroTo100": {
+      "value": 12,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "eeco-cargo-cng",
+    "zeroTo100": {
+      "value": 13.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 8.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "eeco-tour-v",
+    "zeroTo100": {
+      "value": 12,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ignis-sigma",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ignis-alpha",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ignis-zeta-amt",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ignis-alpha-amt",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-smart",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-pure-plus-a",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-creative",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-creative-plus",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-ev-xe",
+    "zeroTo100": {
+      "value": 12.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-ev-xz-tech-lux",
     "zeroTo100": {
       "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-ev-lr",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiago-ev-acfc",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "punch-ev-smart",
+    "zeroTo100": {
+      "value": 12.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "punch-ev-empowered",
+    "zeroTo100": {
+      "value": 10.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "punch-ev-mr",
+    "zeroTo100": {
+      "value": 12.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "punch-ev-lr",
+    "zeroTo100": {
+      "value": 10.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-xe",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-xz",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-amt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-cng",
+    "zeroTo100": {
+      "value": 12.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-ev-xe",
+    "zeroTo100": {
+      "value": 13,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 8.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-ev-xt",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-ev-xz",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tigor-ev-xz-lux",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "nexon-ev-creative",
+    "zeroTo100": {
+      "value": 10.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "nexon-ev-empowered",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "nexon-ev-lr",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "nexon-ev-dark",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "curvv-ev-creative",
+    "zeroTo100": {
+      "value": 10.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "curvv-ev-empowered",
+    "zeroTo100": {
+      "value": 10.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "curvv-ev-45kwh",
+    "zeroTo100": {
+      "value": 10.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "curvv-ev-55kwh",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "sierra-smart",
+    "zeroTo100": {
+      "value": 12.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "sierra-adventure",
+    "zeroTo100": {
+      "value": 11.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "sierra-accomplished",
+    "zeroTo100": {
+      "value": 9.5,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4530,15 +5988,2787 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 40,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "compass-model-s-diesel-at-4wd",
+    "variantId": "sierra-persona",
+    "zeroTo100": {
+      "value": 9.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "harrier-ev-adventure",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "harrier-ev-empowered",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "harrier-ev-rwd",
+    "zeroTo100": {
+      "value": 10,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "harrier-ev-awd",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-n4",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-n8",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-n10",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-n10-o",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-plus-p4",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "bolero-neo-plus-p10",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-3xo-ev-ec",
+    "zeroTo100": {
+      "value": 12.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-3xo-ev-el",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-3xo-ev-el-pro",
+    "zeroTo100": {
+      "value": 11.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-7xo-ax",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-7xo-ax7",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-7xo-ax7t",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv-7xo-ax7l",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "scorpio-s",
+    "zeroTo100": {
+      "value": 11.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "scorpio-s11",
+    "zeroTo100": {
+      "value": 11.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "marazzo-m2",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "marazzo-m4",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "marazzo-m6",
+    "zeroTo100": {
+      "value": 10.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv400-ec",
+    "zeroTo100": {
+      "value": 12.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv400-el-pro",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xuv400-el-pro-dt",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-pack-one",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-pack-two",
+    "zeroTo100": {
+      "value": 9.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-pack-three",
+    "zeroTo100": {
+      "value": 9.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-pack-three-select",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-fe-pack-three-fe",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "be-6-fe-special-edition",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9e-pack-one",
+    "zeroTo100": {
+      "value": 11.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9e-pack-two",
+    "zeroTo100": {
+      "value": 10.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9e-pack-three",
+    "zeroTo100": {
+      "value": 9.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9s-pack-one",
+    "zeroTo100": {
+      "value": 13.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 8.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9s-pack-two",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "xev-9s-pack-three",
     "zeroTo100": {
       "value": 10.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "grand-i10-nios-era",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "grand-i10-nios-corporate",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "grand-i10-nios-amt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "grand-i10-nios-cng",
+    "zeroTo100": {
+      "value": 12.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "aura-e",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "aura-sx",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "aura-amt",
+    "zeroTo100": {
+      "value": 11.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "aura-cng",
+    "zeroTo100": {
+      "value": 12.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "i20-n-line-n6",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "i20-n-line-n8",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "i20-n-line-mt",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "i20-n-line-dct",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "venue-n-line-n6",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "venue-n-line-n10",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "venue-n-line-mt",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "venue-n-line-dct",
+    "zeroTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-n-line-n8",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-n-line-n10",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-n-line-mt",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-n-line-dct",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-electric-executive",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-electric-premium",
+    "zeroTo100": {
+      "value": 10.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-electric-42kwh",
+    "zeroTo100": {
+      "value": 11.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "creta-electric-51-4kwh",
+    "zeroTo100": {
+      "value": 10.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alcazar-executive",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alcazar-signature",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alcazar-signature-knight",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "alcazar-at",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "glanza-e",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "glanza-v",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "glanza-amt",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "glanza-cng",
+    "zeroTo100": {
+      "value": 12.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "rumion-s",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "rumion-v",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "rumion-at",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "rumion-cng",
+    "zeroTo100": {
+      "value": 12.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "urban-cruiser-ebella-g",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "urban-cruiser-ebella-v",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "urban-cruiser-ebella-vx",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "urban-cruiser-ebella-strong-hybrid",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "innova-hycross-g",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "innova-hycross-vx-o",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "innova-hycross-zx-o",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "innova-hycross-hybrid",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hilux-std",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hilux-high",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hilux-high-at",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hilux-black-edition",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "camry-elegance",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "camry-sprint-edition",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vellfire-hi",
+    "zeroTo100": {
+      "value": 11.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "vellfire-vip-executive-lounge",
+    "zeroTo100": {
+      "value": 11.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "land-cruiser-zx",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "land-cruiser-gr-s",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-hte",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-htx",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kia-carens-clavis-htx",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-gtx",
+    "zeroTo100": {
+      "value": 11,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-ev-htk",
+    "zeroTo100": {
+      "value": 10.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-ev-htx",
+    "zeroTo100": {
+      "value": 10.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kia-carens-clavis-ev-htx",
+    "zeroTo100": {
+      "value": 10.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carens-clavis-ev-gt-line",
+    "zeroTo100": {
+      "value": 10.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "syros-htk",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "syros-htx",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "syros-gtx",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "syros-gtx-o",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carnival-limousine",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "carnival-limousine-plus",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ev6-gt-line",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ev6-gt-line-awd",
+    "zeroTo100": {
+      "value": 8.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "ev9-gt-line-awd",
+    "zeroTo100": {
+      "value": 8.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "city-e-hev-v",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "city-e-hev-zx",
+    "zeroTo100": {
+      "value": 10.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "superb-laurin-klement",
+    "zeroTo100": {
+      "value": 8.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "octavia-rs-rs",
+    "zeroTo100": {
+      "value": 7.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 4.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tiguan-r-line-r-line",
+    "zeroTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "golf-gti-gti",
+    "zeroTo100": {
+      "value": 7.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 4.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "comet-ev-executive",
+    "zeroTo100": {
+      "value": 15,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "comet-ev-excite",
+    "zeroTo100": {
+      "value": 15,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "comet-ev-exclusive",
+    "zeroTo100": {
+      "value": 15,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "comet-ev-exclusive-fc",
+    "zeroTo100": {
+      "value": 15,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 9.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hector-plus-select",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hector-plus-savvy-pro",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hector-plus-6-seater",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "hector-plus-7-seater",
+    "zeroTo100": {
+      "value": 9.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "gloster-sharp",
+    "zeroTo100": {
+      "value": 9.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "gloster-blackstorm",
+    "zeroTo100": {
+      "value": 9.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "gloster-desertstorm",
+    "zeroTo100": {
+      "value": 9.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "gloster-snowstorm",
+    "zeroTo100": {
+      "value": 9.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "majestor-sharp",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "majestor-savvy",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "cyberster-gt",
+    "zeroTo100": {
+      "value": 7.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 4.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "m9-presidential-limousine",
+    "zeroTo100": {
+      "value": 9.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kwid-rxe",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kwid-rxt",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kwid-climber",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "kwid-amt",
+    "zeroTo100": {
+      "value": 11.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "triber-rxe",
+    "zeroTo100": {
+      "value": 12.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "triber-rxt",
+    "zeroTo100": {
+      "value": 12.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "triber-rxz",
+    "zeroTo100": {
+      "value": 12.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "triber-amt",
+    "zeroTo100": {
+      "value": 12.7,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 7.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "duster-authentic",
+    "zeroTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "duster-techno",
+    "zeroTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "duster-techno-plus",
+    "zeroTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "duster-iconic",
+    "zeroTo100": {
+      "value": 9.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "x-trail-st-l-single-cbu-variant",
+    "zeroTo100": {
+      "value": 9.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tekton-xe",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tekton-xl",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tekton-xv",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 41,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "tekton-xv-premium",
+    "zeroTo100": {
+      "value": 10.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 39,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "meridian-longitude",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "meridian-overland",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "meridian-at",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "meridian-4x4",
+    "zeroTo100": {
+      "value": 9.9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "wrangler-unlimited",
+    "zeroTo100": {
+      "value": 8.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "wrangler-rubicon",
+    "zeroTo100": {
+      "value": 8.4,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.2,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "grand-cherokee-limited-o",
+    "zeroTo100": {
+      "value": 9.2,
       "source": "estimated-model",
       "estimated": true
     },
@@ -4548,115 +8778,385 @@
       "estimated": true
     },
     "braking100to0": {
-      "value": 39.5,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "atto3-dynamic-50",
+    "variantId": "sealion-7-premium",
     "zeroTo100": {
-      "value": 7.3,
+      "value": 8.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 3.9,
+      "value": 5.5,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 38.9,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "atto3-superior-60",
+    "variantId": "sealion-7-performance",
     "zeroTo100": {
-      "value": 7.3,
+      "value": 7.6,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 3.9,
+      "value": 4.7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 38.9,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "seal-dynamic-rwd",
+    "variantId": "emax-7-premium",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "emax-7-superior",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "emax-7-6-seater",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "emax-7-7-seater",
+    "zeroTo100": {
+      "value": 9.8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 6.1,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "a4-premium",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "a4-premium-plus",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "a4-technology",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "a6-premium-plus",
+    "zeroTo100": {
+      "value": 8.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "a6-technology",
+    "zeroTo100": {
+      "value": 8.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q3-sportback-technology",
+    "zeroTo100": {
+      "value": 9,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5.6,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q7-premium-plus",
+    "zeroTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q7-technology",
+    "zeroTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q8-celebration",
+    "zeroTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "q8-standard",
+    "zeroTo100": {
+      "value": 8,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 40.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "s5-sportback-sportback",
     "zeroTo100": {
       "value": 7.5,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.1,
+      "value": 4.7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 38,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "seal-performance-awd",
+    "variantId": "rs-q8-standard",
     "zeroTo100": {
-      "value": 3.8,
+      "value": 6.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 1.9,
+      "value": 4.3,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 36.5,
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "kodiaq-style-tsi-at-4wd",
+    "variantId": "rs-q8-performance",
     "zeroTo100": {
-      "value": 7.8,
+      "value": 6.9,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.2,
+      "value": 4.3,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39,
+      "value": 40.5,
       "source": "estimated-model",
       "estimated": true
     }
   },
   {
-    "variantId": "kodiaq-laurin-klement-tsi-at-4wd",
+    "variantId": "e-tron-gt-quattro",
     "zeroTo100": {
-      "value": 7.8,
+      "value": 7.6,
       "source": "estimated-model",
       "estimated": true
     },
     "sixtyTo100": {
-      "value": 4.2,
+      "value": 4.7,
       "source": "estimated-model",
       "estimated": true
     },
     "braking100to0": {
-      "value": 39,
+      "value": 42.5,
+      "source": "estimated-model",
+      "estimated": true
+    }
+  },
+  {
+    "variantId": "rs-e-tron-gt-rs",
+    "zeroTo100": {
+      "value": 7.3,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "sixtyTo100": {
+      "value": 4.5,
+      "source": "estimated-model",
+      "estimated": true
+    },
+    "braking100to0": {
+      "value": 42.5,
       "source": "estimated-model",
       "estimated": true
     }

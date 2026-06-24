@@ -106,7 +106,7 @@ export default function Navbar() {
               <Link
                 href="/compare"
                 onClick={() => setIsOpen(false)}
-                className="flex items-center justify-center py-3 rounded-xl text-sm font-semibold text-[#F5F1E8] font-mono bg-[#C84C31] hover:opacity-90"
+                className="flex items-center justify-center py-3 rounded-xl text-sm font-semibold text-[#F5F1E8] bg-[#C84C31] hover:opacity-90"
               >
                 Compare Cars
               </Link>

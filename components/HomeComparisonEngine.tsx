@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import {
-  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend
+  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer,
 } from "recharts";
 import { models, getBrand, getVariantsForModel, getTestData, features } from "@/lib/data";
 import { radarScores } from "@/lib/scores";
@@ -10,6 +10,7 @@ import EstimatedBadge from "./EstimatedBadge";
 import CarPhoto from "./CarPhoto";
 import DriveSelect from "@/components/ui/DriveSelect";
 import { theme } from "@/lib/theme";
+import { usePersistedPageState, usePersistedScroll } from "@/lib/use-persisted-page-state";
 
 const AXES = [
   { key: "performance", label: "Performance" },
@@ -22,51 +23,26 @@ const AXES = [
 
 const PALETTE = theme.chart;
 
-const RADAR_GROUPS = [
-  { title: "Performance Radar", keys: ["performance", "efficiency", "space"] as const, accent: theme.roomAccents.lifecycle },
-  { title: "Safety Radar", keys: ["safety", "features", "space"] as const, accent: theme.roomAccents.lab },
-  { title: "Ownership Radar", keys: ["ownership", "efficiency", "features"] as const, accent: theme.positive },
-];
-
-function RadarPanel({
-  title,
-  accent,
-  data,
-  selected,
-}: {
-  title: string;
-  accent: string;
-  data: Record<string, string | number>[];
-  selected: { id: string; name: string }[];
-}) {
-  return (
-    <div className="border border-[#161616]/10 bg-[#ECE7DF] p-5 rounded-2xl relative overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.04]">
-        <div className="w-48 h-48 rounded-full border border-[#161616]/20 animate-radar-sweep" />
-      </div>
-      <h4 className="text-xs font-geist text-secondary/70 uppercase tracking-widest mb-3 relative z-10" style={{ color: accent }}>
-        {title}
-      </h4>
-      <div className="h-56 relative z-10">
-        <ResponsiveContainer width="100%" height="100%">
-          <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
-            <PolarGrid stroke="rgba(22, 22, 22, 0.08)" />
-            <PolarAngleAxis dataKey="axis" tick={{ fill: "#161616", fontSize: 9 }} />
-            <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />
-            {selected.map((m, i) => (
-              <Radar key={m.id} name={m.name} dataKey={m.name} stroke={PALETTE[i]} fill={PALETTE[i]} fillOpacity={0.08} strokeWidth={2} />
-            ))}
-            <Legend wrapperStyle={{ fontSize: 9, paddingTop: 4 }} />
-          </RadarChart>
-        </ResponsiveContainer>
-      </div>
-    </div>
-  );
-}
-
 export default function HomeComparisonEngine() {
-  const [ids, setIds] = useState<string[]>(["hyundai-creta", "kia-seltos"]);
-  const [mobileActiveTab, setMobileActiveTab] = useState<number>(0);
+  const [persisted, setPersisted] = usePersistedPageState("home-compare", {
+    ids: ["hyundai-creta", "kia-seltos"] as string[],
+    mobileActiveTab: 0,
+  });
+  const { ids, mobileActiveTab } = persisted;
+  const setIds = useCallback(
+    (updater: string[] | ((prev: string[]) => string[])) => {
+      setPersisted((p) => ({
+        ...p,
+        ids: typeof updater === "function" ? updater(p.ids) : updater,
+      }));
+    },
+    [setPersisted],
+  );
+  const setMobileActiveTab = useCallback(
+    (index: number) => setPersisted((p) => ({ ...p, mobileActiveTab: index })),
+    [setPersisted],
+  );
+  usePersistedScroll("home-compare");
 
   // Load selected models
   const selected = useMemo(() => {
@@ -78,21 +54,15 @@ export default function HomeComparisonEngine() {
     return radarScores(selected.map((m) => m.id));
   }, [selected]);
 
-  const buildRadarData = (keys: readonly (typeof AXES)[number]["key"][]) =>
-    keys.map((key) => {
-      const axis = AXES.find((a) => a.key === key)!;
+  const chartData = useMemo(() => {
+    return AXES.map((axis) => {
       const row: Record<string, string | number> = { axis: axis.label };
       for (const m of selected) {
-        row[m.name] = scores[m.id] ? Number(scores[m.id][key].toFixed(1)) : 0;
+        row[m.name] = scores[m.id] ? Number(scores[m.id][axis.key].toFixed(1)) : 0;
       }
       return row;
     });
-
-  const radarGroups = useMemo(
-    () => RADAR_GROUPS.map((g) => ({ ...g, data: buildRadarData(g.keys) })),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [selected, scores]
-  );
+  }, [selected, scores]);
 
   // Detailed stats per car
   const carDetails = useMemo(() => {
@@ -200,11 +170,42 @@ export default function HomeComparisonEngine() {
         <span className="font-geist text-[10px] tracking-widest text-[var(--accent)] uppercase">Control Center</span>
       </div>
 
-      {/* Triple Radar — Performance / Safety / Ownership */}
-      <div className="grid md:grid-cols-3 gap-4">
-        {radarGroups.map((g) => (
-          <RadarPanel key={g.title} title={g.title} accent={g.accent} data={g.data} selected={selected} />
-        ))}
+      {/* Single 6-axis radar — same axes as /compare */}
+      <div className="border border-[#161616]/10 bg-[#ECE7DF] p-5 sm:p-6 rounded-2xl">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <h4 className="text-sm text-secondary flex items-center gap-1.5 flex-wrap">
+            Six axes, scored 1–10
+            <EstimatedBadge tooltip="Performance, Efficiency, Safety, Features, Space, and Ownership — normalized across the full catalog." />
+          </h4>
+          <div className="flex gap-3 text-xs flex-wrap">
+            {selected.map((m, i) => (
+              <div key={m.id} className="flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: PALETTE[i] }} />
+                <span className="text-primary font-medium">{m.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="h-72 sm:h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={chartData} outerRadius="62%">
+              <PolarGrid stroke="rgba(22, 22, 22, 0.1)" />
+              <PolarAngleAxis dataKey="axis" tick={{ fill: "#4b4b4b", fontSize: 11 }} />
+              <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />
+              {selected.map((m, i) => (
+                <Radar
+                  key={m.id}
+                  name={m.name}
+                  dataKey={m.name}
+                  stroke={PALETTE[i]}
+                  fill={PALETTE[i]}
+                  fillOpacity={0.1}
+                  strokeWidth={2}
+                />
+              ))}
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
 
       {/* DESKTOP TABLE: Sticky Comparison Layout */}
